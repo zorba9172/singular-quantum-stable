@@ -1,0 +1,13 @@
+// SINGULAR Ω v32.0 — 38-Model Orthogonal Procrustes & Cellular Sheaf Cohomology Distillation (H1=0)
+§λ("discoveries")
+§ω("singular.v32.elite.disc")
+§κ("DISC-000118-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[374, 426], W_0 : ℝ[426, 426], K_0 : ℝ[374, 426], δ_0 : Δℝ[187], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ◈_H(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

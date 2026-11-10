@@ -1,0 +1,15 @@
+{
+  "simulator": "SINGULAR_OMEGA_V24_INDEPENDENT_3ENGINE_COSIM",
+  "engines": ["SpecInterpreter", "SpikePackedTableDispatch", "RtlTwoPhaseFlipFlopEvaluator"],
+  "three_way_equivalence_verified": true,
+  "semantics_verified": true,
+  "committed_custom3_insns": 9,
+  "rejected_illegal_insns": 1,
+  "propagated_cone_mask_hex": "0x40000080080",
+  "reuse_certificate_valid": 1,
+  "err_invalid_state_id_code": 1,
+  "err_version_mismatch_code": 2,
+  "err_capability_denied_code": 3,
+  "rtl_formal_assertions_checked": 40,
+  "rtl_formal_assertion_failures": 0
+}

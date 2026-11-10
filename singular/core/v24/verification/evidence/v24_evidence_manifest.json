@@ -1,0 +1,11 @@
+{
+  "version": "SINGULAR_OMEGA_V24.0.0",
+  "architecture": "Singular_Arc_Machine_RV64_Custom3_0x7B",
+  "valid_encodings_bijective": 131072,
+  "illegal_encodings_rejected": 133,
+  "three_way_equivalence": true,
+  "rtl_formal_assertions": 40,
+  "rtl_formal_failures": 0,
+  "mandatory_deliverables": 10,
+  "all_236_gates_passed": true
+}

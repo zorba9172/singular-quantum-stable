@@ -1,0 +1,7 @@
+{
+  "arch": "Apple_Silicon_ARM64",
+  "cntfrq_el0_hz": 1000000000,
+  "clock_read_overhead_ns": 12.4580,
+  "cpp_compiler": "Apple_clang_21.0.0_-std=c++23_-O3_-mcpu=native",
+  "rust_compiler": "rustc_1.98.1_-C_opt-level=3_-C_target-cpu=native"
+}

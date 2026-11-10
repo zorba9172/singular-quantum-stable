@@ -1,0 +1,13 @@
+// SINGULAR Ω v22.0 — 4-Layer Deep Weight Factorization (SVD/TT-MPS + Singular Arcs + Cyclotomic CRT)
+§λ("discoveries")
+§ω("singular.v22.discovery")
+§κ("DISC-000068-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[80, 125], W_0 : ℝ[125, 125], K_0 : ℝ[80, 125], δ_0 : Δℝ[39], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_MOE(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

@@ -1,0 +1,17 @@
+// SINGULAR Ω — DISC-000901 experiment: Δ⁺ then ↶ must return Σ bit-for-bit (I2),
+// and two orders of the same Δ multiset must agree (I3). Executed natively by `era-bench`.
+§λ("discoveries")
+§ω("singular.v24.discovery.exp")
+§κ("DISC-000901-E")
+
+Ω ⟦ Σ_0 : ℤ[128, 128], W_0 : ℤ[128, 128], δ_0 : Δℤ[128], δ_1 : Δℤ[128], ξ_0 : ⚿[32] ⟧ {
+  Σ_1 ← Σ_0 ⋅ W_0
+  Σ_2 ← Σ_1 ⊕ δ_0
+  Σ_3 ← Σ_2 ⊕ δ_1
+  Σ_4 ← Σ_1 ⊕ δ_1
+  Σ_5 ← Σ_4 ⊕ δ_0
+  ⊢ ⇄(Σ_3, Σ_5)
+  Σ_6 ← Σ_3 ↶ δ_1
+  Σ_7 ← Σ_6 ↶ δ_0
+  ⊢ ⇄(Σ_7, Σ_1)
+}

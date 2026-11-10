@@ -1,0 +1,2 @@
+workload,full_cpp23_e2e_us,inc_cpp23_csr_undo_e2e_us,singular_v25_sarc_e2e_us,speedup_vs_full_x,speedup_vs_inc_cpp23_x,undo_log_bytes,retraction_ulp_err
+CausalGraph_N16384_K32_EndToEnd,113.147125,1.156250,0.083328,1357.850366,13.875867,0,0.0

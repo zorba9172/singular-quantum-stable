@@ -1,0 +1,13 @@
+// SINGULAR Ω v30.0 — Cognitive Living Organism Pareto Dispatcher, Differential Types, Autonomous Missions & Two-Layer Meta-ABI
+§λ("modules")
+§ω("singular.v30.cognitive.driver.abi")
+§κ("V30-COGNITIVE-DRIVER-ABI-04")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[352, 396], W_0 : ℝ[396, 396], K_0 : ℝ[352, 396], δ_0 : Δℝ[176], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_ORC(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

@@ -1,0 +1,6 @@
+id = "DISC-000014"
+title = "Hardware-Aware Elastic RTL & OpenROAD VLSI Placement Co-Design"
+domain_primary = "Semiconductors & EDA"
+domain_transfer = "Compiler Dataflow Graph Partitioning"
+status = "VALIDATED_AND_PROMOTED"
+author = "singular.quantum.research"

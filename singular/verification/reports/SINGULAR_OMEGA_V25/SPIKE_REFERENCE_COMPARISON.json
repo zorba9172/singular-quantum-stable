@@ -1,0 +1,9 @@
+{
+  "commit": "dbe5ce924d7a6612d3b5511b715241125d539b6c",
+  "four_way_equivalence": true,
+  "ref_cone_mask": "0x40000080080",
+  "qbe_cone_mask": "0x40000080080",
+  "spike_cone_mask": "0x40000080080",
+  "rtl_cone_mask": "0x40000080080",
+  "trap_codes": {"ERR_INVALID_STATE_ID": 1, "ERR_VERSION_MISMATCH": 2, "ERR_CAPABILITY_DENIED": 3, "ERR_VERSION_OVERFLOW": 4}
+}

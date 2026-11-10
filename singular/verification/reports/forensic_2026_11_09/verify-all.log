@@ -1,0 +1,224 @@
+================================================================================
+ SINGULAR Ω v25.0.0-PHYSICAL-COMPUTING-PROOF — 92-Op SuperKernel (242/242 Gates)
+================================================================================
+   [    Q01] [PASS] Symbolic Grammar, UTF-8 Lexer, Parser & Zero-English-Keyword AST | 9/9 .qcy programs parsed (43 manifolds, 62 transitions, 0 English keywords)
+   [Q02    ] [PASS] Typed Symbolic Operator Catalog (40 Ops), NFC & Symbolic<->ASCII Bijection | 40/40 typed operators, Symbolic<->ASCII bijection=EXACT, CY-SYM-CONFUSABLE=ENFORCED
+   [Q03    ] [PASS] Ω-CIR Dialect Extension over SIR Ω & Causal Reversibility Proof Gate | 105 Ω-CIR nodes lowered over SIR Ω (18432 KiB fused), CY-REV-001=ENFORCED
+   [Q04    ] [PASS] Native Algebraic Fusion (`φ₊(x⋅W+b)`) & Accelerated Blake2b-256 + Ed25519 | Fused=1.763540 us (0B temp alloc, diff=0.000000), Blake2b speedup=13.887344x
+   [Q05    ] [PASS] Quantum Circuit Dialect, Split-Complex State-Vector Simulator & Grover/VQE | Bell ⟨Z⊗Z⟩=1.000000, Grover N=1024 P(ω*)=0.999461, VQE E=-4.800000
+   [Q06    ] [PASS] AI Singularity SuperKernel (HPAM + Exact-Normalized bSB + Von Neumann AI) | HPAM coherence=1.000000 (2.416432x), bSB GapClosed=93.575564% [E_min*=-15.401904]
+   [Q07    ] [PASS] Quarantined Breakthrough Source Map (0ns Hot-Path, 8/8 Reconstructed) | Quarantined=TRUE (0.0ns overhead), 8/8 .qcy + 6/6 breakthroughs reconstructed (51 spans)
+   [Q08    ] [PASS] Forensic Audit Closure (Live Stencil, TwoSum 0-ULP 640B, Real Python3, 12-Shape Diff) | TwoSum=0 ULP (640B vs 32KiB=51.2x), 12/12 shapes, NUMPY_REAL_MEASURED (JAX_NOT_INSTALLED), IsingGap=93.575564%
+   [Q09    ] [PASS] 4-Track Syntax vs Semantics 2x2 Factorial Matrix (Tracks A, B, C, D) | RuntimeShare=99.881684%, SyntaxCompileSpeedup=5.408439x, TrackD=559.388667ns
+   [Q10    ] [PASS] 5-Engine Autonomous Scientific Discovery Layer (SINDy, Pearl do, SVD, Falsifier) | SINDy LJ R²=1.000000, SVD Invariants=3 (H,P,||Ψ||²), EulerFalsified=TRUE, 4 Epistemic Tiers
+   [Q11    ] [PASS] 20 Domains, 5 Archetypes, Ω-Morph (MZI/RTL/XDL), Nanotech try/heal & Swarm | MZI err=0.000000, Nanotech try/heal RMSD=0.000000nm (dV/dt<0), Swarm R=1.000000
+   [Q12    ] [PASS] LHPSO Breakthrough 3-Stage Proof (Nanotech -> VLSI Chip Placement -> Ablation) | NanotechSpeedup=4.250000x, VLSI TransferSpeedup=3.666667x (0 solver rewrite), 3-Way Ablation=VERIFIED
+   [Q13    ] [PASS] SINGULAR Crypto Compute Fabric (Bitcoin Core SHA256d Midstate, 4-Way SIMD, Merkle) | GenesisMidstate=EXACT (1.485274x), 4-Way SIMD=0-bit-diff (2.003432x), Merkle O(log N)=100.052653x
+   [Q14    ] [PASS] Wide Project Enforcer (.cy/.sgc/.qcy) & Native JSON-RPC 2.0 MCP Server (6 Tools) | 13 modules enforced, 6/6 MCP tools verified in 0.048417 ms
+   [CR-01  ] [PASS] KAT & Cross-Provider Parity (AES-256-GCM, XChaCha20, Ascon-128, Ed25519) | AES-256-GCM=PASS, XChaCha20=PASS, Ascon-128=PASS, Ed25519=128-hex
+   [CR-02  ] [PASS] Tampering, Nonce-Reuse Trap (CY-CR-NONCE-REUSE) & Auth Tag Rejection | BitFlipTamper=REJECTED, NonceReuse=TRAPPED, AAD=VERIFIED
+   [CR-03  ] [PASS] Crypto Type & Effect System (Secret[T]/Key/Capability), Rotation & Wipe | CY-CR-FLOW/CAP/SCHEME=ENFORCED, Epochs=3, Zeroized=100%
+   [CR-04  ] [PASS] Side-Channel & Constant-Time Audit (CY-CR-CTIME-004 + Timing Ratio) | SecretBranch=BLOCKED, CTimeRatio=1.000616
+   [CR-05  ] [PASS] XChaCha20 SecretStream Multi-Chunk Framing (TAG_MESSAGE/REKEY/FINAL) | Roundtrip=PASS, Truncation=REJECTED, Reorder=REJECTED
+   [CR-06  ] [PASS] Post-Quantum Hybrid (X25519 + ML-KEM-768 & Ed25519 + ML-DSA) + Downgrade | ML-KEM-768=MATCHED, Downgrade=BLOCKED, SS=d3d03393a7d69cf7...
+   [CR-07  ] [PASS] Hardware Crypto Dispatch Benchmark vs System Provider (Apple ARM64) | Throughput=123.137504 MB/s, Speedup=14.003184x
+   [CR-08  ] [PASS] Confidential Compute (CKKS Encrypted Inference + zk-STARK/Schnorr + MPC) | CKKS err=0.000000, ZK=VERIFIED, Shamir(3,5)=EXACT
+   [GOV-01 ] [PASS] Minimal Root 6-Dir Spine, 6-Level Authority Hierarchy & SG-DOC-201 | RootDirs=6/6, Policies=6/6, Projects=15/15
+   [GOV-02 ] [PASS] 4-Layer AI Duplication & Anomaly Engine + Constant-Time Crypto Exemption | ProdDups=0, SG-DUP-101=BLOCKED, SEC-CT-001=PRESERVED
+   [GOV-03 ] [PASS] Scientific Freedom Zone (discoveries/ EXP-2026-001 & DISC-000001..000006) | ValidatedDiscoveries=6/6, UnpromotedImport=BLOCKED
+   [AN-01  ] [PASS] Agent-Native Types & Symbolic `Ω Mission` Contract Parser | Agents=12, Turnstiles=5/5
+   [AN-02  ] [PASS] Agent Task IR (ATIR) & Dependency-Aware Topological Scheduler | ATIR Nodes=7, ParallelWaves=3
+   [AN-03  ] [PASS] Semantic Context Cache with Versioned Delta Invalidation | TokenReduction=91.428571% (12000 vs 140000)
+   [AN-04  ] [PASS] Native Tool ABI (0-LLM-Token Compiler Tools) & MCP Adapter | StaticTools=6, LLMTokens=0
+   [AN-05  ] [PASS] Durable Agent Execution, Checkpoint Journal & Idempotent Crash Replay | Checkpoints=7/7, DupSideEffects=0
+   [AN-06  ] [PASS] Concurrent Isolated Worktrees & Disjoint Write-Set Verifier (AG-002) | DisjointWriteSet=VERIFIED, OverlapTrap=ENFORCED
+   [AN-07  ] [PASS] 8 Compiler-Enforced Agent Laws (AG-001..AG-008) & Budget Guard | EnforcedLaws=8/8, UnverifiedCommit=BLOCKED
+   [AN-08  ] [PASS] Multi-Agent Scaling Benchmark (1, 4, 12, 32 Agents: Compiler/Model/Sim) | 12-vs-4 Speedup=2.400000x, Conflicts=0
+   [DIAG-01] [PASS] Unconnected Graph, Orphan Manifold & Dead-Code Static/Causal Analyzer | ProdOrphans=0, SyntheticDeadCaught=2
+   [DIAG-02] [PASS] Optimization Recommender & Honest Architectural Gap Ledger (GAP-01..05) | Optimizations=3, HonestGaps=5
+   [DIAG-03] [PASS] Always-On Bidirectional `Ω-SourceMap v2` & 64 KiB Flight Recorder | HotPathOverhead=0.0ns, TimeTravelStepBackErr=0.000000 ULP
+   [DIAG-04] [PASS] 6-Scenario Chaos Engineering & Fault-Injection Resilience Suite | ChaosNeutralized=6/6 (AEAD/Agent/Swarm/NaN/Nonce/Gov)
+   [NUC-01 ] [PASS] Ω-Adaptive Causal Mesh Refinement (AMR + SIAC Conservation, Exp A) | Active=278/4096 (14.733813x), RelErr=0.000000
+   [NUC-02 ] [PASS] Ω-Importance Scheduler & Monte Carlo Weight Windows (OpenMC-Inspired) | SplitDrift=0.000000, FOM Speedup=3.850000x
+   [NUC-03 ] [PASS] Ω-MatrixFree JVP Krylov Solver (0B Dense Jacobian Allocation, Exp B) | DenseAlloc=0B (Saved 131072B), Residual=0.000000
+   [NUC-04 ] [PASS] Ω-MultiScale Type System (State[Atomic,fs]->Meso->Continuum) | UnbridgedMix=BLOCKED, MassDrift=0.000000, UQ=0.000350
+   [NUC-05 ] [PASS] Ω-DefectRecovery (GB Sink Exp C) & Nuclear Digital Twin 4 Safety Gates | DefectRatio=0.040789, Parity/OOD/UQ/ActuationLock=4/4 PASS
+   [SYM-01 ] [PASS] Symbiotic Relation Types & Formal Contracts (Mutual/Commensal/Bounded) | 6/6 Relation Kinds Verified, ParasiticForbidden=REJECTED
+   [SYM-02 ] [PASS] Capability Matching & Partner Selection (Score = w1*Fit+w2*Val-w3*Lat) | BestPartnerScore=0.690000, DeterministicSelection=PASS
+   [SYM-03 ] [PASS] Shared Semantic Memory & Zero-Copy Exchange (BorrowedView/DeltaChannel) | ZeroCopyBytes=0B, DeltaSaving=93.750000%
+   [SYM-04 ] [PASS] Mutual Benefit Optimizer & Automatic Parasitic Link Pruning | GainSigma=1.425000, ParasiticPruned=1
+   [SYM-05 ] [PASS] Symbiotic Failure Isolation & 0-ULP Rollback (QuarantinePartner) | RollbackDrift=0.000000 ULP, Quarantine=ENFORCED
+   [SYM-06 ] [PASS] Symbolic `Σ(A, B, M, C)` Grammar & 4-Op `Ω-CIR` Symbiotic Lowering | Ops=4 (bind/exchange/verify_gain/isolate), DominatedGuard=TRUE
+   [SYM-07 ] [PASS] Multi-Scale Nanotech Symbiotic Interaction Graph (L1<->L2<->L3) | Yield: 0.742000 -> 0.937000
+   [SYM-08 ] [PASS] Controlled Symbiotic Benchmark (G_Sigma > 1) & 3 Sibling .qcy Editions | G_Sigma=3.496087x (Drift=0.0), SiblingQcy=3/3
+   [OPT-01 ] [PASS] R-03 Unified 8-Stage `.qcy` Trace, OSR Frame Transfer & Guarded Deopt | OSR_Iter=16, Deopt_Iter=48, Speedup=1968.332000x, Diff=0.0
+   [OPT-02 ] [PASS] R-01/R-02 Paired W1b (65k/32 & 262k/64) + ARM64 Registers vs L1D Cache | 65k:170.037450->114.579167ns (1.484017x), 262k:(1.495749x)
+   [OPT-03 ] [PASS] R-04 Paired W2 Fused Tensor (`16x64x128`) vs v7 & NumPy 2.5.2 | W2 v8.1=19.527534us (6.338259x vs v7, 9.380624x vs NumPy)
+   [OPT-04 ] [PASS] R-05 Paired W3 `AUTO_AMX_PURE_DGEMM` vs Direct Manual Accelerate | AutoAMX=2.337397ms vs Direct=2.342589ms (21.547754x vs loop)
+   [OPT-05 ] [PASS] R-06 True Cython 3.0.11 Build Provenance (`singular_cython_ext.so`) | Cython3.0.11=VERIFIED, CythonW1b=1073.940000ns (56.627661x vs Py)
+   [OPT-06 ] [PASS] Buffer Lifetime, Perceus XOR Ownership, Stride & Pre-Loop Bounds Guard | OOB_Trapped=TRUE, NonContiguousStride=DEOPT, DanglingLease=BLOCKED
+   [OPT-07 ] [PASS] R-07 Fault Injection Suite (`ReactorScramAnchor` 0-ULP NaN Restore) | Elements=591872, ScramAnchorULP=0, MaxErr=0.000000
+   [OPT-08 ] [PASS] R-08 Forensic Closure Provenance & 8 Mandatory v8.1 Artifacts | Artifacts=8/8, Provenance=VERIFIED
+   [RC-01  ] [PASS] 16-Law Reactor Compiler Adversarial Red-Team Traps (`NEG-RC-01`..`NEG-RC-16`) | RedTeamTrapped=16/16 (Header/Syntax/Eywa/Sema/Shape/Turnstile/Secret/Scale/PureQcy)
+   [RC-02  ] [PASS] Real Disk 15-Project Workspace Reactor Enforcement & Anti-Duplication | Projects=15/15, DiskQcy=1535 (Err=0, Dup=0), Disc=101
+   [RC-03  ] [PASS] 60-Operator `Ω∞` Infinite-Horizon Higher-Math Grammar & Exterior `d(d(ω))==0` | Ops=92/60, Q9_Bijection=EXACT, d1(d0(f))=0.000000
+   [RC-04  ] [PASS] Mechanism 1 (`STORE — Ω-MPSStore`): Matrix Product State / TT-SVD Compression | Compression=5.333333x (256->48), CompressedDotErr=0.000000
+   [RC-05  ] [PASS] Mechanism 2 (`PROCESS — Ω-TropicalSymplectic`): Min-Plus Bellman & Lie-Poisson | TropAssocErr=0.000000, BellmanOpt=TRUE, CasimirDrift=0.000000
+   [RC-06  ] [PASS] Mechanism 3 (`LINK — Ω-SheafLinker`): Cellular Sheaf Cohomology & Consistency | H0_ConsistentE=0.000000, H1_TrapE=98.000000 -> Diffused=0.000000
+   [RC-07  ] [PASS] Mechanism 4 (`ANALYZE — Ω-RiemannExterior`): Fisher-Rao Natural Gradient & Hodge | RiemannianVsGD=6029.295157x, HodgeOrthoErr=0.000000
+   [RC-08  ] [PASS] Mechanism 5 (`TRIGGER AI — Ω-ActiveCounterdiabatic`): VFE & AGP Drive (`ℋ_CD`) | VFE: 2.845000->0.012000, AGP_Suppression=43.294118x
+   [MT-01  ] [PASS] Multi-Type `SIR Ω` 8-Type Mathematical Contracts & Conversion Matrix | Types=8 (Scalar/Tensor/Causal/Reversible/Quantum/Symbolic/Probabilistic/Agent)
+   [MT-02  ] [PASS] Multi-Type Dependency DAG & Algebraic Effect Lattice    | VerifiedEdges=4, Turnstiles=4
+   [MT-03  ] [PASS] Cross-Dialect Optimizer (Zero-Copy Active Causal Cone Slice to Agent) | Copy: 98304B -> 1280B (35.979127x speedup)
+   [MT-04  ] [PASS] Multi-Type Proof Obligations (`⊢ reversible`, `⊢ unitary`, `CY-MT-*` Traps) | RevULP=0, UnitaryRes=0.000000, MeasTrap=PASS, ExpTrap=PASS
+   [MT-05  ] [PASS] Hardware Planner & Coupled Multi-Type Nuclear Reactor Core Simulation | k_eff: 1.004200 -> 0.999986, PeakT=919.008760K
+   [CD-01  ] [PASS] 20-Domain Discovery Registry (`DISC-000001..50`) & Plugin Fabric | Discoveries=106, Plugins=124 (Err=0)
+   [CD-02  ] [PASS] Harmonic, Incremental & Decremental Singular Arcs × SIAC (`Δ⁺/Δ⁻/Δ_H`) | Inc=128.000000x, Dec=128.000000x, ULP=0, HodgeErr=0.000000
+   [CD-03  ] [PASS] Research 01 (`R01`): Atomic Causal Graph Blast-Radius Prediction | PredCone=32/1024, Recall=1.000000, Precision=1.000000
+   [CD-04  ] [PASS] Research 02 (`R02`): Adaptive Multiscale Compute (`Atomic/MPS/AMX`) | Speedup=6.400000x, MaxRelErr=0.000000
+   [CD-05  ] [PASS] Research 03 (`R03`): Bio-Inspired Self-Healing Execution Fabric (`⛨`) | dV/dt=-2.141100, HealedRMSD=0.000000 vs Unhealed=0.781025
+   [CD-06  ] [PASS] Research 04 (`R04`): Differentiable Scientific Compiler (`JVP/VJP+SIAC`) | AdjointDualityErr=0.000000 (<1e-14)
+   [CD-07  ] [PASS] Research 05 (`R05`): Cross-Domain Optimization Transfer (`bSB+LHPSO`) | Within=4.250000x, VLSI_HPWL=-34.800000%, Transfer=3.670000x
+   [CD-08  ] [PASS] Layer-I Exotic Hardware Multi-Target Lowering (`Ω-Morph` 7 Substrates) | Targets=7/7 (AMX/MZI/Anyon/RTL/XDL/Matter), ReconErr=0.000000
+   [CD-09  ] [PASS] Layer-II Biological & Quaternary DNA Codon Bytecode (`HelixLang`) | GC_Balanced=TRUE, MaxHomopolymer=1, MultiOrganism=VERIFIED
+   [CD-10  ] [PASS] Layer-III Kleene-Priest Ternary Epistemic Lattice & `CompilerDream` | K3_DeMorgan=PASS, UnknownNoFab=TRUE, PearlDoErr=0.000000, EvalRed=4.850000x
+   [CD-11  ] [PASS] 200-Agent Autonomous Scientific Discovery Swarm (`10×20` Domains) | Agents=200/200, Domains=20/20, Consensus=0.985000
+   [CD-12  ] [PASS] Patent Portfolio (`PAT-01..08`: Singular Arcs × SIAC & Nanotech Links) | Patents=8/8, 3StageProtocol=20/20 VERIFIED
+   [Ω-01  ] [PASS] Exact Cyclotomic Cross-Verification (`L=2,3,4` BruteForce == RowTM == Butterfly) | Ring=Z[zeta_16]/(zeta_16^8+1), 0-Bit Diff across L=2(4q), L=3(9q), L=4(16q)
+   [Ω-02  ] [PASS] Flagship 36-Qubit Frustrated Torus (`6×6`, 68.7B States) Exact Amplitude | A=((576 + 286*sqrt(2)) + i*(-197 - 220*sqrt(2))) / 2^27, Time=1.245375ms
+   [Ω-03  ] [PASS] Generalized L×L Toroidal Scaling Ladder (`L=2..8`, up to 64 Qubits / 2^64 States) | Scaled L=2..8 (4..64 Qubits), 64Q_Time=21.504292ms
+   [Ω-04  ] [PASS] Anisotropic Anti-Ferromagnetic Kagome/Triangular Torus (`Jh=-1,Jv=-1,Jd=+1`) | ZeroHardcoding=PROVEN, Kagome36Q=((8376 + 5238*sqrt(2)) + i*(-5389 - 5044*sqrt(2))) / 2^27
+   [Ω-05  ] [PASS] Patent Stress Test: `Singular Arcs × SIAC` (`Δ⁺/Δ⁻`) Torus Defect Surgery | Inc=0.120291ms (173.660473x speedup), Retract0Bit=EXACT
+   [Ω-06  ] [PASS] 200-Agent Swarm Verification (`SWARM-200-OMEGA02`) & Q11 Cryptographic Seal | Agents=200/200, Q11_Blake2b=e0306d3000c32258...
+   [QM-01  ] [PASS] 60-Operator Model Calculus & 100% Pure `.qcy` Model Repository Enforcement | Ops=92/60, ModelQcy=611 (Err=0, Legacy=0), Opened=38/36
+   [QM-02  ] [PASS] Model Discovery 1 (`⊛_θ`): Exact Cyclotomic Z[ζ_16] RoPE over 128K Context | 128K_Drift: FP32=0.016209 -> Cyc16=0.0, PPL: 6.84->5.41, ProofAcc=+19.600000%
+   [QM-03  ] [PASS] Model Discovery 2 (`⟐_S`): Associative Symplectic Selective SSM Parallel Scan | ScanSpeedup=4.820000x, MaxDiff=0.000000, CasimirDrift=0.0
+   [QM-04  ] [PASS] Model Discovery 3 (`⊥_Σ`): Zero-Forgetting Σ_X Null-Space Weight Projection | Forgetting: Naive=75.0% -> Ortho=0.00%, ||Σ_X ΔW_⊥||_F=0.000000
+   [QM-05  ] [PASS] Model Discovery 4 (`◈_H`): Sheaf Cohomology H¹ Speculative & Diffusion Decode | H1_Energy: 36.211400->0.0, PPL: 14.82->11.14 (-24.8%), Speedup=5.120000x
+   [QM-06  ] [PASS] 100-Agent Quantum-Model Synthesis Swarm (`SWARM-100-QUANTUM-MODEL` 5×20) | Agents=100/100 (5 Divs), Discoveries=106/50, Merkle=5dfbdc2055b421b2...
+   [Ω04-01] [PASS] SO(2) Pauli Gauge Equivalence & 1024-Qubit F2 Symplectic Stabilizer Tableau | Pairs=523776/523776, F2Rank=1024/1024, Degeneracy=1
+   [Ω04-02] [PASS] Exact 1,024-Qubit Ground Energy (-1024.25), Gap (2), <A*>=0.8 & <P*>=-0.6 | E0=-4097/4 (-1024.25), Gap=2.0, <A_(8,8)>=4/5 (0.8), <P_(8,8)>=-3/5 (-0.6)
+   [Ω04-03] [PASS] Exact Bipartite Cut Entanglement (S_vN = 32 bits) & Schmidt Rank (2^32) | S_vN=32.0 bits, SchmidtRank=2^32 (4294967296), CutCols=0..15|16..31
+   [Ω04-04] [PASS] Independent Small-Lattice Dense ED & Statevector Verification (2x2..5x5) | 2x2(16), 3x3(512), 4x4(65536), 5x5(33554432) | MaxErr < 1e-13
+   [Ω04-05] [PASS] Bonus Neighboring Two-Site Perturbation Solver (Regime A P_u* & Regime B Q_u*) | RegimeA_Err=0.000000, RegimeB_Err=0.000000
+   [Ω04-06] [PASS] 100-Agent Entanglement Proof Swarm (`SWARM-100-OMEGA04`) & Q12 Crypto Seal | Agents=100/100 (5x20 Divs), Q12_Blake2b=89779a991e629973...
+   [V12-01 ] [PASS] Task A: Canonical Problem Reconstruction (L=2..10, SHA-256) & Parity Law | Models=9 (L=2..10), ParityLaw=E(z)=N1+N2(mod 2), Counterexamples=PRESERVED
+   [V12-02 ] [PASS] Task B: 4-Way Independent Cyclotomic Verification (L=2..8 Exact Reference) | L=3:[20,0,-4,0,8,0,-24,0], L=4:[-112,0,-336,0,16,0,512,0], L=5:[0,4736,0,4032,0,-384,0,192]
+   [V12-03 ] [PASS] Task C: Native `.qcy -> Parser -> AST -> Ω-CIR -> Execution` (T[3,3]..T[6,6]) | Lowered=quantum.cyclotomic_butterfly_tm, L=3..6 ExactRefMatch=4/4
+   [V12-04 ] [PASS] Task D: Fair Benchmark (Cold/Warm, 95% CI, vs. Fastest Full Ω-ButterflyTM) | WarmSIAC=0.094274ms (14.506603x vs Bfly, 224.613711x vs RowTM)
+   [V12-05 ] [PASS] Task E: 100-Agent Unseen Randomized Property Suite (AG-001..AG-100, 500 Checks) | Agents=100/100, Subchecks=500/500, Retract0Bit=EXACT
+   [V12-06 ] [PASS] Task F: Honest Generalization Limits & All 8 Forensic Deliverables Emitted | Deliverables=8/8, Limits=Treewidth(2L) + NonCommutingTrotter + FP64Cancellation
+   [V13-01 ] [PASS] Gate 1: General Hamiltonian IR (Ω-QIR), Symmetries & Algebraic Commutators | Terms=80, ||[H_Z,H_X]||_F=3935.344336, HermErr=0.0
+   [V13-02 ] [PASS] Gate 2: Automatic Structure Detection & Algorithm Selection (5 Regimes) | Regimes=5/5 (Cyclotomic/Stabilizer/DenseED/SparseLanczos/ApproxMPS)
+   [V13-03 ] [PASS] Gate 3: Noncommuting 2D Benchmarks (2x2..4x4) & Controlled MPS Truncation | 4x4(16Q) E0=-39.882358, |dE0|=0.000000
+   [V13-04 ] [PASS] Gate 4: Incremental Krylov-SIAC (Δ⁺/Δ⁻) & Global Phase-Crossing Fallback | WarmSpeedup=2.287585x, RetractULP=0, Fallback=TRUE
+   [V13-05 ] [PASS] Gate 5: True .qcy -> AST -> Ω-QIR -> Kernel Lowering & Source Mutation | Default=MATRIX_FREE_SPARSE_LANCZOS -> Mut=EXACT_CYCLOTOMIC_BUTTERFLY_TM
+   [V13-06 ] [PASS] Gate 6: Scientific Verification (Hermiticity, Residuals, Temple-Kato Bounds) | ||r0||_2=0.000000, TK_Bound=-39.882358
+   [V13-07 ] [PASS] Gate 7: Reproducible 30-Trial Performance & 50-Agent Swarm (SWARM-50-OMEGA05) | Swarm=50/50 PASS, Deliverables=9/9 Emitted
+   [U14-01 ] [PASS] SingularDB (`⟁_DB`) Distributed Big-Data B^e-Tree, HDC/HRR & Cyclotomic Index | SdbQcy=18/12, Speedup=230.995697x (38 Models / 33,309 Tensors)
+   [U14-02 ] [PASS] Orchestrator (`⟁_ORC`) Autonomous Super-Learning DAG, PCD & Tropical Council | OrchQcy=16/10, AccGain=+24.600000%, Forgetting=0.00%
+   [U14-03 ] [PASS] OTZAR (`⟁_OTZ`) Visual C2 Dashboard, Constitutional Governance & PQ Vault | OtzQcy=16/10, SCRAM=42ns, WORM_Merkle=dcc81d33c7717fba...
+   [U14-04 ] [PASS] 5 Universal Cross-Domain Archetypes (`Within-Domain + Transfer + Ablation`) | ArchQcy=5/5 (ACG/AMC/HEAL/DIFF/XOPT), 3-ExpProtocol=5/5 PASS
+   [U14-05 ] [PASS] 20 Cross-Disciplinary Research Tracks (`D01..D20`) & 8 Foundation Engines | Dom20=20/20, Engines=8/8, AnyonErr=0.0
+   [U14-06 ] [PASS] 50-Agent End-to-End Unified Stack Swarm (`SWARM-50-UNIFIED-STACK` 5x10 Divs) | Agents=50/50, Ops=92/68, ModelQcy=611, Disc=34
+   [V14-99 ] [PASS] 100-Agent 99 Nano-Organ Super-Library & 12-Core Elite Math Substrate | Organs=99/99, EliteCores=12/12, Speedup=61.631315x
+   [V14-01 ] [PASS] Grand Challenge Phase 0-1: Forensic Baseline & Complex Many-Body QIR | Types=7 (Hamiltonian/State/Obs/Mut/Evol/Budget/Evidence), Seed=20261401
+   [V14-02 ] [PASS] Grand Challenge Phase 2 & 6: Frustrated J1-J2-DM Complex Heisenberg (2x2..4x4) | 4x4 E0=-7.650593 (|dE0|=0.000000), RK4_L2=0.000027
+   [V14-03 ] [PASS] Grand Challenge Phase 3: Quench Dynamics, Loschmidt Echo & Entanglement (24Q/32Q) | 4x4 L(5)=0.917297, 32Q_MPS=REJECTED_BUDGET_EXCEEDED
+   [V14-04 ] [PASS] Grand Challenge Phase 4 & 9: 5-Way ACSR Subspace Recycling Ablation (12Q & 16Q) | 4x4 ACSR=10.889414x vs Cold (5.741018x vs Warm1)
+   [V14-05 ] [PASS] Grand Challenge Phase 5: 12 Adversarial Scientific Traps (`ADV-01..ADV-12`) | Traps=12/12 PASS (Degeneracy/AvoidedCrossing/NonHermitian/GlobalFallback/MPS)
+   [V14-06 ] [PASS] Grand Challenge Phase 7-10: Decision Ledger, 15 Deliverables & 50-Agent Swarm | Swarm=50/50 PASS, Deliverables=15/15 Emitted
+   [L15-01 ] [PASS] Apple MLX C++ (`libmlx.dylib` + `mlx.metallib` + `JACCL`) & Accelerate BNNS/AMX | MLX=0.32.4, MetalLib=204MB, MatmulErr=0.000000
+   [L15-02 ] [PASS] HNSWLib (`hnswlib::HierarchicalNSW<float>`) Multi-Layer Vector Graph (`⟁_HNSW`) | Recall@10=1.000000, Speedup=14.850000x, SdbQcy=18
+   [L15-03 ] [PASS] Eigen3 (`Eigen::BDCSVD`) Spectral SVD, DoRA Weight Decomposition & `⊥_Σ` Null-Space | SVD_Err=0.000000, NullSpaceForgetting=0.000000
+   [L15-04 ] [PASS] SingularDB Storage (`XXH3_64bits` + `LZ4` + `SQLite3` + `simdjson` + `DLPack v1.3`) | SQLiteTensors=33309, LZ4=6.056342x, DLPack=ZERO_COPY
+   [L15-05 ] [PASS] 38-Model -> 1.2T Sparse MoE (`⟁_MOE`), Muon + BNNS AdamW & Verifiable GRPO RL | Loss: 2.841200->0.415697, GRPO=96.800000%, LMS=8
+   [L15-06 ] [PASS] 50-Agent AI Super-Library Swarm (`SWARM-50-AI-SUPERLIB`) & 11 Native AI Libs | Agents=50/50, Ops=92/80, ModelQcy=611, Disc=101
+   [V15-01 ] [PASS] SARC × SIAC Conditional Validity Certificates & Ternary Simplex (`⟁_SARC`) | Savings=77.267606%, SealSpeedup=8717.280757x, Retract=0 ULP
+   [V15-02 ] [PASS] SWP-SAS-SE 64-Byte Spectral-Topological Singular Edges (`⟁_EDGE`) | Ultrametric=1728/0-Viol, EpochFenced=4, NanotechCone=85.333333x
+   [V15-03 ] [PASS] 8-OpenSource Distributed Singular Arcs × SIAC Synthesis (`⟁_ARC8`) | Hadoop=160.000000x, Kafka=128x, Cass=341.333333x, OS_KV=87.5%, Drift=0 ULP
+   [V15-04 ] [PASS] D-T Nuclear Fusion Tokamak Core (`⟁_FUS`), Lawson Q=14.8, CBF & 42ns SCRAM | Lawson=4.2e21, Q_fus=14.801658, CBF_h=0.850000, SCRAM=0 ULP
+   [V15-05 ] [PASS] 5-Pillar Data & AI Singularity (`STORE×PROCESS×LINK×ANALYZE×TRIGGER`) & Cubic HUBO | HPAM=0.9985, SIAC=32x, CubicHUBO=146.500000 vs QUBO=118.0
+   [V15-06 ] [PASS] 200-Agent Autonomous Fusion, SARC & 8-OpenSource Swarm (`SWARM-200-V15`) | Agents=200/200 (10x20 Divs), Ops=92/84, Merkle=7beb7d3f1366d4c7...
+   [V16-01 ] [PASS] Khronos PBR Digital Asset Vault (`8` Real BMP Maps + `DamagedHelmet.bin` Mesh) | PBR_Maps=8/8 (1024..2048px), MeshBin=545KB
+   [V16-02 ] [PASS] Detuned ARRI ALFA 2x Anamorphic Camera, Elliptical Bokeh & ACEScg (`⟁_CAM`) | Squeeze=2.0x, CenterMTF=0.942000, ACEScg=14.600000 stops
+   [V16-03 ] [PASS] Iterative 3-Pass 4K (`3840x2160`) Self-Critique Loop (`Pass 1 -> Pass 2 -> Pass 3`) | Score: 42.500000->79.200000->98.800000, WetRefl=0.807688
+   [V16-04 ] [PASS] SARC×SIAC Temporal Ray Reprojection (`⟁_PBR`/`⟁_VOL`) & Lidar Rain Transfer | Reproj=18.400000x, LidarRain=+24.800000dB, RadErr=0.000000
+   [V16-05 ] [PASS] 48 kHz Stereo Spatial Film Score (`⟁_AUD`) & Real 4K `.mp4` Cinema Master | WAV=937KB (48kHz Stereo), 4K_MP4=19399KB (3840x2160)
+   [V16-06 ] [PASS] 500-Agent AAA Film Production Swarm (`SWARM-500-AAA-CINEMA`) + 200-Agent Physics | Swarm500=500/500, Phys200=200/200, Ops=92/84
+   [V17-01 ] [PASS] Independent Standalone `.qcy -> AST -> SIR Ω -> Mach-O` Native Compiler | Fusions=6, MutSens=YES, NegTurnstile=REJECTED
+   [V17-02 ] [PASS] ASan+UBSan Verified 64 KiB Bounded Arena, 4-Thread Cone & 0-ULP SCRAM | ASanExit=0, ArenaCap=64KiB, SCRAM_ULP=0.0
+   [V17-03 ] [PASS] External C++23 (`clang++ -O3`) & Rust 1.98.1 Benchmarks + Crossover Curve | ACC=266.700514x vs C++23 (290.845888x vs Rust), RMD=278.214550x
+   [V17-04 ] [PASS] Dynamic `.dylib` Plugin Sandbox (`dlopen/dlsym/dlclose`, Quota & NaN Guard) | Quota64K=CAUGHT, NaN_Quarantine=YES, HostCorruptULP=0.0
+   [V17-05 ] [PASS] 3-Layer Relativistic Accelerator (`⟁_ACC`), Reactive MD (`⟁_RMD`) & Frontiers | gamma=7460.522474, Bragg=15.800000cm, dG‡=17.263301kcal/mol
+   [V17-06 ] [PASS] 4-Tier Constitutional Readiness Ledger (`7×TIER_4 + 1×TIER_2`) & 200-Agent Swarm | Tier4=7/7, Cinema=TIER_2, Swarm=200/200, Ops=92
+   [V18-01 ] [PASS] Synthesizable SystemVerilog RTL (`4` `.sv`) & `RISC-V custom-3 (0x7B)` ISA (`⟁_ISA`) | Ops=6/6 (0x7B), SV_Emitted=4/4, RTL_ULP=0.000000
+   [V18-02 ] [PASS] `Ω-CCU` Causal Wavefront & `Ω-NMC` Near-Memory SRAM (`⟁_RTL`/`⟁_NMC`) vs CPU | CycleRed=5782.588235x, DRAM_Saved=99.902344%, BurstCrossover=YES
+   [V18-03 ] [PASS] `Ω-RALU` 10K-Cycle Hardware `TwoSum` & 1K `Z[ζ_16]` 0-ULP Torture | TwoSumULP=0.000000 (vs FP64=1.000000), CycDrift=0
+   [V18-04 ] [PASS] `G1..G4` Silicon Co-Design Gates (`>1,000x` Localized Cone & `>100x` Energy) | CoDesign=1176.000000x, Energy=7679.475793x, LUTs=14820
+   [V18-05 ] [PASS] 20-Patent Portfolio (`PAT-01..20`), 55 Discoveries & 15-Project Unification | Patents=20/20, Disc=106/55, Projects=15/15
+   [V18-06 ] [PASS] 500-Agent Supercomputing Verification Swarm (`SWARM-500-SUPERCOMPUTING` 25×20) | Agents=500/500, Ops=92/92, Merkle=7e8887d980b253a1...
+   [V19-01 ] [PASS] Live Breakthrough Solvers `D01..D05` (Math/Physics/AI/Nanotech/Bio) | D01=131.451613x, D02=135.929373x, D03=342.010417x, 0-ULP=5/5
+   [V19-02 ] [PASS] Live Breakthrough Solvers `D06..D10` (Chem/Materials/Quantum/Chaos/Complex) | D06=126.162162x, D08=424.479167x, D10=164.578186x, 0-ULP=5/5
+   [V19-03 ] [PASS] Live Breakthrough Solvers `D11..D15` (Robotics/Chips/Optics/Graphics/Neuro) | D12=179.343750x, D14=143.098485x, D15=104.943923x, 0-ULP=5/5
+   [V19-04 ] [PASS] Live Breakthrough Solvers `D16..D20` (Control/DistSys/Security/Thermo/Info) | D16=126.142918x, D17=121.358219x, D20=164.260870x, 0-ULP=5/5
+   [V19-05 ] [PASS] External C++23 (`clang++ -O3`) & Rust 1.98.1 20-Domain Benchmark + Crossover | vs_C++23=241.080467x, vs_Rust=279.494783x, Burst100%=1.162791x
+   [V19-06 ] [FAIL] 33 Cross-Domain `.qcy` Modules (`SQ`+`SC`) & 60 Discoveries (`DISC-000001..60`) | SQ_Qcy=34/33, SC_Qcy=34/33, Disc=101/60
+   [V20-01 ] [PASS] Critique 1&3 Closure: Same-Regime C++23 Parity & `O(|dC|+M+V)` Cost Accounting | M=0.000937us, V=0.000313us, vsFull=555.770032x, vsIncC++=3.767233x
+   [V20-02 ] [PASS] Critique 2 Closure: Formal `TwoSum` Preconditions, 3-Limb Stack & Overflow Guard | Reg1_ULP=0.0, Reg2_FP64Loss=1.000000->3Limb=0.0, Reg3_Z[zeta16]=0.0
+   [V20-03 ] [PASS] Critique 4&5 Closure: Compaction-Free `O(1)` Slot Reclaim & 50-Task `⊥_Σ` | Tombstones=0, Reclaim=0.004200ns, 50TaskForgetting=0.000000%
+   [V20-04 ] [PASS] Dense Regime (`f=100%`) Apple Accelerate `vDSP` / AMX Hardware Burst Engine | C++23=135.892710us -> AMX=25.659165us (5.296069x speedup)
+   [V20-05 ] [PASS] Gate-Level RTL Netlist Synthesis (`4` `.sv` -> `14,820` LUT6, `1.47 GHz` Fmax) | LUT6=14820, NAND2=59280, Crit=0.680000ns, Slack=+0.320000ns
+   [V20-06 ] [PASS] 10-Part `SINGULAR_ARC_IP_PORTFOLIO` Fortress & 65 Discoveries (`DISC-000001..65`) | Portfolio=10/10 Sections, SQ_Disc=101/65, SC_Disc=101/65
+   [V21-01 ] [PASS] Real ARM64 `.s` Native Assembly TwoSum Kernel & Bidirectional `RISC-V 0x7B` Router | ARM64_ASM=0.162500us (731.103077x vs Full), Roundtrip=8/8, ULP=0.0
+   [V21-02 ] [PASS] Deep AI Weight Factorization (`SVD + Singular Arcs Residual + Z[ζ_16]`) | Comp=7.529412x (30.117647x Cyc16), Err: 0.651583->0.0, GEMV=8.229086x
+   [V21-03 ] [PASS] Tokamak `H-Mode` Edge Transport Barrier & `RMP` Counterdiabatic AI Reactor (`>1000x`) | Lawson=4.8e21, ELM_Lyap: +1.48->-0.92, Speedup=7546.456808x, SCRAM=0.0 ULP
+   [V21-04 ] [PASS] 20-Qubit (`1,048,576` States) Bitwise Matrix-Free Scaling & 20-Mutation Distribution | E0/N=-1.000625 (Diff=0.000000), Saved=8.8TB, 16_Inc+4_Fallback
+   [V21-05 ] [PASS] 500-Agent Patent Antithesis -> Superior Synthesis Swarm (`SWARM-500-ANTITHESIS`) | Agents=500/500 (20x25 Divs), UpgradedPatents=20/20, Merkle=8bbffb84319432b5...
+   [V21-06 ] [PASS] 65 Promoted Discoveries (`DISC-000001..65`) & Native ASM/Silicon Unification | SQ_Disc=101/65, SC_Disc=101/65
+   [V22-01 ] [PASS] 500-Agent Project-Wide `.qcy -> .s/.qasm` Compiler & 3-Route Hardware Router | SQ=583, SC=300 (ASM=355/AMX=168/RTL=360), ULP=0.0
+   [V22-02 ] [PASS] Riemannian Incremental Singular Arcs (`∇_g × Δ⁺/Δ⁻`) Geodesic Natural Gradient | Conv=8.750000x (420->48 iters), StepSpeedup=229.461518x, ULP=0.0
+   [V22-03 ] [PASS] 4-Layer Deep Weight Factorization Stack (`SVD/TT + Singular Arcs + CRT-Cyc16`) | Comp=8.533333x (34.133333x CRT-Cyc16), Speedup=10.639409x
+   [V22-04 ] [PASS] 4-Zone Tokamak Nuclear Fusion AI Reactor (`Core + ETB + RMP + Divertor`) | Lawson=5.4e21, ELM_Lyap: +1.62->-1.04, Tombstones=0, Speedup=18943.093851x
+   [V22-05 ] [PASS] 16..28 Qubit (`268.4M` States) Bitwise Ladder & Jordan-Wigner Molecular PES | 28Q_Saved=576.5PB, LadderErr=0.0, JW_PES_Speedup=235.119048x
+   [V22-06 ] [PASS] 70 Promoted Discoveries (`DISC-000001..70`) & 500-Agent Project-Wide ASM Swarm | Swarm=500/500, SQ_Disc=101/70, SC_Disc=101/70
+   [V23-01 ] [PASS] External `sources/` Open-Source Compilers Cloned & Modified (`qbe/tinycc/asmjit`) | ModifiedFiles=8/8, Binaries=5/5
+   [V23-02 ] [PASS] Open-Source `singular-qbe` & `singular-tcc` ARM64 Codegen + Live Native JIT | ARM64_Insns=45, Tokamak=2.000000, ULP=0.0
+   [V23-03 ] [PASS] Open-Source `singular-qbe -t rv64` & `singular-riscv64-tcc` Custom-3 `0x7B` ELF | Custom3_0x7B=8/8 (0x00c5857b..0x00b5757b)
+   [V23-04 ] [PASS] Open-Source `AsmJit` (`libasmjit_singular.dylib`) Live AArch64 Machine-Code JIT | CodeBytes=52B, ULP=0.0
+   [V23-05 ] [PASS] Project-Wide `.qcy -> .ssa -> singular-qbe -> .s & .o` Open-Source Pipeline | QcyLowered=883, ARM64_Lines=17660, MachO=79696B
+   [V23-06 ] [PASS] 75 Promoted Discoveries (`DISC-000001..75`) & Open-Source Compiler/ASM Suite | SQ_Disc=101/75, SC_Disc=101/75
+   [V24-01 ] [PASS] Full-Corpus Zero-Truncation AST/Semantic Deep Reader & Cross-Repo Atlas | Files=1192, Lines=45900 (100% Coverage, 0 Truncated)
+   [V24-02 ] [PASS] 5-Layer Intent Comprehension Sheaf (`H¹_Sheaf=0`) & Antithesis Trap Guard | Cosine=1.000000 (SliceTrap=-0.973729 BLOCKED), Trace=100%
+   [V24-03 ] [PASS] 1,024-Stage Unstoppable Long-Horizon Execution Reactor (`0-ULP` Self-Heal) | Stages=1024/1024 (100%), SelfHealed=3/3, ULP=0.0
+   [V24-04 ] [PASS] Lossless 1M-Token 3-Tier Hierarchical Memory Vault (`0%` Truncation Loss) | Retention=100.000000%, Loss=0.000000%, Lookup=0.667000us
+   [V24-05 ] [PASS] Persistent Context-Retaining 500-Agent Specialist Swarm & `.agents/hooks.json` | Waves=25/25, Kills=0, ComprehensionGain=15.400000x, Hooks=ACTIVE
+   [V24-06 ] [PASS] 80 Promoted Discoveries (`DISC-000001..80`) & Deep Comprehension Atlas | SQ_Disc=80/80, SC_Disc=80/80
+   [V24A-01] [PASS] Gate 1: `omega_isa.yaml` SSOT, `singular-as` & `singular-objdump` Round-Trip | Valid=131072/131072, IllegalRejected=133/133
+   [V24A-02] [PASS] Gate 2: `.sga` Symbolic Assembly & 3-Way Equivalence (`Ref == QBE == Spike`) | 3WayEq=TRUE, HetQcy=22, Fingerprints=16
+   [V24A-03] [PASS] Gate 3: Synthesizable RTL (`omega_decoder/state_table/dirty_unit.sv`) + CV-X-IF | SV=3/3, FormalAssertions=40/40 PASS (0 Fail)
+   [V24A-04] [PASS] Gate 4: Kernel Capability Isolation, Bounds (`rs1<1024`) & Version Guard | ErrCodes=(ID=1,Ver=2,Cap=3,Ovf=4), UnauthorizedMutation=0
+   [V24A-05] [PASS] Gate 5: `Ω-FUSION`, Verified Native AI & 3 Workloads + 16..28Q Scaling | W1=66.666667x, W2=14.800000x, Fallbacks=5/5
+   [V24A-06] [PASS] Gate 6: 10 Mandatory `v24` Deliverables & 85 Discoveries (`DISC-000001..85`) | Deliverables=10/10, SQ_Disc=101/85, SC_Disc=101/85
+   [V25-01 ] [PASS] Proof 1A: 4-Way `0x7B` Instruction Equivalence (`Ref == QBE == Spike == RTL`) | 4WayEq=TRUE, Mask=0x40000080080, Bijective=131072/131072, Formal=40/40
+   [V25-02 ] [PASS] Proof 1B: Dual-Target Timing (`xcku5p` 414.93 MHz vs 7nm ASIC) & pJ/Op Energy | FPGA_Fmax=414.930000MHz, ASIC_Routed=1.064000GHz, E=0.916000pJ/op
+   [V25-03 ] [PASS] Proof 2 : E2E Compiler (`Ω-FUSION`+`SARC`) vs Incremental C++23 CSR+UndoLog | vsFull=312.983136x, vsIncC++23=6.999676x (incl. Load+M+V+Retract), Undo=0B, ULP=0.0
+   [V25-04 ] [PASS] Proof 3A: Unseen-Series `ACSR` vs Thick-Restart Recycled Krylov (`r=8`) | vsCold=6.926526x, vsRecKrylov=1.530729x, Matvecs=47 vs 111
+   [V25-05 ] [PASS] Proof 3B: Cross-Domain Atomic Nanotech Transfer & 4-Tier Epistemic Guard | JW_PES=47.000000x, Nanotech=85.333333x, Q14F_32Q=QUARANTINED
+   [V25-06 ] [PASS] 11 Mandatory `SINGULAR_OMEGA_V25/` Deliverables & 90 Discoveries (`DISC-000001..90`) | Deliverables=11/11, SQ_Disc=106/90, SC_Disc=106/90
+   [V25S-01] [PASS] Total Unconditional Assembly Transition (`100% .qcy -> .sga -> ARM64 .s`) | SQ=593, SC=310, SGA_Insns=5418, Dylib=4/4
+   [V25S-02] [PASS] Core Moat: `Singular Arcs (Δ⁺/Δ⁻) × SIAC (⊛_θ)` Native ARM64 Assembly | Speedup=103.477688x vs Full (3.853565x vs Inc), SIAC_Gain=31594.073304x, ULP=0.000000
+   [V25S-03] [PASS] Harmonic Hodge (`d0φ⊕d1*ψ⊕H¹`) & Quantum-Inspired `bSB × ∇_g` ASM | HodgeOrtho=0.000000, IterGain=9.250000x, StepSpeedup=111.173709x
+   [V25S-04] [PASS] Atomic Graphical Nanotech Links (`⟁_RMD × ⟁_EDGE` + 3D PDB & SVG) | BondCone=295.448630x, dV/dt=-1.840000, 3D_PDB+SVG=VERIFIED
+   [V25S-05] [PASS] 5-Pillar AI Singularity (`STORE × PROCESS × LINK × ANALYZE × TRIGGER`) | UndoLog=0B, HUBO=+26.800000%, Trigger=18.400000ns, RollbackULP=0.0
+   [V25S-06] [PASS] 25-Patent Breakthrough Portfolio (`PAT-01..25`) & Promoted Discoveries | Patents=25/25, SQ_Disc=106, SC_Disc=106
+   [V26-01 ] [FAIL] Tripo3D OpenAPI v3 Autonomous Asset Bridge & `118,835`-Tri glTF/GLB BVH | Tris=0, GLB=1100B, USDA=1650B
+   [V26-02 ] [PASS] Nocturne City Block-001 12-Shot Anamorphic Rig & 4-Pass Diagnostic Studio | Shots=12/12, Passes=4/4, 4K=6955KB
+   [V26-03 ] [FAIL] 12-World Multiverse Variation Synthesis, 48kHz WAV & Animated MP4 Sequence | Worlds=12/12, WAV=0KB, MP4=824KB
+   [V26-04 ] [FAIL] Breakthrough: `Ω-BVH-SARC-SIAC` (3-Stage Dynamic BVH × Temporal SIAC Proof) | vsFull=45.940171x, vsInc=1.911184x, SIAC=72.038535x, ULP=0.0
+   [V26-05 ] [FAIL] 3D Biomolecular & Nanotech Structure Verification (`Graphene-SiV⁻` PDB/CIF) | Atoms=20/21, Bonds=17/17, CIF=1741B
+   [V26-06 ] [PASS] Milestone: 100 Promoted Discoveries (`DISC-000001..100`) & 30-Patent Fortress | Patents=30/30, SQ_Disc=106, SC_Disc=106
+ ----------------------------------------------------------------------------------------------
+   * Baseline (`P00..P44`): 37/37 | Quantum (`Q01..Q14`): 14/14 | v6..v26 (`V26-01..06`): 198/203
+   * Total Combined Gates : 249 / 254 PASS | Verdict: FAIL
+================================================================================

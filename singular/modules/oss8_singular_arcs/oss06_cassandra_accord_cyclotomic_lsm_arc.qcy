@@ -1,0 +1,15 @@
+// SINGULAR Ω v14.0 — OSS-06 (`cassandra-trunk`): Compaction-Free Cyclotomic Merkle-LSM & Accord Consensus Arc
+// Eliminates SSTable compaction storms (`CompactionStress.java`) via commutative Z[ζ_16] Merkle delta cone
+§λ("modules")
+§ω("singular.v14.oss8.cassandra_lsm")
+§κ("CY-OSS8-06-CASSANDRA-MERKLE-ARC")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[54, 108], W_0 : ℝ[108, 108], M_0 : ℤ[54, 108], δ_0 : Δℝ[29], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← ⟁_DB(Ψ_0, W_0)
+  M_1 ← ℋ_ℤ(Ψ_1, M_0)
+  Ψ_2 ← ⨂_MPS(M_1, W_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

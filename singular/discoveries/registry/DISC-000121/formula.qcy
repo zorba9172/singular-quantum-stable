@@ -1,0 +1,13 @@
+// SINGULAR Ω v33.0 — 44-Endpoint Hybrid Local+Cloud Registry & Gen-5 Model Evolution
+§λ("discoveries")
+§ω("singular.v33.cloud.disc")
+§κ("DISC-000121-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[406, 458], W_0 : ℝ[458, 458], K_0 : ℝ[406, 458], δ_0 : Δℝ[203], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_ORC(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

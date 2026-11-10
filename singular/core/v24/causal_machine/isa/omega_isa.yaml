@@ -1,0 +1,71 @@
+# SINGULAR Ω v24 — Xomegacausal ISA extension.
+# This file is the single source of truth for the causal_machine toolchain.
+# Generated from it (tools/omega_isagen.cpp): isa/gen/omega_isa_gen.h,
+# isa/gen/omega_isa_pkg.sv and sources/spike/customext/omega_isa_gen.h.
+# Restricted YAML subset: block maps and block lists only, no flow style.
+isa:
+  name: Xomegacausal
+  version: 24.0.0
+  base: RV64I
+  xlen: 64
+  opcode: 0x7B
+  opcode_name: custom-3
+  format: R
+  funct7: 0x01
+state:
+  entries: 64
+  version_bits: 32
+  deps_bits: 64
+  reset: all versions 0, all dirty bits 0, all dependency masks 0
+  scope: private per hart, not memory mapped, no coherence between harts
+csr:
+  name: momegaen
+  addr: 0x7C0
+  reset: 0x0
+  s_enable_bit: 0
+  u_enable_bit: 1
+  rule: M-mode always permitted; S-mode needs bit 0; U-mode needs bit 1; otherwise illegal-instruction trap with no state change
+result:
+  error_flag_bit: 63
+  rule: on error rd = (1 << 63) | code and the state table is unchanged
+errors:
+  - name: ERR_INVALID_ID
+    code: 1
+    meaning: a state id operand is >= entries
+  - name: ERR_VERSION_MISMATCH
+    code: 2
+    meaning: expected version operand differs from the current version
+  - name: ERR_SELF_DEP
+    code: 3
+    meaning: track with source id equal to dependent id
+instructions:
+  - mnemonic: omega.track
+    symbol: ⊙
+    funct3: 0
+    rs2_must_be_zero: 0
+    operands: rd, rs1 = source id, rs2 = dependent id
+    semantics: deps[s] |= 1 << d ; rd = deps[s]
+  - mnemonic: omega.dirty
+    symbol: Δ⁺
+    funct3: 1
+    rs2_must_be_zero: 0
+    operands: rd, rs1 = state id, rs2 = expected version
+    semantics: if version[i] == e then version[i] = e + 1 mod 2^32, dirty[i] = 1, rd = version[i] else ERR_VERSION_MISMATCH
+  - mnemonic: omega.prop
+    symbol: ⇝
+    funct3: 2
+    rs2_must_be_zero: 1
+    operands: rd, rs1 = state id
+    semantics: if dirty[i] == 0 then rd = 0 else R = transitive closure of deps from i ; for j in R with dirty[j] == 0 set dirty[j] = 1 and version[j] += 1 ; rd = R without i
+  - mnemonic: omega.valid
+    symbol: ✓
+    funct3: 3
+    rs2_must_be_zero: 0
+    operands: rd, rs1 = state id, rs2 = certificate version
+    semantics: rd = 1 if dirty[i] == 0 and version[i] == v else 0 ; no state change
+  - mnemonic: omega.clean
+    symbol: ⟲
+    funct3: 4
+    rs2_must_be_zero: 1
+    operands: rd, rs1 = state id
+    semantics: dirty[i] = 0 ; rd = version[i]

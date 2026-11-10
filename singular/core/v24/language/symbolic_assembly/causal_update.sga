@@ -1,0 +1,29 @@
+; ============================================================================
+; SINGULAR Ω v24.0.0 — Canonical Symbolic Assembly (.sga)
+; Mother Tongue of the Singular Arc Machine
+; Note: `∂` is reserved strictly for mathematical derivatives;
+;       `Ω.PROP` denotes causal dependency cone propagation.
+; ============================================================================
+
+⟁ state : Ω.MEM[1024]
+
+λ update(δ : ℝ64) → ℝ64 {
+
+    ⊙ state[42]
+    Ω.TRACK state[42], 7
+    Ω.TRACK state[42], 19
+    Δ⁺ state[42], δ
+    Ω.DIRTY state[42], 0
+
+    affected ← Ω.PROP(state, 42)
+
+    ↻ node ∈ affected {
+        ◇ cached(node)
+            ? Ω.REUSE(node)
+            : Ω.COMPUTE(node)
+    }
+
+    ∂grad ← ∂(state[42]) / ∂(δ)
+    ✓ Ω.VALID(state, 42, 1)
+    ↩ state[42]
+}

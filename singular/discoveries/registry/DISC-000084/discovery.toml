@@ -1,0 +1,3 @@
+discovery_id = "DISC-000084"
+title = "Synthesizable omega_dirty_unit.sv + CVA6 CV-X-IF Coprocessor & 40 Formal Assertions"
+status = "PROMOTED"

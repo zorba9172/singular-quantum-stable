@@ -1,0 +1,84 @@
+(* ========================================================================== *)
+(* SINGULAR Ω / SingularQuantum (.qcy) — Formal Quantum-Symbolic EBNF Grammar *)
+(* Constitutional Mandate: SINGULAR-QUANTUM-EXCLUSIVE-001 (Zero English KWs)  *)
+(* ========================================================================== *)
+
+module              = header_section , { omega_system_block } ;
+
+(* 1. SYMBOLIC CONSTITUTIONAL HEADERS (RC-001: §λ layer, §ω owner, §κ contract) *)
+header_section      = layer_header , owner_header , contract_header ;
+layer_header        = "§λ" , "(" , string_literal , ")" ;
+owner_header        = "§ω" , "(" , string_literal , ")" ;
+contract_header     = "§κ" , "(" , string_literal , ")" ;
+
+(* 2. OMEGA QUANTUM-SYMBOLIC SYSTEM BLOCK *)
+omega_system_block  = "Ω" , state_manifold_decl , "{" ,
+                        { transition_stmt } ,
+                        proof_turnstile , { proof_turnstile } ,
+                      "}" ;
+
+(* 3. MULTI-TYPE SYMBOLIC STATE MANIFOLD (MTSQC) *)
+state_manifold_decl = "⟦" , state_binding , { "," , state_binding } , "⟧" ;
+state_binding       = sym_identifier , ":" , symbolic_type , [ "@" , unit_symbol ] ;
+
+symbolic_type       = real_tensor_type
+                    | sparse_delta_type
+                    | torus_lattice_type
+                    | cyclotomic_ring_type
+                    | hilbert_ket_type
+                    | reversible_type ;
+
+real_tensor_type    = "ℝ" , "[" , dim_list , "]" ;
+sparse_delta_type   = "Δℝ" , "[" , dim_list , "]" ;
+torus_lattice_type  = "𝕋" , "[" , dim_list , "]" ;
+cyclotomic_ring_type= "ℤ" , "[" , "ζ₁₆" , "," , number_literal , "]" ;
+hilbert_ket_type    = "ℂ" , "[" , "2^" , number_literal , "]" ;
+reversible_type     = "⛨ℝ" , "[" , dim_list , "]" ;
+
+dim_list            = dim_atom , { "," , dim_atom } ;
+dim_atom            = number_literal | sym_identifier ;
+unit_symbol         = sym_identifier ;
+
+(* 4. SYMBOLIC STATE TRANSITIONS (Zero Imperative English Keywords) *)
+transition_stmt     = sym_identifier , "←" , symbolic_expr ;
+
+symbolic_expr       = unary_symbolic_op , "(" , symbolic_expr , ")"
+                    | symbolic_expr , binary_symbolic_op , symbolic_expr
+                    | ket_bra_expr
+                    | "(" , symbolic_expr , ")"
+                    | sym_identifier
+                    | number_literal ;
+
+unary_symbolic_op   = "φ₊" | "φσ" | "φτ" | "φg"
+                    | "∇_g" | "∇" | "Δ"
+                    | "⛨" | "ℳ" | "†" | "Tr"
+                    | "∑∞" | "d" | "⋆" | "∮"
+                    | "H¹_Sheaf" | "ℋ_CD" | "ℋ_ℤ" | "𝒰_π8" ;
+
+binary_symbolic_op  = "⋅" | "⊗" | "∘"
+                    | "⨂_MPS" | "⨂_TM"
+                    | "⊕" | "⊕_trop" | "↶"
+                    | "⋈" | "↦" | "⚡" | "∥" | "∧"
+                    | "+" | "-" | "*" | "/" ;
+
+ket_bra_expr        = "⟨" , sym_identifier , "|" , symbolic_expr , "|" , sym_identifier , "⟩"
+                    | "|" , sym_identifier , "⟩"
+                    | "⟨" , sym_identifier , "|" ;
+
+(* 5. MANDATORY PROOF OBLIGATION TURNSTILES (RC-006) *)
+proof_turnstile     = "⊢" , proof_predicate ;
+
+proof_predicate     = reversibility_proof
+                    | finiteness_proof
+                    | isomorphism_proof
+                    | norm_bound_proof ;
+
+reversibility_proof = "⇄" , "(" , sym_identifier , "," , sym_identifier , ")" ;
+finiteness_proof    = "|" , sym_identifier , "|" , "<" , "∞" ;
+isomorphism_proof   = sym_identifier , ( "≈" | "==" ) , symbolic_expr ;
+norm_bound_proof    = symbolic_expr , ( "<=" | ">=" | "<" | ">" ) , symbolic_expr ;
+
+(* 6. LEXICAL ATOMS (UTF-8 NFC) *)
+sym_identifier      = ( greek_letter | latin_letter ) , { greek_letter | latin_letter | digit | "_" | subscript_glyph } ;
+number_literal      = digit , { digit } , [ "." , { digit } ] , [ ( "e" | "E" ) , [ "+" | "-" ] , digit , { digit } ] ;
+string_literal      = '"' , { character } , '"' ;

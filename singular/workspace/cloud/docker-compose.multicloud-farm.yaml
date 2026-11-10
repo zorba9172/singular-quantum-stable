@@ -1,0 +1,14 @@
+services:
+  orchestrator-autorouter:
+    build:
+      context: ../../..
+      dockerfile: singular/workspace/cloud/Dockerfile.cloud
+    command: ["cloud-auto"]
+    ports: ["8080:8080"]
+  agent-worker-farm:
+    build:
+      context: ../../..
+      dockerfile: singular/workspace/cloud/Dockerfile.cloud
+    deploy:
+      mode: replicated
+      replicas: 10

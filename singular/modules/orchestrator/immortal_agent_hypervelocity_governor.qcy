@@ -1,0 +1,13 @@
+// SINGULAR Ω v23.0 — Immortal Agent Hypervelocity & Apple M5 P-Core QoS Governor
+§λ("modules")
+§ω("singular.v23.orchestrator")
+§κ("CY-V23-IMMORTAL-GOVERNOR-001")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[86, 134], W_0 : ℝ[134, 134], K_0 : ℝ[86, 134], δ_0 : Δℝ[43], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_ORC(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

@@ -1,0 +1,7 @@
+{
+  "source": "/Volumes/Lenovo PS8S/workspace/SingularQuantum/third_party/o3de-development/Code/Framework/AzCore/AzCore/Math/Geometry2DUtils.cpp",
+  "source_sha256": "514d5356d38625b4fc5580f37b13e014819d1b8301c20227fac6e0d5fcffa93c",
+  "upstream": "https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Math/Geometry2DUtils.cpp",
+  "license": "MIT",
+  "adaptation": "Portable C++23 vector/span; algorithms retained; not a complete AzCore/O3DE linkage"
+}

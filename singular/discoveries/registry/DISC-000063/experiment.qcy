@@ -1,0 +1,13 @@
+// SINGULAR Ω v21.0 — Deep AI Weight Factorization via SVD + Singular Arcs Sparse Residual
+§λ("discoveries")
+§ω("singular.v21.discovery")
+§κ("DISC-000063-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[68, 109], W_0 : ℝ[109, 109], K_0 : ℝ[68, 109], δ_0 : Δℝ[33], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_MOE(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

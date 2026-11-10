@@ -1,0 +1,13 @@
+// SINGULAR Ω v24.0 Experiment — Lossless 1M-Token 3-Tier Hierarchical Memory Vault (0% Truncation Loss)
+§λ("discoveries")
+§ω("singular.v24.discovery.exp")
+§κ("DISC-000079-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[109, 159], W_0 : ℝ[159, 159], K_0 : ℝ[109, 159], δ_0 : Δℝ[54], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φτ(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_OTZ(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

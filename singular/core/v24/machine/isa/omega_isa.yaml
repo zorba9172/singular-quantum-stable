@@ -1,0 +1,117 @@
+# ============================================================================
+# SINGULAR Ω v24.0.0 — Canonical Ω-ISA Single Source of Truth (`omega_isa.yaml`)
+# Architecture: Singular Arc Machine (RISC-V RV64GC + custom-3 0x7B Extension)
+# ============================================================================
+isa_version: "24.0.0"
+machine_name: "Singular Arc Machine"
+extension_space: "RISC-V custom-3"
+opcode_hex: "0x7B"
+opcode_bin: "1111011"
+format: "R-Type (32-bit)"
+
+state_table_model:
+  entries: 1024
+  index_bits: 10
+  fields:
+    version: "u32 (monotonic generation counter, wraps with overflow flag)"
+    dirty: "u1 (1 = modified since last Ω.VALID, 0 = clean/reusable)"
+    deps_mask: "u64 (compact 64-slot causal cone dependency bitmap)"
+    valid_cert: "u32 (hash of last validated input versions)"
+    owner_cap: "u16 (capability domain ID for privilege isolation)"
+  concurrency_mode: "Single-Core Atomic in v24.0 (CSR fence before multi-core)"
+  interrupt_behavior: "Single-cycle non-interruptible state-table commit"
+
+error_codes:
+  0: "OMEGA_OK (State transition committed or certificate valid)"
+  1: "ERR_INVALID_STATE_ID (rs1 >= 1024; architectural state unchanged)"
+  2: "ERR_VERSION_MISMATCH (expected version rs2 != state[rs1].version; state unchanged)"
+  3: "ERR_CAPABILITY_DENIED (caller capability != state[rs1].owner_cap; state unchanged)"
+  4: "ERR_VERSION_OVERFLOW (state[rs1].version == 0xFFFFFFFF; requires epoch reset)"
+
+instructions:
+  - mnemonic: "omega.track"
+    symbolic_op: "Ω.TRACK"
+    opcode: 0x7B
+    funct3: 0x0
+    funct7: 0x01
+    operands:
+      rd: "status_out (0 = OMEGA_OK, 1 = ERR_INVALID_STATE_ID, 3 = ERR_CAPABILITY_DENIED)"
+      rs1: "src_state_id (0..1023)"
+      rs2: "dst_dep_bit (0..63)"
+    preconditions:
+      - "rs1 < 1024"
+      - "rs2 < 64"
+      - "has_capability(current_cap, state[rs1].owner_cap)"
+    semantics: |
+      if (rs1 >= 1024 || rs2 >= 64) { rd = 1; return; }
+      if (!cap_ok(rs1)) { rd = 3; return; }
+      state[rs1].deps_mask |= (1ULL << rs2);
+      rd = 0;
+
+  - mnemonic: "omega.dirty"
+    symbolic_op: "Ω.DIRTY"
+    opcode: 0x7B
+    funct3: 0x1
+    funct7: 0x01
+    operands:
+      rd: "status_out (0 = OMEGA_OK, 1 = ERR_INVALID_STATE_ID, 2 = ERR_VERSION_MISMATCH, 3 = ERR_CAPABILITY_DENIED, 4 = ERR_VERSION_OVERFLOW)"
+      rs1: "state_id (0..1023)"
+      rs2: "expected_version (u32)"
+    preconditions:
+      - "rs1 < 1024"
+      - "state[rs1].version == rs2"
+      - "has_capability(current_cap, state[rs1].owner_cap)"
+      - "state[rs1].version < 0xFFFFFFFF"
+    semantics: |
+      if (rs1 >= 1024) { rd = 1; return; }
+      if (!cap_ok(rs1)) { rd = 3; return; }
+      if (state[rs1].version != (uint32_t)rs2) { rd = 2; return; }
+      if (state[rs1].version == 0xFFFFFFFFu) { rd = 4; return; }
+      state[rs1].version += 1;
+      state[rs1].dirty = 1;
+      rd = 0;
+
+  - mnemonic: "omega.prop"
+    symbolic_op: "Ω.PROP"
+    opcode: 0x7B
+    funct3: 0x2
+    funct7: 0x01
+    operands:
+      rd: "affected_cone_mask_or_err (64-bit cone mask if rs1 < 1024 and dirty, 0 if clean, -1/ERR on invalid ID)"
+      rs1: "root_state_id (0..1023)"
+      rs2: "propagation_mode (0 = direct cone, 1 = transitive closure)"
+    preconditions:
+      - "rs1 < 1024"
+      - "has_capability(current_cap, state[rs1].owner_cap)"
+    semantics: |
+      if (rs1 >= 1024) { rd = 1; return; }
+      if (!cap_ok(rs1)) { rd = 3; return; }
+      if (state[rs1].dirty == 0) { rd = 0; return; }
+      uint64_t mask = state[rs1].deps_mask | (1ULL << (rs1 & 63));
+      for (int b = 0; b < 64; ++b) {
+        if (mask & (1ULL << b)) state[b].dirty = 1;
+      }
+      rd = mask;
+
+  - mnemonic: "omega.valid"
+    symbolic_op: "Ω.VALID"
+    opcode: 0x7B
+    funct3: 0x3
+    funct7: 0x01
+    operands:
+      rd: "validity_status (1 = VALID_REUSABLE, 0 = DIRTY_RECOMPUTE_REQUIRED, >1 = ERROR_CODE)"
+      rs1: "state_id (0..1023)"
+      rs2: "certified_version (u32)"
+    preconditions:
+      - "rs1 < 1024"
+      - "has_capability(current_cap, state[rs1].owner_cap)"
+    semantics: |
+      if (rs1 >= 1024) { rd = 1; return; }
+      if (!cap_ok(rs1)) { rd = 3; return; }
+      if (state[rs1].dirty == 0 && state[rs1].version == (uint32_t)rs2) {
+        rd = 1; // Valid cached result — Ω.REUSE permitted
+      } else {
+        state[rs1].dirty = 0;
+        state[rs1].valid_cert = state[rs1].version;
+        rd = 0; // Recompute executed & state validated
+      }

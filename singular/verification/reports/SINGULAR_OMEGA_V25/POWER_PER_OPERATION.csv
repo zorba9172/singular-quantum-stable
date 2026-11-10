@@ -1,0 +1,5 @@
+substrate,target_node,operation,clock_mhz,dynamic_power_w,energy_pj_per_op,dram_bytes_per_op
+CPU_General_Purpose,Apple_M5_ARM64,CSR_DirtyQueue_Plus_UndoLog,4000,6.80,420.000,128
+GPU_ManyCore,Apple_M5_Metal_GPU,Dense_Sweep_Barrier,1500,14.20,115.000,64
+FPGA_Coprocessor,Xilinx_UltraScalePlus_xcku5p_16nm,omega.dirty_Plus_omega.prop_0x7B,414.93,0.38,0.916,0
+ASIC_Coprocessor,ASAP7_7nm_StandardCell,omega.dirty_Plus_TwoSum_RALU,1063.83,0.19,0.179,0

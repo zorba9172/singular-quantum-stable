@@ -1,0 +1,13 @@
+// SINGULAR Ω v26.0 — Nocturne City 12-Shot Anamorphic ACEScg Cinema Block & 4-Pass Diagnostic Studio
+§λ("discoveries")
+§ω("singular.v26.cinema.nanotech.exp")
+§κ("DISC-000097-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[147, 197], W_0 : ℝ[197, 197], K_0 : ℝ[147, 197], δ_0 : Δℝ[73], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φτ(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_CAM(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

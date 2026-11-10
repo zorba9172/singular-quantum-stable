@@ -1,0 +1,13 @@
+// SINGULAR Ω v30.0 — Cognitive Pareto Living Organism Dispatcher & Two-Layer Stable Driver Meta-ABI
+§λ("discoveries")
+§ω("singular.v30.neural.vector.genesis.exp")
+§κ("DISC-000105-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[329, 379], W_0 : ℝ[379, 379], K_0 : ℝ[329, 379], δ_0 : Δℝ[164], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φτ(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_ORC(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

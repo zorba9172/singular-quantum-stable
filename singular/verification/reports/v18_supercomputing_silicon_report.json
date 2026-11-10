@@ -1,0 +1,10 @@
+{
+  "edition": "SINGULAR Ω v18.0.0-SUPERCOMPUTING",
+  "all_v18_passed": true,
+  "v18_01_rtl_and_isa": {"passed": true, "sv_modules": 4, "isa_ops": 6},
+  "v18_02_ccu_nmc_benchmark": {"passed": true, "cycle_reduction_x": 5782.5882, "dram_saved_pct": 99.9023},
+  "v18_03_reversible_alu": {"passed": true, "twosum_ulp_err": 0.0000, "cyclotomic_drift": 0},
+  "v18_04_silicon_gates_g1_g4": {"passed": true, "combined_codesign_speedup_x": 1176.0000, "energy_reduction_x": 7679.4758},
+  "v18_05_patents_and_workspace": {"passed": true, "patents": 20, "discoveries": 50, "projects": 15},
+  "v18_06_swarm_500": {"passed": true, "agents": 500, "operators": 92, "merkle": "7e8887d980b253a14c67f832d4f8daab"}
+}

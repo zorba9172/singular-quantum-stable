@@ -1,0 +1,14 @@
+{
+  "oracle": "Accelerate_LAPACK_zheev_and_Exact_12Q_TFIM",
+  "e_norm": 0.000000e+00,
+  "e_energy": 1.382358e-17,
+  "e_state_12q_trotter": 7.801556e-17,
+  "noncommuting_commutator_frobenius_norm": 1.503330e-01,
+  "e_state_after_adaptive_lr_arc": 1.248847e-11,
+  "level1_discrete_retraction_ulp": 0.000000,
+  "q20_statevector_mib": 16.000000,
+  "q20_aux_diagonal_cache_mib": 0.250000,
+  "q20_total_simulator_mib": 16.250000,
+  "patents_status": "80_DRAFT_TECHNICAL_CLAIMS_ACROSS_16_FAMILIES_0_FILED_AT_PATENT_OFFICE",
+  "discoveries_status": "150_V38_155_V39_160_V40_SEQUENTIAL_PLUS_1_DISC_000901_TOTAL_161_ON_DISK"
+}

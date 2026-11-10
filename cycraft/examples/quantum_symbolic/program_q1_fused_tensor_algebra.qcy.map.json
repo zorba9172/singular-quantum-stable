@@ -1,0 +1,16 @@
+{
+  "schema": "SINGULAR_OMEGA_QUANTUM_SOURCEMAP_V1",
+  "usage_policy": "QUARANTINED_DOCUMENTATION_AND_BREAKTHROUGH_RECONSTRUCTION_ONLY (NEVER_USED_IN_RUNTIME_HOT_PATH)",
+  "runtime_hot_path_linked": false,
+  "source_qcy": "cycraft/examples/quantum_symbolic/program_q1_fused_tensor_algebra.qcy",
+  "blake2b_256": "eaf661a116f561e2fea5227683e05fd0322fae8e420b2db5da74545deb67e7e6",
+  "mapped_spans": [
+    {"line": 15, "byte_offset": 460, "byte_len": 32, "omega_cir": "omega.fused_gemm_bias_phi_plus", "cpp_kernel": "cycraft/include/cycraft/quantum_syntax/omega_cir_lowering.hpp:182-212"},
+    {"line": 16, "byte_offset": 495, "byte_len": 42, "omega_cir": "omega.fused_gemm_bias_phi_plus", "cpp_kernel": "cycraft/include/cycraft/quantum_syntax/omega_cir_lowering.hpp:182-212"},
+    {"line": 17, "byte_offset": 540, "byte_len": 31, "omega_cir": "omega.fused_gemm_bias_phi_plus", "cpp_kernel": "cycraft/include/cycraft/quantum_syntax/omega_cir_lowering.hpp:182-212"},
+    {"line": 18, "byte_offset": 574, "byte_len": 16, "omega_cir": "omega.vector_map_simd", "cpp_kernel": "cycraft/include/cycraft/quantum_syntax/omega_symbolic_parser.hpp:150-245"},
+    {"line": 19, "byte_offset": 593, "byte_len": 15, "omega_cir": "omega.proof_turnstile", "cpp_kernel": "cycraft/include/cycraft/quantum_syntax/omega_symbolic_parser.hpp:150-245"},
+    {"line": 20, "byte_offset": 611, "byte_len": 22, "omega_cir": "omega.proof_turnstile", "cpp_kernel": "cycraft/include/cycraft/quantum_syntax/omega_symbolic_parser.hpp:150-245"}
+  ],
+  "reconstructible_ascii_canonical_length": 694
+}

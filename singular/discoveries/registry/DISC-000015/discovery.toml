@@ -1,0 +1,6 @@
+id = "DISC-000015"
+title = "Programmable Matter Phase-Transition & Active Hydrogel Compiler"
+domain_primary = "Materials Science & Soft Robotics"
+domain_transfer = "Adaptive Mesh Refinement in Continuum Physics"
+status = "VALIDATED_AND_PROMOTED"
+author = "singular.quantum.research"

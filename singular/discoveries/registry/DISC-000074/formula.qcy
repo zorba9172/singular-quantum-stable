@@ -1,0 +1,13 @@
+// SINGULAR Ω v23.0 — Open-Source AsmJit AArch64 Machine-Code Emitter (libasmjit_singular.dylib)
+§λ("discoveries")
+§ω("singular.v23.discovery")
+§κ("DISC-000074-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[90, 141], W_0 : ℝ[141, 141], K_0 : ℝ[90, 141], δ_0 : Δℝ[45], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_AST(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

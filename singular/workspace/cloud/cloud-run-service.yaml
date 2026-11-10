@@ -1,0 +1,14 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: singular-omega-v33-auto-router
+spec:
+  template:
+    spec:
+      containers:
+        - image: gcr.io/singular-cloud/singular-omega-v33:latest
+          env:
+            - name: SINGULAR_AUTO_MODE
+              value: "true"
+            - name: SINGULAR_DB_CLOUD_SYNC
+              value: "SARC_NULLSPACE_DELTA"

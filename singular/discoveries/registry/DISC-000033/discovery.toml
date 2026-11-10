@@ -1,0 +1,3 @@
+discovery_id = "DISC-000033"
+title = "mlx_bnns_unified_memory_safetensors_amx_metal_kernel"
+status = "PROMOTED"

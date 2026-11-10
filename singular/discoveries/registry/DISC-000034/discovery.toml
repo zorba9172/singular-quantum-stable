@@ -1,0 +1,3 @@
+discovery_id = "DISC-000034"
+title = "cyclotomic_hnsw_xxh3_lz4_sqlite3_singulardb_hybrid_index"
+status = "PROMOTED"

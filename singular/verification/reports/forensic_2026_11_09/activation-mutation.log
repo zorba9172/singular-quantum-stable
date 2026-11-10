@@ -1,0 +1,22 @@
+================================================================================
+ SINGULAR Ω v25.0 — Unified 8-Stage Reactor Execution Trace (run: /tmp/singular-forensic-20261109/activation-mutation.qcy)
+================================================================================
+  [1] Parser (UTF-8 Symbolic) : PASS (5 manifolds, 6 transitions, 0 English keywords)
+  [2] Semantic Analyzer       : PASS (@domain / singular.quantum.thermoelastic / SG-PROG-A-THERMO-001, 2 ⊢ proofs)
+  [3] SIR Ω / Ω-CIR Lowering  : PASS (11 nodes, SavedAlloc=3145728 B, Blake2b=7f18904815c59b4d...)
+  [4] Tier-0 Interpreter (VM) : PASS (Executed iters 0..15 & 48..63, total=32 iters)
+  [5] Runtime Profiler (PGO)  : PASS (k_eff=1.000000 reached critical threshold at iter=16)
+  [6] JIT / OSR Frame Transfer: PASS (Promoted mid-loop at iter=16, executed 32 native fast-lane iters)
+  [7] Guarded Deoptimization  : PASS (Dynamic stride/cone guard bailout at iter=48 -> exact Tier-0 frame recovery)
+  [8] Differential Verifier   : PASS (Accum=27.972014 vs Ref=27.972014, max_diff=0.000000e+00)
+      [Ω-CIR %1] omega.state_manifold                       | target=Ψ_2 | rev_0log=NO
+      [Ω-CIR %2] omega.state_manifold                       | target=W_2 | rev_0log=NO
+      [Ω-CIR %3] omega.state_manifold                       | target=b_2 | rev_0log=NO
+      [Ω-CIR %4] omega.state_manifold                       | target=δ_2 | rev_0log=NO
+      [Ω-CIR %5] omega.state_manifold                       | target=S_2 | rev_0log=NO
+      [Ω-CIR %6] omega.fused_gemm_bias_phi_plus             | target=Φ_2 | rev_0log=NO
+      [Ω-CIR %7] omega.sparse_inject_oplus                  | target=Θ_2 | rev_0log=YES
+      [Ω-CIR %8] omega.scram_anchor_guard                   | target=Υ_2 | rev_0log=YES
+      [Ω-CIR %9] omega.retract_exact_inverse                | target=Ξ_2 | rev_0log=YES
+      [Ω-CIR %10] omega.proof_turnstile                      | target= | rev_0log=NO
+      [Ω-CIR %11] omega.proof_turnstile                      | target= | rev_0log=NO

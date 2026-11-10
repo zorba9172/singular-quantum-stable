@@ -1,0 +1,13 @@
+// SINGULAR Ω v30.0 — Incremental Virtual Rendering, Angular Spectrum (λ=532nm) Holographic Scene Compiler & Differential Memory
+§λ("modules")
+§ω("singular.v30.holographic.compiler")
+§κ("V30-HOLOGRAPHIC-SCENE-03")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[348, 392], W_0 : ℝ[392, 392], K_0 : ℝ[348, 392], δ_0 : Δℝ[174], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_PBR(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

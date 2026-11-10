@@ -1,0 +1,21 @@
+# SINGULAR Ω v25.0.0-PHYSICAL-COMPUTING-PROOF — Deterministic Supply-Chain, Language & Discovery Lockfile
+lock_version = 25
+release_version = "25.0.0-STABLE"
+release_channel = "STABLE"
+stability_status = "STABLE"
+superkernel_abi_version = "6.0.0-SUPERKERNEL"
+exclusive_language = "SingularQuantum (.qcy)"
+constitutional_rule = "SINGULAR-QUANTUM-EXCLUSIVE-001"
+verified_gates = 242
+enforced_workspace_projects = 15
+compiled_workspace_qcy_files = 1314
+workspace_qcy_errors = 0
+cross_domain_plugins = 20
+flagship_research_programs = 5
+promoted_discoveries = 90
+symbolic_operators = 92
+compiler_laws = 16
+autonomous_swarm_agents = 500
+patent_claims_verified = 36
+verified_profiles = ["exotic-physics", "living-healing", "cognitive-control", "quantum-reactor", "cryptography", "nanotech-siac", "manybody-j1j2dm-acsr", "dt-fusion-sarc", "aaa-4k-cinema", "relativistic-accelerator-acc", "reactive-md-rmd", "causal-incremental-cie", "millennium-frontier-probes", "supercomputing-silicon-rtl", "omni-20-domain-calculus", "gate-level-netlist-ip-fortress", "project-wide-arm64-asm-riemann", "deep-comprehension-unbounded-execution", "physical-computing-proof"]
+external_runtime_dependencies = 0

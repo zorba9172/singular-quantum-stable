@@ -1,0 +1,3 @@
+discovery_id = "DISC-000056"
+title = "Same-Regime Incremental Parity & O(|dC|+M+V) Complexity Bound"
+status = "PROMOTED"

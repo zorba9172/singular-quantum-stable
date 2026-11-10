@@ -1,0 +1,9 @@
+================================================================================
+ SINGULAR Ω v17.0.0-STABLE — INDEPENDENT BREAKTHROUGH AUDIT (V17-01..V17-06)
+================================================================================
+  [V17-01] Standalone .qcy Compiler : PASS (Fusions=6, MutSens=YES)
+  [V17-02] ASan+UBSan & 64KiB Arena : PASS (Exit=0, SCRAM_ULP=0.0000)
+  [V17-03] C++23 & Rust Benchmarks  : PASS (ACC=243.7990x vs C++23, 308.9508x vs Rust, RMD=178.3511x)
+  [V17-04] Dynamic Plugin Sandbox   : PASS (Quota64K=CAUGHT, NaN_Quarantine=YES, CorruptULP=0.0000)
+  [V17-05] Relativistic ACC/RMD/Frnt: PASS (gamma=7460.5225, Bragg=15.8000cm, dG‡=17.2633kcal/mol)
+  [V17-06] 4-Tier Ledger & 200Swarm : PASS (Tier4=7/7, Cinema=TIER_2, Agents=200/200, Ops=92)

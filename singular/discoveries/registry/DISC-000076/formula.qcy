@@ -1,0 +1,13 @@
+// SINGULAR Ω v24.0 — Full-Corpus Zero-Truncation AST/Semantic Deep Reader & Cross-Repo Atlas
+§λ("discoveries")
+§ω("singular.v24.discovery")
+§κ("DISC-000076-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[102, 152], W_0 : ℝ[152, 152], K_0 : ℝ[102, 152], δ_0 : Δℝ[51], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_AST(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

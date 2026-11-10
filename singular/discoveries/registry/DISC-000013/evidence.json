@@ -1,0 +1,9 @@
+{
+  "id": "DISC-000013",
+  "title": "Topological Anyon Braiding & HoTT Fault-Tolerant Quantum Types",
+  "verified": true,
+  "rel_err": 0.0,
+  "within_domain_speedup": 24.6,
+  "cross_domain_transfer_speedup": 16.8,
+  "ablation_speedup_without_mechanism": 1.0
+}

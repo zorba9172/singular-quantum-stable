@@ -1,0 +1,19 @@
+id = "DISC-000901"
+title = "Exact Reversible Arc Engine (ERA): Z-group incremental/decremental/undo arcs with exact-consistent quantized value cut-off"
+status = "RESEARCH_CANDIDATE"
+maturity = "FUNCTION_VERIFIED (correctness); performance workload-dependent; not patent-ready"
+operator = "⊕ ↶ ⇄"
+implementation = "cycraft/include/cycraft/quantum_syntax/omega_exact_reversible_arc_engine.hpp"
+benchmark = "cycraft/include/cycraft/quantum_syntax/omega_exact_reversible_arc_benchmark.hpp"
+command = "bin/singular-quantum era-bench"
+evidence = "evidence.json (written by the command; no hand-entered figures)"
+report = "singular/verification/reports/ERA_EXACT_REVERSIBLE_ARC_EVIDENCE.md"
+# ID 000901 is outside the 0000xx range that verify-all gates auto-generate, to avoid overwrite races.
+# Guarantees I1..I3 hold by construction (exact abelian group) and are checked on every run.
+# Speed depends on workload and output precision; see the crossover rows in the report.
+prior_art = ["DBSP / differential dataflow (Z-weighted retraction)", "self-adjusting computation and early cut-off (Adapton, Salsa, Shake)", "reproducible summation (ReproBLAS, Kulisch accumulator)"]
+audit_command = "bin/singular-quantum era-audit"
+audit_evidence = "audit_evidence.json"
+formal_model = "singular/verification/reports/ERA_FORMAL_MODEL.md"
+prior_art_chart = "singular/verification/reports/ERA_PRIOR_ART_CLAIM_CHART.md"
+tracks = ["product: deterministic incremental execution kernel", "IP: narrow claim C3 only after professional prior-art search"]

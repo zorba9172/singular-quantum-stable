@@ -1,0 +1,6 @@
+id = "DISC-000013"
+title = "Topological Anyon Braiding & HoTT Fault-Tolerant Quantum Types"
+domain_primary = "Topological Quantum Computing"
+domain_transfer = "Distributed Fault-Tolerant Consensus"
+status = "VALIDATED_AND_PROMOTED"
+author = "singular.quantum.research"

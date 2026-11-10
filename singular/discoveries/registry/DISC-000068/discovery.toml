@@ -1,0 +1,3 @@
+discovery_id = "DISC-000068"
+title = "4-Layer Deep Weight Factorization (SVD/TT-MPS + Singular Arcs + Cyclotomic CRT)"
+status = "PROMOTED"

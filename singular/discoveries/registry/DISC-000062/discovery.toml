@@ -1,0 +1,3 @@
+discovery_id = "DISC-000062"
+title = "3-Target Empirical Hardware Router (ARM64 .s vs Apple AMX vs RISC-V RTL)"
+status = "PROMOTED"

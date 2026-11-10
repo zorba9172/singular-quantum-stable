@@ -1,0 +1,3 @@
+discovery_id = "DISC-000125"
+title = "Pulumi Multi-Cloud IaC, Ephemeral Git Worktrees & Build Accel"
+status = "PROMOTED"

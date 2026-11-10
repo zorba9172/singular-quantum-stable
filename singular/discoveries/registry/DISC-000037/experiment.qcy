@@ -1,0 +1,14 @@
+// SINGULAR Ω v14.0 — DISC-000037 Experiment: 5 Hard Tasks (OSS-8 + Tokamak-Nanotech + 200-Agent Swarm)
+§λ("discoveries")
+§ω("singular.v14.discovery.disc000037.experiment")
+§κ("CY-DISC-000037-EXPERIMENT")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[74, 148], W_0 : ℝ[148, 148], G_0 : ℝ[74, 148], δ_0 : Δℝ[39], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← ⟁_ACG(Ψ_0, W_0)
+  G_1 ← ⊕_trop(Ψ_1, G_0)
+  Ψ_2 ← ⟁_HEAL(G_1, W_0)
+  Ψ_3 ← ◈_H(Ψ_2, G_1) ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

@@ -1,0 +1,13 @@
+// SINGULAR Ω v24.0 — Deep Comprehension & 1,024-Stage Unbounded Execution Verification Gate
+§λ("verification")
+§ω("singular.v24.verification")
+§κ("CY-V24-DEEP-HORIZON-GATE-001")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[98, 146], W_0 : ℝ[146, 146], K_0 : ℝ[98, 146], δ_0 : Δℝ[49], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_CIE(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

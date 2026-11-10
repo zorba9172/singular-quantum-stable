@@ -1,0 +1,13 @@
+// SINGULAR Ω v24.0 Experiment — 5-Layer Intent Comprehension Sheaf & Antithesis Trap Detector
+§λ("discoveries")
+§ω("singular.v24.discovery.exp")
+§κ("DISC-000077-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[105, 155], W_0 : ℝ[155, 155], K_0 : ℝ[105, 155], δ_0 : Δℝ[52], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φτ(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_CIE(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

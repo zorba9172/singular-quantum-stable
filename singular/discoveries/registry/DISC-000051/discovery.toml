@@ -1,0 +1,3 @@
+discovery_id = "DISC-000051"
+title = "ARCH-01 Atomic Causal Graph Multi-Target Lowering Across 20 Domains"
+status = "PROMOTED"

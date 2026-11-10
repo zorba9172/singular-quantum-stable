@@ -1,0 +1,1 @@
+[STANDALONE EXTERNAL BENCHMARK] Comp(vs Scalar=2.11x, vs AutoVec=1.27x, vs Eigen3=1.50x, vs vDSP=1.63x, vs NEON_2P=1.41x, vs NEON_1P=1.64x) | TrueE2E(vs Eigen+vDSP=1400.82x, vs C++BFS=12.86x, Sparsity=1024.00x) | ContSIAC=31594.07x (1368438820 ULP above eps, Retract=0 ULP) | AdvGuard100%=1.00x (Unguarded=0.26x) | sink=15.83

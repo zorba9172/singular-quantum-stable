@@ -1,0 +1,13 @@
+// SINGULAR Ω v31.0 — Harmonic-Incremental-Decremental Singular Arcs x 5-Tap B-Spline SIAC Superconvergence
+§λ("discoveries")
+§ω("singular.v31.sarc.patent")
+§κ("DISC-000112-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[338, 388], W_0 : ℝ[388, 388], K_0 : ℝ[338, 388], δ_0 : Δℝ[169], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⊛_θ(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

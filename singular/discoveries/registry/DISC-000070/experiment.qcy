@@ -1,0 +1,13 @@
+// SINGULAR Ω v22.0 — 28-Qubit (268.4M States) Bitwise Ladder & Jordan-Wigner Molecular PES SIAC
+§λ("discoveries")
+§ω("singular.v22.discovery")
+§κ("DISC-000070-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[84, 131], W_0 : ℝ[131, 131], K_0 : ℝ[84, 131], δ_0 : Δℝ[41], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⨂_MPS(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

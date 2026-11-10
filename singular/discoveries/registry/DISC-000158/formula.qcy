@@ -1,0 +1,13 @@
+// SINGULAR Ω v40.0 — Live Ephemeral Git Worktree Bottleneck Scanner & ASM Accelerator
+§λ("discoveries")
+§ω("singular.v40.live.disc")
+§κ("DISC-000158-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[442, 494], W_0 : ℝ[494, 494], K_0 : ℝ[442, 494], δ_0 : Δℝ[221], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_SYN(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

@@ -1,0 +1,17 @@
+build.sh: OK
+cycraft/include/cycraft/quantum_syntax/omega_executable_cli.hpp: OK
+cycraft/include/cycraft/quantum_syntax/omega_executable_grammar.hpp: OK
+cycraft/include/cycraft/quantum_syntax/omega_executable_incremental.hpp: OK
+cycraft/include/cycraft/quantum_syntax/omega_executable_ir.hpp: OK
+cycraft/include/cycraft/quantum_syntax/omega_executable_native.hpp: OK
+cycraft/include/cycraft/quantum_syntax/omega_executable_process.hpp: OK
+cycraft/include/cycraft/quantum_syntax/omega_executable_value.hpp: OK
+cycraft/include/cycraft/quantum_syntax/omega_language_contract.hpp: OK
+cycraft/src/cycraft_main.cpp: OK
+singular/modules/executable/matrix.qcy: OK
+singular/verification/executable/GRAMMAR.txt: OK
+singular/verification/executable/MATHEMATICAL_MODEL.txt: OK
+singular/verification/executable/RELEASE_SCOPE.txt: OK
+singular/verification/executable/invariants.cpp: OK
+singular/verification/executable/validate.sh: OK
+bin/singular-quantum: OK

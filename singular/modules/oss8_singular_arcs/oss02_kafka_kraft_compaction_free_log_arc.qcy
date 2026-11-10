@@ -1,0 +1,15 @@
+// SINGULAR Ω v14.0 — OSS-02 (`kafka-trunk`): KRaft Compaction-Free Homomorphic Log Singular Arc
+// Eliminates O(N) tombstone log cleaner passes via exact 0-ULP decremental arc retraction (Θ ↶ δ)
+§λ("modules")
+§ω("singular.v14.oss8.kafka_kraft")
+§κ("CY-OSS8-02-KAFKA-LOG-ARC")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[38, 76], W_0 : ℝ[76, 76], L_0 : ℝ[38, 76], δ_0 : Δℝ[21], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← ⟁_DB(Ψ_0, W_0)
+  L_1 ← ⊛_θ(Ψ_1, L_0)
+  Ψ_2 ← ⊥_Σ(L_1, W_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

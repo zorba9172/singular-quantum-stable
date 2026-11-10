@@ -1,0 +1,13 @@
+// SINGULAR Ω v40.0 — Live Safetensors simdjson + DLPack Zero-Copy Weight Streamer
+§λ("discoveries")
+§ω("singular.v40.live.exp")
+§κ("DISC-000156-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[435, 487], W_0 : ℝ[487, 487], K_0 : ℝ[435, 487], δ_0 : Δℝ[217], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φτ(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_ST(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

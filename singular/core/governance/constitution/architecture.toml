@@ -1,0 +1,19 @@
+# SINGULAR Ω v6.0 — Minimal Root, Infinite Depth Architecture Policy
+[architecture]
+root_directories = ["core", "modules", "shared", "discoveries", "verification", "workspace"]
+root_expansion = "deny"
+module_dependencies = "acyclic"
+cross_module_imports = "public_contracts_only"
+
+[dependency_matrix]
+shared_allowed_deps = []
+core_allowed_deps = ["shared"]
+modules_allowed_deps = ["core", "shared"]
+discoveries_allowed_deps = ["core", "shared"]
+verification_allowed_deps = ["core", "modules", "shared", "discoveries"]
+workspace_is_authority = false
+
+[shared]
+ownership_required = true
+domain_specific_code = "deny"
+semantic_duplication = "deny"

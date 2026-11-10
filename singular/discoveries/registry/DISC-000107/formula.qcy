@@ -1,0 +1,13 @@
+// SINGULAR Ω v25.1 — Hermetic SHA-256 Build Manifest & Adversarial Cache Invalidation Gate (GATE-BUILD-TRUTH)
+§λ("discoveries")
+§ω("singular.v25.audit.truth")
+§κ("DISC-000107-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[148, 198], W_0 : ℝ[198, 198], K_0 : ℝ[148, 198], δ_0 : Δℝ[74], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_SYN(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

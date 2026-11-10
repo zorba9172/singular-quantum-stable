@@ -1,0 +1,42 @@
+// ============================================================================
+// SINGULAR Ω v13.0 — Program Q13: `Quantum Ω-05 — Noncommuting Frustrated Quantum Matter`
+// 2D Frustrated Transverse + Longitudinal Field Ising Hamiltonian:
+//   H = -∑_{⟨i,j⟩} J_{ij} Z_i Z_j - ∑_i h_i X_i + ∑_i g_i Z_i
+// Source-Parameterized `Ω-QIR` Lowering, Automatic Algorithm Selection (`ℰ_λ`),
+// Incremental Krylov-SIAC Warm-Lanczos (`⊕ / ⛨ / ↶`) & Hermiticity Proof (`⊢`)
+// ============================================================================
+§λ("domain")
+§ω("singular.quantum.noncommuting.omega05")
+§κ("SG-Q13-OMEGA05-NONCOMMUTING-MATTER")
+
+Ω ⟦
+  Λ_0 : 𝕋[4, 4],
+  J_0 : ℝ[3, 4],
+  h_0 : ℝ[4, 4],
+  g_0 : ℝ[4, 4],
+  Ψ_0 : ℂ[16],
+  δ_0 : Δℝ[4, 4],
+  S_0 : ⛨ℝ[4, 4],
+  α_50 : 𝒜[50],
+  𝒮_0 : ℝ[1]
+⟧ {
+  // 1. Construct source-parameterized noncommuting 2D frustrated Hamiltonian (Jh=1.0, Jv=-0.8, Jd=-0.6, hX=0.75, gZ=0.35, periodic=1)
+  ℋ_0 ← ℋ_ℚ(Λ_0, J_0, h_0, g_0, 1.0, -0.8, -0.6, 0.75, 0.35, 1)
+
+  // 2. Automatic Hamiltonian structure detection & optimal solver dispatch (Cyclotomic / ED / Sparse Lanczos / DMRG-MPS)
+  Ψ_1 ← ℰ_λ(ℋ_0)
+
+  // 3. Bipartite von Neumann entanglement entropy, observables & 50-Agent Swarm (`SWARM-50-OMEGA05`) verification
+  𝒮_1 ← 𝒮_vN(Ψ_1, Λ_0) + 𝒮_0
+  α_1 ← ℋ_CD(α_50, Ψ_1)
+
+  // 4. Incremental Singular Arcs × SIAC (Δ⁺ / Δ⁻) Hamiltonian mutation & 0-ULP ReactorScramAnchor retraction
+  h_1 ← h_0 ⊕ δ_0
+  h_2 ← ⛨(h_1, S_0)
+  h_3 ← h_1 ↶ δ_0
+
+  // 5. Compile-time & runtime mathematical proof obligations (Hermiticity, Bijective Retraction, Normalization)
+  ⊢ ℋ_0† ≈ ℋ_0
+  ⊢ ⇄(h_0, h_3)
+  ⊢ |Ψ_1| < ∞
+}

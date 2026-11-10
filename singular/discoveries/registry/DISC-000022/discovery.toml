@@ -1,0 +1,6 @@
+id = "DISC-000022"
+title = "Associative Symplectic Selective State-Space Parallel Scan (⟐_S)"
+domain_primary = "Hybrid State-Space & Recurrent Foundation Models (Falcon-H1 / Hymba / RWKV-7)"
+domain_transfer = "Hamiltonian Dynamical Systems & Linear-Time Sequence Modeling"
+status = "VALIDATED_AND_PROMOTED"
+author = "singular.quantum.swarm100"

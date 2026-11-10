@@ -1,0 +1,8 @@
+{
+  "id": "DISC-000003",
+  "gate": "Q11",
+  "metrics": {
+    "frobenius_err": 2.734323e-16,
+    "mzi_count": 6
+  }
+}

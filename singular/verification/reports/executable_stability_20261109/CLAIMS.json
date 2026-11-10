@@ -1,0 +1,11 @@
+{
+  "status": "engineering_candidates_only",
+  "patent_application_filed": false,
+  "patentability": null,
+  "scientific_breakthrough": null,
+  "families": [
+    {"id":"A","mechanism":"typed transactional incremental dataflow","implementation":"omega_executable_incremental.hpp","novelty":"NOT_ESTABLISHED","prior_art":["Acar self-adjusting computation","DBSP","Differential Dataflow"]},
+    {"id":"B","mechanism":"explicit-data VM/native/JIT semantic contract","implementation":"omega_executable_native.hpp","novelty":"NOT_ESTABLISHED","missing":"independent translation-validation research comparison"},
+    {"id":"C","mechanism":"frozen-source measured release provenance","implementation":"build.sh","novelty":"NOT_ESTABLISHED","missing":"claim-by-claim prior-art analysis"}
+  ]
+}

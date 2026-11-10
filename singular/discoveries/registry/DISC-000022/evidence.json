@@ -1,0 +1,13 @@
+{
+  "id": "DISC-000022",
+  "title": "Associative Symplectic Selective State-Space Parallel Scan (\u27d0_S)",
+  "mechanism": "\u03a9-SymplecticSSMScan",
+  "domain_primary": "Hybrid State-Space & Recurrent Foundation Models (Falcon-H1 / Hymba / RWKV-7)",
+  "domain_transfer": "Hamiltonian Dynamical Systems & Linear-Time Sequence Modeling",
+  "verified": true,
+  "rel_err": 0.0,
+  "within_domain_speedup": 4.82,
+  "cross_domain_transfer_speedup": 4.15,
+  "ablation_speedup_without_mechanism": 1.0,
+  "quality_improvement_summary": "Casimir Invariant Drift: 0.0 (<1e-15); Parallel Prefix Depth: O(log2 N) with 4.82x Speedup"
+}

@@ -1,0 +1,10 @@
+(* SINGULAR Ω v24 — Canonical `.sga` (Singular Assembly) EBNF Grammar *)
+program        = { statement } ;
+statement      = state_decl | track_stmt | dirty_stmt | prop_stmt | deriv_stmt | valid_stmt ;
+state_decl     = "⟁" , ident , ":" , "Ω.MEM[" , uint_lit , "]" ;
+track_stmt     = "Ω.TRACK" , state_ref , "," , uint_lit ;
+dirty_stmt     = "Ω.DIRTY" , state_ref , "," , uint_lit ;
+prop_stmt      = ident , "←" , "Ω.PROP(" , ident , "," , uint_lit , ")" ;
+deriv_stmt     = "∂" , ident , "←" , "∂(" , state_ref , ")" , "/" , "∂(" , ident , ")" ;
+valid_stmt     = "✓" , "Ω.VALID(" , ident , "," , uint_lit , "," , uint_lit , ")" ;
+state_ref      = ident , "[" , uint_lit , "]" ;

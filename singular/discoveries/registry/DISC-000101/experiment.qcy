@@ -1,0 +1,13 @@
+// SINGULAR Ω v30.0 — Causal Incremental Neural Computation (CINC) & Selective Null-Space Plasticity
+§λ("discoveries")
+§ω("singular.v30.neural.vector.genesis.exp")
+§κ("DISC-000101-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[313, 363], W_0 : ℝ[363, 363], K_0 : ℝ[313, 363], δ_0 : Δℝ[156], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φτ(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⊥_Σ(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

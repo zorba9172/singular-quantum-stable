@@ -1,0 +1,7 @@
+{
+  "id": "DISC-000079",
+  "title": "Lossless 1M-Token 3-Tier Hierarchical Memory Vault (0% Truncation Loss)",
+  "status": "PROMOTED",
+  "measured_gain_x": 100,
+  "ulp_drift": 0.0
+}

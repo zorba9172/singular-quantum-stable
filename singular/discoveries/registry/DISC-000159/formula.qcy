@@ -1,0 +1,13 @@
+// SINGULAR Ω v40.0 — Online Cloud-to-Local Nullspace DoRA Distillation (Gen-6 24.0x)
+§λ("discoveries")
+§ω("singular.v40.live.disc")
+§κ("DISC-000159-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[446, 498], W_0 : ℝ[498, 498], K_0 : ℝ[446, 498], δ_0 : Δℝ[223], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⊥_Σ(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

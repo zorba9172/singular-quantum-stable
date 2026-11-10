@@ -1,0 +1,9 @@
+{
+  "id": "DISC-000002",
+  "gate": "Q10",
+  "metrics": {
+    "r2": 1.0,
+    "epsilon": 1.25,
+    "sigma": 1.0
+  }
+}

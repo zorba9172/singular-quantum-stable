@@ -1,0 +1,3 @@
+discovery_id = "DISC-000058"
+title = "Compaction-Free O(1) Bitmask Slot Reclamation Without Tombstones"
+status = "PROMOTED"

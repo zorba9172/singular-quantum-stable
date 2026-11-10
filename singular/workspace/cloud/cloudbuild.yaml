@@ -1,0 +1,5 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-f', 'singular/workspace/cloud/Dockerfile.cloud', '-t', 'gcr.io/$PROJECT_ID/singular-omega-v33:latest', '.']
+  - name: 'pulumi/pulumi'
+    args: ['up', '--yes', '--cwd', 'singular/workspace/cloud']

@@ -1,0 +1,13 @@
+// SINGULAR Ω v22.0 — 4-Zone Tokamak Nuclear Fusion AI Reactor (Core + ETB + RMP + Divertor)
+§λ("discoveries")
+§ω("singular.v22.discovery")
+§κ("DISC-000069-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[80, 123], W_0 : ℝ[123, 123], K_0 : ℝ[80, 123], δ_0 : Δℝ[39], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_FUS(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

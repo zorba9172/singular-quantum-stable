@@ -1,0 +1,1212 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.70+360 (git sha1 5e740962d, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+
+-- Running command `read_verilog -sv "/Volumes/Lenovo PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv"; synth -top omega_holonomic_13tap_siac_leech_lattice_unit -lut 6; stat' --
+
+1. Executing Verilog-2005 frontend: /Volumes/Lenovo PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv
+Parsing SystemVerilog input from `/Volumes/Lenovo PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv' to AST representation.
+Generating RTLIL representation for module `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Successfully finished Verilog frontend.
+
+2. Executing SYNTH pass.
+
+2.1. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1.1. Analyzing design hierarchy..
+Top module:  \omega_holonomic_13tap_siac_leech_lattice_unit
+
+2.1.2. Analyzing design hierarchy..
+Top module:  \omega_holonomic_13tap_siac_leech_lattice_unit
+Removed 0 unused modules.
+
+2.2. Executing PROC pass (convert processes to netlists).
+
+2.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 4 switch rules as full_case in process $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:69$proc$25 in module omega_holonomic_13tap_siac_leech_lattice_unit.
+Removed a total of 0 dead cases.
+
+2.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 0 assignments to connections.
+
+2.2.4. Executing PROC_INIT pass (extract init attributes).
+
+2.2.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_n in `\omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:69$proc$25'.
+
+2.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 1 switch.
+<suppressed ~2 debug messages>
+
+2.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:69$proc$25'.
+     1/6: $0\hw_signature[31:0]
+     2/6: $0\leech_octic_energy_out[31:0]
+     3/6: $0\wilson_loop_parity_out[31:0]
+     4/6: $0\siac13_accum_out[63:0]
+     5/6: $0\active_mode[3:0]
+     6/6: $0\valid_out[0:0]
+
+2.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+2.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\omega_holonomic_13tap_siac_leech_lattice_unit.\valid_out' using process `\omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:69$proc$25'.
+  created $adff cell `$procdff$62' with positive edge clock and positive level reset.
+Creating register for signal `\omega_holonomic_13tap_siac_leech_lattice_unit.\active_mode' using process `\omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:69$proc$25'.
+  created $adff cell `$procdff$67' with positive edge clock and positive level reset.
+Creating register for signal `\omega_holonomic_13tap_siac_leech_lattice_unit.\hw_signature' using process `\omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:69$proc$25'.
+  created $adff cell `$procdff$72' with positive edge clock and positive level reset.
+Creating register for signal `\omega_holonomic_13tap_siac_leech_lattice_unit.\siac13_accum_out' using process `\omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:69$proc$25'.
+  created $adff cell `$procdff$77' with positive edge clock and positive level reset.
+Creating register for signal `\omega_holonomic_13tap_siac_leech_lattice_unit.\wilson_loop_parity_out' using process `\omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:69$proc$25'.
+  created $adff cell `$procdff$82' with positive edge clock and positive level reset.
+Creating register for signal `\omega_holonomic_13tap_siac_leech_lattice_unit.\leech_octic_energy_out' using process `\omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:69$proc$25'.
+  created $adff cell `$procdff$87' with positive edge clock and positive level reset.
+
+2.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 3 empty switches in `\omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:69$proc$25'.
+Removing empty process `omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:69$proc$25'.
+Cleaned up 3 empty switches.
+
+2.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module omega_holonomic_13tap_siac_leech_lattice_unit.
+<suppressed ~12 debug messages>
+
+2.3. Executing OPT_EXPR pass (perform const folding).
+Optimizing module omega_holonomic_13tap_siac_leech_lattice_unit.
+<suppressed ~12 debug messages>
+
+2.4. Executing CHECK pass (checking for obvious problems).
+Checking module omega_holonomic_13tap_siac_leech_lattice_unit...
+Found and reported 0 problems.
+
+2.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \omega_holonomic_13tap_siac_leech_lattice_unit..
+Removed 7 unused cells and 40 unused wires.
+<suppressed ~8 debug messages>
+
+2.6. Executing OPT pass (performing simple optimizations).
+
+2.6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module omega_holonomic_13tap_siac_leech_lattice_unit.
+
+2.6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 40 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Removed a total of 0 cells.
+
+2.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \omega_holonomic_13tap_siac_leech_lattice_unit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~14 debug messages>
+
+2.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \omega_holonomic_13tap_siac_leech_lattice_unit.
+Performed a total of 0 changes.
+
+2.6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 40 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Removed a total of 0 cells.
+
+2.6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \omega_holonomic_13tap_siac_leech_lattice_unit..
+
+2.6.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module omega_holonomic_13tap_siac_leech_lattice_unit.
+
+2.6.9. Finished fast OPT passes. (There is nothing left to do.)
+
+2.7. Executing FSM pass (extract and optimize FSM).
+
+2.7.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+2.7.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+2.7.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+2.7.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \omega_holonomic_13tap_siac_leech_lattice_unit..
+
+2.7.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+2.7.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+2.7.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+2.7.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+2.8. Executing OPT pass (performing simple optimizations).
+
+2.8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module omega_holonomic_13tap_siac_leech_lattice_unit.
+
+2.8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 40 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Removed a total of 0 cells.
+
+2.8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \omega_holonomic_13tap_siac_leech_lattice_unit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~14 debug messages>
+
+2.8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \omega_holonomic_13tap_siac_leech_lattice_unit.
+Performed a total of 0 changes.
+
+2.8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 40 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Removed a total of 0 cells.
+
+2.8.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$77 ($adff) from module omega_holonomic_13tap_siac_leech_lattice_unit (D = \siac13_sum, Q = \siac13_accum_out).
+Adding EN signal on $procdff$82 ($adff) from module omega_holonomic_13tap_siac_leech_lattice_unit (D = $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:98$xor$27_Y, Q = \wilson_loop_parity_out).
+Adding EN signal on $procdff$67 ($adff) from module omega_holonomic_13tap_siac_leech_lattice_unit (D = $procmux$51_Y, Q = \active_mode).
+Adding EN signal on $procdff$87 ($adff) from module omega_holonomic_13tap_siac_leech_lattice_unit (D = \leech_kissing_mix, Q = \leech_octic_energy_out).
+Adding EN signal on $procdff$72 ($adff) from module omega_holonomic_13tap_siac_leech_lattice_unit (D = $procmux$35_Y, Q = \hw_signature).
+
+2.8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \omega_holonomic_13tap_siac_leech_lattice_unit..
+Removed 5 unused cells and 5 unused wires.
+<suppressed ~6 debug messages>
+
+2.8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module omega_holonomic_13tap_siac_leech_lattice_unit.
+
+2.8.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.8.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \omega_holonomic_13tap_siac_leech_lattice_unit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~6 debug messages>
+
+2.8.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \omega_holonomic_13tap_siac_leech_lattice_unit.
+Performed a total of 0 changes.
+
+2.8.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 35 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Removed a total of 0 cells.
+
+2.8.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.8.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \omega_holonomic_13tap_siac_leech_lattice_unit..
+
+2.8.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module omega_holonomic_13tap_siac_leech_lattice_unit.
+
+2.8.16. Finished fast OPT passes. (There is nothing left to do.)
+
+2.9. Executing WREDUCE pass (reducing word size of cells).
+Removed top 28 address bits (of 32) from memory init port omega_holonomic_13tap_siac_leech_lattice_unit.$auto$mem.cc:349:emit$31 ($auto$proc_rom.cc:155:do_switch$29).
+Removed top 16 bits (of 32) from port A of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:47$mul$1 ($mul).
+Removed top 25 bits (of 30) from port B of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:47$mul$1 ($mul).
+Removed top 9 bits (of 30) from port Y of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:47$mul$1 ($mul).
+Removed top 16 bits (of 32) from port A of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:48$mul$2 ($mul).
+Removed top 27 bits (of 31) from port B of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:48$mul$2 ($mul).
+Removed top 11 bits (of 31) from port Y of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:48$mul$2 ($mul).
+Removed top 9 bits (of 32) from port A of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:49$gt$3 ($gt).
+Removed top 11 bits (of 32) from port B of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:49$gt$3 ($gt).
+Removed top 32 bits (of 64) from port A of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:53$mul$4 ($mul).
+Removed top 52 bits (of 63) from port B of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:53$mul$4 ($mul).
+Removed top 20 bits (of 63) from port Y of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:53$mul$4 ($mul).
+Removed top 32 bits (of 64) from port A of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:54$mul$5 ($mul).
+Removed top 51 bits (of 61) from port B of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:54$mul$5 ($mul).
+Removed top 19 bits (of 61) from port Y of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:54$mul$5 ($mul).
+Removed top 32 bits (of 64) from port A of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:55$mul$6 ($mul).
+Removed top 51 bits (of 62) from port B of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:55$mul$6 ($mul).
+Removed top 19 bits (of 62) from port Y of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:55$mul$6 ($mul).
+Removed top 32 bits (of 64) from port A of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:56$mul$7 ($mul).
+Removed top 52 bits (of 61) from port B of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:56$mul$7 ($mul).
+Removed top 20 bits (of 61) from port Y of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:56$mul$7 ($mul).
+Removed top 32 bits (of 64) from port A of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:57$mul$8 ($mul).
+Removed top 54 bits (of 61) from port B of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:57$mul$8 ($mul).
+Removed top 22 bits (of 61) from port Y of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:57$mul$8 ($mul).
+Removed top 32 bits (of 64) from port A of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:58$mul$9 ($mul).
+Removed top 57 bits (of 61) from port B of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:58$mul$9 ($mul).
+Removed top 25 bits (of 61) from port Y of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:58$mul$9 ($mul).
+Removed top 20 bits (of 64) from port A of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$11 ($add).
+Removed top 19 bits (of 64) from port B of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$11 ($add).
+Removed top 18 bits (of 64) from port Y of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$11 ($add).
+Removed top 19 bits (of 64) from port A of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$12 ($add).
+Removed top 20 bits (of 64) from port B of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$12 ($add).
+Removed top 18 bits (of 64) from port Y of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$12 ($add).
+Removed top 18 bits (of 64) from port A of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$13 ($add).
+Removed top 18 bits (of 64) from port B of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$13 ($add).
+Removed top 17 bits (of 64) from port Y of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$13 ($add).
+Removed top 22 bits (of 64) from port A of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$14 ($add).
+Removed top 25 bits (of 64) from port B of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$14 ($add).
+Removed top 21 bits (of 64) from port Y of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$14 ($add).
+Removed top 21 bits (of 64) from port A of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$15 ($add).
+Removed top 31 bits (of 64) from port B of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$15 ($add).
+Removed top 20 bits (of 64) from port Y of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$15 ($add).
+Removed top 17 bits (of 64) from port A of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$16 ($add).
+Removed top 20 bits (of 64) from port B of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$16 ($add).
+Removed top 16 bits (of 64) from port Y of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$16 ($add).
+Removed top 32 bits (of 64) from port A of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:62$mul$17 ($mul).
+Removed top 49 bits (of 61) from port B of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:62$mul$17 ($mul).
+Removed top 17 bits (of 61) from port Y of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:62$mul$17 ($mul).
+Removed top 16 bits (of 64) from port A of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$18 ($add).
+Removed top 17 bits (of 64) from port B of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$18 ($add).
+Removed top 15 bits (of 64) from port Y of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$18 ($add).
+Removed top 14 bits (of 28) from port B of cell omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:67$mul$22 ($mul).
+Removed top 16 bits (of 64) from wire omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$16_Y.
+Removed top 20 bits (of 64) from wire omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$15_Y.
+Removed top 21 bits (of 64) from wire omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$14_Y.
+Removed top 17 bits (of 64) from wire omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$13_Y.
+Removed top 18 bits (of 64) from wire omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$12_Y.
+Removed top 18 bits (of 64) from wire omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$11_Y.
+Removed top 17 bits (of 64) from wire omega_holonomic_13tap_siac_leech_lattice_unit.$/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:62$mul$17_Y.
+Removed top 15 bits (of 64) from wire omega_holonomic_13tap_siac_leech_lattice_unit.siac13_sum.
+Removed top 31 bits (of 64) from wire omega_holonomic_13tap_siac_leech_lattice_unit.tap_6.
+Removed top 25 bits (of 64) from wire omega_holonomic_13tap_siac_leech_lattice_unit.tap_5.
+Removed top 22 bits (of 64) from wire omega_holonomic_13tap_siac_leech_lattice_unit.tap_4.
+Removed top 20 bits (of 64) from wire omega_holonomic_13tap_siac_leech_lattice_unit.tap_3.
+Removed top 19 bits (of 64) from wire omega_holonomic_13tap_siac_leech_lattice_unit.tap_2.
+Removed top 19 bits (of 64) from wire omega_holonomic_13tap_siac_leech_lattice_unit.tap_1.
+Removed top 20 bits (of 64) from wire omega_holonomic_13tap_siac_leech_lattice_unit.tap_0.
+Removed top 11 bits (of 32) from wire omega_holonomic_13tap_siac_leech_lattice_unit.n_times_22.
+Removed top 9 bits (of 32) from wire omega_holonomic_13tap_siac_leech_lattice_unit.k_times_100.
+
+2.10. Executing PEEPOPT pass (run peephole optimizers).
+
+2.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \omega_holonomic_13tap_siac_leech_lattice_unit..
+Removed 0 unused cells and 17 unused wires.
+<suppressed ~1 debug messages>
+
+2.12. Executing TECHMAP pass (map to technology primitives).
+
+2.12.1. Executing Verilog-2005 frontend: /Users/moshemoran/.singularc-tools/oss-cad-suite/libexec/../share/yosys/cmp2lut.v
+Parsing Verilog input from `/Users/moshemoran/.singularc-tools/oss-cad-suite/libexec/../share/yosys/cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+2.12.2. Executing Verilog-2005 frontend: /Users/moshemoran/.singularc-tools/oss-cad-suite/libexec/../share/yosys/cmp2lcu.v
+Parsing Verilog input from `/Users/moshemoran/.singularc-tools/oss-cad-suite/libexec/../share/yosys/cmp2lcu.v' to AST representation.
+Generating RTLIL representation for module `\_80_lcu_cmp_'.
+Generating RTLIL representation for module `$__CMP2LCU'.
+Successfully finished Verilog frontend.
+
+2.12.3. Continuing TECHMAP pass.
+Using template $paramod$49ed42420314c50021c754e250243b9552a3bad6\_80_lcu_cmp_ for cells of type $gt.
+Using template $paramod$5a643ce099ac5e215258fa135f528eea2a840b6c$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$0f36470fd1d7da87a20834ee3294dfea1e3d6606$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$d341454c09b53c7d385f5c97c4cf7bb3592a17b8$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$811a01220fabb58a193659b375a924ec566331f5$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$10a4fcded2eb5b95e0c8913c034221e706e5a8c2$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$12e700fd7cea0373d47c21acee18566b1ce0968d$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$58d15e4d584af7d75725a321dc8e4da1eab03cca$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$18ce91fc404cec93c5641e182f33bb68d06882f0$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$2a403bd0a011146736a1ee2072665be21e56b4e7$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$7217e670528bff3c5bc8dff93b095b66af2a6fe7$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$d6a928591afed1d3d3e0790b3633608784fd4039$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$5c86fade1af0f1f0915fd1448a82e448d0bb2e6a$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$9e56ecb90891fb20707e88eb56d353260af0e93b$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$e7802a1deba447c132b226f0cdb8b586b543038a$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$19c7995411bafb592672b358e28e004a013ee272$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$6a48fc15bef9551151002ab2d814ecfc6ef273e1$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$5382a513d6dd2fb261d835b126f7748975735b35$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$5a0f4437eff02cf9f200674937538db4965181e5$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$79a39d7b95dd9ab62f5fae2d688be3d227f1c16b$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$f32aed534cfee3ba409b47b9ebdae3298ed3fde1$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$d7ba8ed0078136dbeedf4cbfd4e7bff64e1c1ac4$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$0c4deb3695b6a6cb30366304194effbf527903b4$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$bd5325b2e2d96e42840834767e14e83ad78b3412$__CMP2LCU for cells of type $__CMP2LCU.
+Using template $paramod$9810db3cc09f95e7613b3af76f402aedf7d0afe3$__CMP2LCU for cells of type $__CMP2LCU.
+No more expansions possible.
+<suppressed ~603 debug messages>
+
+2.13. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module omega_holonomic_13tap_siac_leech_lattice_unit:
+  creating $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:67$add$23 ($add).
+  creating $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:67$mul$22 ($mul).
+  creating $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:66$add$20 ($add).
+  creating $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$18 ($add).
+  creating $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:62$mul$17 ($mul).
+  creating $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$16 ($add).
+  creating $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$15 ($add).
+  creating $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$14 ($add).
+  creating $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$13 ($add).
+  creating $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$12 ($add).
+  creating $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$11 ($add).
+  creating $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:58$mul$9 ($mul).
+  creating $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:57$mul$8 ($mul).
+  creating $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:56$mul$7 ($mul).
+  creating $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:55$mul$6 ($mul).
+  creating $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:54$mul$5 ($mul).
+  creating $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:53$mul$4 ($mul).
+  creating $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:48$mul$2 ($mul).
+  creating $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:47$mul$1 ($mul).
+  merging $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$11 into $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$13.
+  merging $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$12 into $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$13.
+  merging $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$14 into $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$15.
+  merging $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$13 into $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$16.
+  merging $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$15 into $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$16.
+  merging $macc model for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$16 into $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$18.
+  creating $alu model for $macc $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:66$add$20.
+  creating $alu model for $macc $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:67$add$23.
+  creating $macc cell for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:56$mul$7: $auto$alumacc.cc:427:replace_macc$249
+  creating $macc cell for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:55$mul$6: $auto$alumacc.cc:427:replace_macc$250
+  creating $macc cell for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:53$mul$4: $auto$alumacc.cc:427:replace_macc$251
+  creating $macc cell for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:54$mul$5: $auto$alumacc.cc:427:replace_macc$252
+  creating $macc cell for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:48$mul$2: $auto$alumacc.cc:427:replace_macc$253
+  creating $macc cell for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:47$mul$1: $auto$alumacc.cc:427:replace_macc$254
+  creating $macc cell for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:62$mul$17: $auto$alumacc.cc:427:replace_macc$255
+  creating $macc cell for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:61$add$18: $auto$alumacc.cc:427:replace_macc$256
+  creating $macc cell for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:58$mul$9: $auto$alumacc.cc:427:replace_macc$257
+  creating $macc cell for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:67$mul$22: $auto$alumacc.cc:427:replace_macc$258
+  creating $macc cell for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:57$mul$8: $auto$alumacc.cc:427:replace_macc$259
+  creating $alu cell for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:67$add$23: $auto$alumacc.cc:578:replace_alu$260
+  creating $alu cell for $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:66$add$20: $auto$alumacc.cc:578:replace_alu$263
+  created 2 $alu and 11 $macc cells.
+
+2.14. Executing SHARE pass (SAT-based resource sharing).
+
+2.15. Executing OPT pass (performing simple optimizations).
+
+2.15.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module omega_holonomic_13tap_siac_leech_lattice_unit.
+<suppressed ~18 debug messages>
+
+2.15.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 157 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 156 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+2.15.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \omega_holonomic_13tap_siac_leech_lattice_unit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~6 debug messages>
+
+2.15.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \omega_holonomic_13tap_siac_leech_lattice_unit.
+Performed a total of 0 changes.
+
+2.15.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 156 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Removed a total of 0 cells.
+
+2.15.6. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 49 on $auto$ff.cc:337:slice$88 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 50 on $auto$ff.cc:337:slice$88 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 51 on $auto$ff.cc:337:slice$88 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 52 on $auto$ff.cc:337:slice$88 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 53 on $auto$ff.cc:337:slice$88 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 54 on $auto$ff.cc:337:slice$88 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 55 on $auto$ff.cc:337:slice$88 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 56 on $auto$ff.cc:337:slice$88 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 57 on $auto$ff.cc:337:slice$88 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 58 on $auto$ff.cc:337:slice$88 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 59 on $auto$ff.cc:337:slice$88 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 60 on $auto$ff.cc:337:slice$88 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 61 on $auto$ff.cc:337:slice$88 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 62 on $auto$ff.cc:337:slice$88 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 63 on $auto$ff.cc:337:slice$88 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+
+2.15.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \omega_holonomic_13tap_siac_leech_lattice_unit..
+Removed 6 unused cells and 243 unused wires.
+<suppressed ~7 debug messages>
+
+2.15.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module omega_holonomic_13tap_siac_leech_lattice_unit.
+
+2.15.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.15.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \omega_holonomic_13tap_siac_leech_lattice_unit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~6 debug messages>
+
+2.15.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \omega_holonomic_13tap_siac_leech_lattice_unit.
+Performed a total of 0 changes.
+
+2.15.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 150 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Removed a total of 0 cells.
+
+2.15.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.15.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \omega_holonomic_13tap_siac_leech_lattice_unit..
+
+2.15.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module omega_holonomic_13tap_siac_leech_lattice_unit.
+
+2.15.16. Finished fast OPT passes. (There is nothing left to do.)
+
+2.16. Executing MEMORY pass.
+
+2.16.1. Executing OPT_MEM pass (optimize memories).
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-1 lane 4
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-0 lane 5
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-0 lane 6
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-0 lane 7
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-0 lane 8
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-0 lane 9
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-1 lane 10
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-0 lane 11
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-0 lane 16
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-0 lane 17
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-0 lane 18
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-0 lane 19
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-0 lane 20
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-1 lane 21
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-0 lane 22
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-1 lane 23
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-1 lane 24
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-0 lane 25
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-1 lane 26
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-0 lane 27
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-1 lane 28
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-0 lane 29
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-1 lane 30
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-0 lane 31
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-0 lane 32
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-0 lane 33
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-1 lane 34
+omega_holonomic_13tap_siac_leech_lattice_unit.$auto$proc_rom.cc:155:do_switch$29: removing const-0 lane 35
+Performed a total of 1 transformations.
+
+2.16.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+2.16.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+2.16.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+2.16.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+Checking read port `$auto$proc_rom.cc:155:do_switch$29'[0] in module `\omega_holonomic_13tap_siac_leech_lattice_unit':
+    FF found, but with a mux select that doesn't seem to correspond to transparency logic.
+Checking read port address `$auto$proc_rom.cc:155:do_switch$29'[0] in module `\omega_holonomic_13tap_siac_leech_lattice_unit':
+    no address FF found.
+
+2.16.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \omega_holonomic_13tap_siac_leech_lattice_unit..
+
+2.16.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+2.16.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+2.16.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \omega_holonomic_13tap_siac_leech_lattice_unit..
+
+2.16.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.17. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \omega_holonomic_13tap_siac_leech_lattice_unit..
+
+2.18. Executing OPT pass (performing simple optimizations).
+
+2.18.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module omega_holonomic_13tap_siac_leech_lattice_unit.
+<suppressed ~4 debug messages>
+
+2.18.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 148 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Removed a total of 0 cells.
+
+2.18.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.18.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \omega_holonomic_13tap_siac_leech_lattice_unit..
+Removed 0 unused cells and 3 unused wires.
+<suppressed ~1 debug messages>
+
+2.18.5. Finished fast OPT passes.
+
+2.19. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+Mapping memory $auto$proc_rom.cc:155:do_switch$29 in module \omega_holonomic_13tap_siac_leech_lattice_unit:
+  created 16 $dff cells and 0 static cells of width 8.
+  read interface: 0 $dff and 15 $mux cells.
+  write interface: 0 write mux blocks.
+
+2.20. Executing OPT pass (performing simple optimizations).
+
+2.20.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module omega_holonomic_13tap_siac_leech_lattice_unit.
+<suppressed ~4 debug messages>
+
+2.20.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 158 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Removed a total of 0 cells.
+
+2.20.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \omega_holonomic_13tap_siac_leech_lattice_unit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~38 debug messages>
+
+2.20.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \omega_holonomic_13tap_siac_leech_lattice_unit.
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][3][2]$305:
+      Old ports: A=8'01000100, B=8'01010101, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][1]$a$291
+      New ports: A=1'0, B=1'1, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][1]$a$291 [0]
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][1]$a$291 [7:1] = { 3'010 $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][1]$a$291 [0] 3'010 }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][3][1]$302:
+      Old ports: A=8'00100010, B=8'00110011, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][0]$b$289
+      New ports: A=1'0, B=1'1, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][0]$b$289 [0]
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][0]$b$289 [7:1] = { 3'001 $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][0]$b$289 [0] 3'001 }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][3][0]$299:
+      Old ports: A=8'00000000, B=8'00010001, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][0]$a$288
+      New ports: A=1'0, B=1'1, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][0]$a$288 [0]
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][0]$a$288 [7:1] = { 3'000 $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][0]$a$288 [0] 3'000 }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][3][3]$308:
+      Old ports: A=8'01100110, B=8'01110111, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][1]$b$292
+      New ports: A=1'0, B=1'1, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][1]$b$292 [0]
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][1]$b$292 [7:1] = { 3'011 $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][1]$b$292 [0] 3'011 }
+    Consolidated identical input bits for $mux cell $procmux$35:
+      Old ports: A={ 20'01000101010110100000 $auto$proc_rom.cc:154:do_switch$28 [15:12] 8'01000001 }, B=1163528513, Y=$procmux$35_Y
+      New ports: A=$auto$proc_rom.cc:154:do_switch$28 [15:12], B=4'1001, Y=$procmux$35_Y [11:8]
+      New connections: { $procmux$35_Y [31:12] $procmux$35_Y [7:0] } = 28'0100010101011010000001000001
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][3][4]$311:
+      Old ports: A=8'10001000, B=8'10011001, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][2]$a$294
+      New ports: A=1'0, B=1'1, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][2]$a$294 [0]
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][2]$a$294 [7:1] = { 3'100 $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][2]$a$294 [0] 3'100 }
+  Optimizing cells in module \omega_holonomic_13tap_siac_leech_lattice_unit.
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][2]$293:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][2]$a$294, B=8'01110111, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][1]$a$285
+      New ports: A={ 2'10 $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][2]$a$294 [0] }, B=3'011, Y={ $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][1]$a$285 [3] $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][1]$a$285 [1:0] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][1]$a$285 [7:4] $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][1]$a$285 [2] } = { $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][1]$a$285 [3] $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][1]$a$285 [1] $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][1]$a$285 [1:0] $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][1]$a$285 [1] }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][1]$290:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][1]$a$291, B=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][1]$b$292, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][0]$b$283
+      New ports: A={ 1'0 $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][1]$a$291 [0] }, B={ 1'1 $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][1]$b$292 [0] }, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][0]$b$283 [1:0]
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][0]$b$283 [7:2] = { 2'01 $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][0]$b$283 [1:0] 2'01 }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][0]$287:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][0]$a$288, B=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][0]$b$289, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][0]$a$282
+      New ports: A={ 1'0 $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][0]$a$288 [0] }, B={ 1'1 $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][0]$b$289 [0] }, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][0]$a$282 [1:0]
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][0]$a$282 [7:2] = { 2'00 $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][0]$a$282 [1:0] 2'00 }
+  Optimizing cells in module \omega_holonomic_13tap_siac_leech_lattice_unit.
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][1]$284:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][1]$a$285, B=8'01110111, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$b$280
+      New ports: A={ $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][1]$a$285 [3] $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][1]$a$285 [1:0] }, B=3'011, Y={ $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$b$280 [3] $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$b$280 [1:0] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$b$280 [7:4] $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$b$280 [2] } = { $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$b$280 [3] $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$b$280 [1] $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$b$280 [1:0] $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$b$280 [1] }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][0]$281:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][0]$a$282, B=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][0]$b$283, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$a$279
+      New ports: A={ 1'0 $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][0]$a$282 [1:0] }, B={ 1'1 $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][0]$b$283 [1:0] }, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$a$279 [2:0]
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$a$279 [7:3] = { 1'0 $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$a$279 [2:0] 1'0 }
+  Optimizing cells in module \omega_holonomic_13tap_siac_leech_lattice_unit.
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$278:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$a$279, B=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$b$280, Y={ $auto$proc_rom.cc:154:do_switch$28 [15:12] $auto$proc_rom.cc:154:do_switch$28 [3:0] }
+      New ports: A={ 1'0 $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$a$279 [2:0] }, B={ $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$b$280 [3] $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$b$280 [1] $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$b$280 [1:0] }, Y=$auto$proc_rom.cc:154:do_switch$28 [3:0]
+      New connections: $auto$proc_rom.cc:154:do_switch$28 [15:12] = $auto$proc_rom.cc:154:do_switch$28 [3:0]
+  Optimizing cells in module \omega_holonomic_13tap_siac_leech_lattice_unit.
+Performed a total of 12 changes.
+
+2.20.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 158 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 153 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 152 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+<suppressed ~18 debug messages>
+Removed a total of 6 cells.
+
+2.20.6. Executing OPT_SHARE pass.
+
+2.20.7. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 1 on $auto$ff.cc:337:slice$92 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 2 on $auto$ff.cc:337:slice$92 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 3 on $auto$ff.cc:337:slice$92 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 4 on $auto$ff.cc:337:slice$92 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 5 on $auto$ff.cc:337:slice$92 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 7 on $auto$ff.cc:337:slice$92 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 12 on $auto$ff.cc:337:slice$92 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 13 on $auto$ff.cc:337:slice$92 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 14 on $auto$ff.cc:337:slice$92 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 15 on $auto$ff.cc:337:slice$92 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 16 on $auto$ff.cc:337:slice$92 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 18 on $auto$ff.cc:337:slice$92 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 21 on $auto$ff.cc:337:slice$92 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 23 on $auto$ff.cc:337:slice$92 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 25 on $auto$ff.cc:337:slice$92 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 27 on $auto$ff.cc:337:slice$92 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 28 on $auto$ff.cc:337:slice$92 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 29 on $auto$ff.cc:337:slice$92 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+Setting constant 0-bit at position 31 on $auto$ff.cc:337:slice$92 ($adffe) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+
+2.20.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \omega_holonomic_13tap_siac_leech_lattice_unit..
+Removed 0 unused cells and 26 unused wires.
+<suppressed ~1 debug messages>
+
+2.20.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module omega_holonomic_13tap_siac_leech_lattice_unit.
+<suppressed ~1 debug messages>
+
+2.20.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.20.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \omega_holonomic_13tap_siac_leech_lattice_unit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~10 debug messages>
+
+2.20.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \omega_holonomic_13tap_siac_leech_lattice_unit.
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][0]$281:
+      Old ports: A={ 1'0 $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][0]$a$282 [1:0] }, B={ 1'1 $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][0]$a$282 [1:0] }, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$a$279 [2:0]
+      New ports: A=1'0, B=1'1, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$a$279 [2]
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][0][0]$a$279 [1:0] = $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][0]$a$282 [1:0]
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][1]$290:
+      Old ports: A={ 1'0 $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][0]$a$288 [0] }, B={ 1'1 $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][2][0]$a$288 [0] }, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][0]$a$282 [1:0]
+      New ports: A=1'0, B=1'1, Y=$memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][0]$a$282 [1]
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$29$rdmux[0][1][0]$a$282 [0] = \mode_req [0]
+  Optimizing cells in module \omega_holonomic_13tap_siac_leech_lattice_unit.
+Performed a total of 2 changes.
+
+2.20.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 151 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Removed a total of 0 cells.
+
+2.20.14. Executing OPT_SHARE pass.
+
+2.20.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.20.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \omega_holonomic_13tap_siac_leech_lattice_unit..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+2.20.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module omega_holonomic_13tap_siac_leech_lattice_unit.
+<suppressed ~2 debug messages>
+
+2.20.18. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.20.19. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \omega_holonomic_13tap_siac_leech_lattice_unit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+2.20.20. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \omega_holonomic_13tap_siac_leech_lattice_unit.
+Performed a total of 0 changes.
+
+2.20.21. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 149 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Removed a total of 0 cells.
+
+2.20.22. Executing OPT_SHARE pass.
+
+2.20.23. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.20.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \omega_holonomic_13tap_siac_leech_lattice_unit..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+2.20.25. Executing OPT_EXPR pass (perform const folding).
+Optimizing module omega_holonomic_13tap_siac_leech_lattice_unit.
+
+2.20.26. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.20.27. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \omega_holonomic_13tap_siac_leech_lattice_unit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+2.20.28. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \omega_holonomic_13tap_siac_leech_lattice_unit.
+Performed a total of 0 changes.
+
+2.20.29. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 149 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Removed a total of 0 cells.
+
+2.20.30. Executing OPT_SHARE pass.
+
+2.20.31. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.20.32. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \omega_holonomic_13tap_siac_leech_lattice_unit..
+
+2.20.33. Executing OPT_EXPR pass (perform const folding).
+Optimizing module omega_holonomic_13tap_siac_leech_lattice_unit.
+
+2.20.34. Finished fast OPT passes. (There is nothing left to do.)
+
+2.21. Executing TECHMAP pass (map to technology primitives).
+
+2.21.1. Executing Verilog-2005 frontend: /Users/moshemoran/.singularc-tools/oss-cad-suite/libexec/../share/yosys/techmap.v
+Parsing Verilog input from `/Users/moshemoran/.singularc-tools/oss-cad-suite/libexec/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+2.21.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $mux.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=s32'00000000000000000000000000000001 for cells of type $lcu.
+Using extmapper simplemap for cells of type $adffe.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $xnor.
+Using extmapper maccmap for cells of type $macc_v2.
+  add \stencil_in_3 * 9'100010011 (32x9 bits, unsigned)
+  add \stencil_in_2 * 11'10010010111 (32x11 bits, unsigned)
+  add \stencil_in_0 * 11'11111001101 (32x11 bits, unsigned)
+  add \stencil_in_1 * 10'1101101111 (32x10 bits, unsigned)
+  add \total_nodes_n * 4'1011 (16x4 bits, unsigned)
+  add \active_cone_k * 5'11001 (16x5 bits, unsigned)
+  add \holonomic_delta_in * 12'100100010101 (32x12 bits, unsigned)
+  add { \tap_0 [43:1] 1'0 } (44 bits, unsigned)
+  add { \tap_1 [44:3] 3'000 } (45 bits, unsigned)
+  add { \tap_2 [44:2] 2'00 } (45 bits, unsigned)
+  add { \tap_3 [43:3] 3'000 } (44 bits, unsigned)
+  add { \tap_4 [41:3] 3'000 } (42 bits, unsigned)
+  add { \tap_5 [38:3] 3'000 } (39 bits, unsigned)
+  add { \stencil_in_6 1'0 } (33 bits, unsigned)
+  add { $/Volumes/Lenovo$20PS8S/workspace/Supercomputing/singular/core/compiler/rtl/omega_holonomic_13tap_siac_leech_lattice_unit.sv:62$mul$17_Y [46:3] 3'000 } (47 bits, unsigned)
+  add \stencil_in_5 * 4'1001 (32x4 bits, unsigned)
+  add \stencil_in_1 * 14'10111111111101 (32x14 bits, unsigned)
+  add \stencil_in_4 * 7'1001011 (32x7 bits, unsigned)
+Using template $paramod$fbc7873bff55778c0b3173955b7e4bce1d9d6834\_90_alu for cells of type $alu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000101001 for cells of type $fa.
+Using template $paramod$35a69cb9a70c12a16833c695168dfe15d5378044\_90_alu for cells of type $alu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000101011 for cells of type $fa.
+Using template $paramod$52434018ec8a02e79051cb559e8516c70bddda5e\_90_alu for cells of type $alu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000101010 for cells of type $fa.
+Using template $paramod$7ad0a2715cbe7438acc372ec84186a7c022b6ee1\_90_alu for cells of type $alu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000010100 for cells of type $fa.
+Using template $paramod$6fc37af1c109ae54e8aed83fcd995c12d378ce93\_90_alu for cells of type $alu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000010101 for cells of type $fa.
+Using template $paramod$950cc9f9d9b07c09d0ee4a231126f2c8a3c4f78a\_90_alu for cells of type $alu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000101100 for cells of type $fa.
+Using template $paramod$ed2a0424f59c17e2727a10b34d08cad64b7729ea\_90_alu for cells of type $alu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000101110 for cells of type $fa.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000100100 for cells of type $fa.
+Using template $paramod$9fb24bf0faa43f804d3c379242188667e42c235c\_90_alu for cells of type $alu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000100111 for cells of type $fa.
+Using template $paramod$9c7d13c1edbd4d27a85edb6208279a64037aa7b0\_90_alu for cells of type $alu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000101111 for cells of type $fa.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000110000 for cells of type $fa.
+Using template $paramod$959c9ddbaba0966d253c0f5ab1a5eabdad847a18\_90_alu for cells of type $alu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000011100 for cells of type $fa.
+Using template $paramod$d7c91f8d4ce389beb1bd34b271e05fae2549a2a8\_90_alu for cells of type $alu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000100000 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000100000 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000101001 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000101011 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000101010 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000010100 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000010101 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000101100 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000100100 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000100111 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000110001 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000110001 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000011100 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~4717 debug messages>
+
+2.22. Executing OPT pass (performing simple optimizations).
+
+2.22.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module omega_holonomic_13tap_siac_leech_lattice_unit.
+<suppressed ~13044 debug messages>
+
+2.22.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 10509 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 10241 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 10115 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 10053 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 10021 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+<suppressed ~1464 debug messages>
+Removed a total of 488 cells.
+
+2.22.3. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 0 on $auto$ff.cc:337:slice$1108 ($_DFFE_PN0P_) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+
+2.22.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \omega_holonomic_13tap_siac_leech_lattice_unit..
+Removed 500 unused cells and 1741 unused wires.
+<suppressed ~501 debug messages>
+
+2.22.5. Rerunning OPT passes. (Removed registers in this run.)
+
+2.22.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module omega_holonomic_13tap_siac_leech_lattice_unit.
+
+2.22.7. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 9520 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Removed a total of 0 cells.
+
+2.22.8. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.22.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \omega_holonomic_13tap_siac_leech_lattice_unit..
+
+2.22.10. Finished fast OPT passes.
+
+2.23. Executing ABC9 pass.
+
+2.23.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.23.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.23.3. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module omega_holonomic_13tap_siac_leech_lattice_unit.
+Found 0 SCCs.
+
+2.23.4. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.23.5. Executing TECHMAP pass (map to technology primitives).
+
+2.23.5.1. Executing Verilog-2005 frontend: /Users/moshemoran/.singularc-tools/oss-cad-suite/libexec/../share/yosys/techmap.v
+Parsing Verilog input from `/Users/moshemoran/.singularc-tools/oss-cad-suite/libexec/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+2.23.5.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~78 debug messages>
+
+2.23.6. Executing OPT pass (performing simple optimizations).
+
+2.23.6.1. Executing OPT_EXPR pass (perform const folding).
+
+2.23.6.2. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+2.23.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Removed 0 multiplexer ports.
+
+2.23.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+Performed a total of 0 changes.
+
+2.23.6.5. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+2.23.6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.23.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+
+2.23.6.8. Executing OPT_EXPR pass (perform const folding).
+
+2.23.6.9. Finished fast OPT passes. (There is nothing left to do.)
+
+2.23.7. Executing TECHMAP pass (map to technology primitives).
+
+2.23.7.1. Executing Verilog-2005 frontend: /Users/moshemoran/.singularc-tools/oss-cad-suite/libexec/../share/yosys/abc9_map.v
+Parsing Verilog input from `/Users/moshemoran/.singularc-tools/oss-cad-suite/libexec/../share/yosys/abc9_map.v' to AST representation.
+Lexer warning: The SystemVerilog keyword `bit' (at /Users/moshemoran/.singularc-tools/oss-cad-suite/libexec/../share/yosys/abc9_map.v:35) is not recognized unless read_verilog is called with -sv!
+Generating RTLIL representation for module `$__ABC9_BARRIER_MAP'.
+Successfully finished Verilog frontend.
+
+2.23.7.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+2.23.8. Executing Verilog-2005 frontend: /Users/moshemoran/.singularc-tools/oss-cad-suite/libexec/../share/yosys/abc9_model.v
+Parsing Verilog input from `/Users/moshemoran/.singularc-tools/oss-cad-suite/libexec/../share/yosys/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ABC9_DELAY'.
+Generating RTLIL representation for module `$__ABC9_BARRIER'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Generating RTLIL representation for module `$__DFF_N__$abc9_flop'.
+Generating RTLIL representation for module `$__DFF_P__$abc9_flop'.
+Successfully finished Verilog frontend.
+
+2.23.9. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.23.10. Executing ABC9_OPS pass (helper functions for ABC9).
+<suppressed ~2 debug messages>
+
+2.23.11. Executing AIGMAP pass (map logic to AIG).
+Module omega_holonomic_13tap_siac_leech_lattice_unit: replaced 5317 cells with 31945 new cells, skipped 4203 cells.
+  replaced 4 cell types:
+      12 $_MUX_
+    1764 $_OR_
+      18 $_XNOR_
+    3523 $_XOR_
+  not replaced 4 cell types:
+    4063 $_AND_
+     117 $_DFFE_PN0P_
+       1 $_DFF_PN0_
+      22 $_NOT_
+
+2.23.11.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+2.23.11.2. Executing XAIGER2 backend.
+<suppressed ~128 debug messages>
+Extracted 16919 AND gates and 0 wires from module `omega_holonomic_13tap_siac_leech_lattice_unit' to a netlist network with 445 inputs and 635 outputs.
+
+2.23.11.3. Executing ABC9_EXE pass (technology mapping using ABC9).
+
+2.23.11.4. Executing ABC9.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_lut <abc-temp-dir>/lutdefs.txt 
+ABC: + read_box <abc-temp-dir>/input.box 
+ABC: + &read <abc-temp-dir>/input.xaig 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =    445/    635  and =   13280  lev =   71 (6.58)  mem = 0.17 MB  box = 0  bb = 0
+ABC: + &scorr 
+ABC: Warning: The network is combinational.
+ABC: + &sweep 
+ABC: + &dc2 
+ABC: + &dch -f -r 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =    445/    635  and =   14172  lev =   73 (8.09)  mem = 0.18 MB  ch =  681  box = 0  bb = 0
+ABC: cst =       0  cls =    636  lit =     681  unused =   13300  proof =     0
+ABC: + &if -v 
+ABC: K = 6. Memory (bytes): Truth =    0. Cut =   72. Obj =  152. Set =  744. CutMin = no
+ABC: Node =   14172.  Ch =   636.  Total mem =    2.44 MB. Peak cut mem =    0.20 MB.
+ABC: P:  Del =   16.00.  Ar =    3273.0.  Edge =    14840.  Cut =   363718.  T =     0.06 sec
+ABC: P:  Del =   16.00.  Ar =    3440.0.  Edge =    16855.  Cut =   278501.  T =     0.06 sec
+ABC: P:  Del =   16.00.  Ar =    4011.0.  Edge =    17734.  Cut =   321512.  T =     0.06 sec
+ABC: F:  Del =   16.00.  Ar =    3283.0.  Edge =    15007.  Cut =   258610.  T =     0.05 sec
+ABC: A:  Del =   16.00.  Ar =    2998.0.  Edge =    13272.  Cut =   261083.  T =     0.06 sec
+ABC: A:  Del =   16.00.  Ar =    2946.0.  Edge =    13190.  Cut =   262912.  T =     0.06 sec
+ABC: Total time =     0.35 sec
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &mfs 
+ABC: + &ps -l 
+ABC: <abc-temp-dir>/input : i/o =    445/    635  and =   40671  lev =   83 (8.77)  mem = 0.48 MB  box = 0  bb = 0
+ABC: Mapping (K=6)  :  lut =   2882  edge =   12891  lev =   16 (1.82)  mem = 0.23 MB
+ABC: LUT = 2882 : 2=377 13.1 %  3=453 15.7 %  4=444 15.4 %  5=646 22.4 %  6=962 33.4 %  Ave = 4.47
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &verify 
+ABC: Networks are equivalent.  Time =     2.02 sec
+ABC: + time 
+ABC: elapse: 114.47 seconds, total: 114.47 seconds
+
+2.23.11.5. Executing AIGER frontend.
+<suppressed ~10 debug messages>
+Removed 73785 unused cells and 74346 unused wires.
+
+2.23.11.6. Executing ABC_OPS_REINTEGRATE pass (reintegrate ABC mapped design into module).
+ABC RESULTS:              $lut cells:     2882
+ABC RESULTS:           input signals:      140
+ABC RESULTS:          output signals:        6
+<suppressed ~1080 debug messages>
+Removing temp directory.
+
+2.23.12. Executing TECHMAP pass (map to technology primitives).
+
+2.23.12.1. Executing Verilog-2005 frontend: /Users/moshemoran/.singularc-tools/oss-cad-suite/libexec/../share/yosys/abc9_unmap.v
+Parsing Verilog input from `/Users/moshemoran/.singularc-tools/oss-cad-suite/libexec/../share/yosys/abc9_unmap.v' to AST representation.
+Generating RTLIL representation for module `$__DFF_x__$abc9_flop'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Generating RTLIL representation for module `$__ABC9_BARRIER'.
+Successfully finished Verilog frontend.
+
+2.23.12.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~6 debug messages>
+
+2.24. Executing OPT pass (performing simple optimizations).
+
+2.24.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module omega_holonomic_13tap_siac_leech_lattice_unit.
+
+2.24.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 3104 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Removed a total of 0 cells.
+
+2.24.3. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 0 on $auto$ff.cc:337:slice$1156 ($_DFFE_PN0P_) from module omega_holonomic_13tap_siac_leech_lattice_unit.
+
+2.24.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \omega_holonomic_13tap_siac_leech_lattice_unit..
+Removed 95 unused cells and 1202 unused wires.
+<suppressed ~105 debug messages>
+
+2.24.5. Rerunning OPT passes. (Removed registers in this run.)
+
+2.24.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module omega_holonomic_13tap_siac_leech_lattice_unit.
+
+2.24.7. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Computing hashes of 2999 cells of `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Finding duplicate cells in `\omega_holonomic_13tap_siac_leech_lattice_unit'.
+Removed a total of 0 cells.
+
+2.24.8. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.24.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \omega_holonomic_13tap_siac_leech_lattice_unit..
+
+2.24.10. Finished fast OPT passes.
+
+2.25. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `omega_holonomic_13tap_siac_leech_lattice_unit'. Setting top module to omega_holonomic_13tap_siac_leech_lattice_unit.
+
+2.25.1. Analyzing design hierarchy..
+Top module:  \omega_holonomic_13tap_siac_leech_lattice_unit
+
+2.25.2. Analyzing design hierarchy..
+Top module:  \omega_holonomic_13tap_siac_leech_lattice_unit
+Removed 0 unused modules.
+
+2.26. Printing statistics.
+
+=== omega_holonomic_13tap_siac_leech_lattice_unit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     2912 wires
+     3710 wire bits
+       30 public wires
+      828 public wire bits
+       21 ports
+      492 port bits
+     2999 cells
+      116   $_DFFE_PN0P_
+        1   $_DFF_PN0_
+     2882   $lut
+
+2.27. Executing CHECK pass (checking for obvious problems).
+Checking module omega_holonomic_13tap_siac_leech_lattice_unit...
+Found and reported 0 problems.
+
+3. Printing statistics.
+
+=== omega_holonomic_13tap_siac_leech_lattice_unit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     2912 wires
+     3710 wire bits
+       30 public wires
+      828 public wire bits
+       21 ports
+      492 port bits
+     2999 cells
+      116   $_DFFE_PN0P_
+        1   $_DFF_PN0_
+     2882   $lut
+
+End of script. Logfile hash: 92ce9cb858, time: 124.39s, user: 2.78s, system: 0.58s, MEM: 99.08 MB peak
+Yosys 0.70+360 (git sha1 5e740962d, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+Time spent: 93% 1x abc9_exe (47 sec), 1% 2x read_aiger (0 sec), ...

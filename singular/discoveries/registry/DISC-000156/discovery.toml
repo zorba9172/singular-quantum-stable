@@ -1,0 +1,3 @@
+discovery_id = "DISC-000156"
+title = "Live Safetensors simdjson + DLPack Zero-Copy Weight Streamer"
+status = "PROMOTED"

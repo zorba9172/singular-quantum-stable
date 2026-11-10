@@ -1,0 +1,98 @@
+; SINGULAR Ω v24 — prop_sw_vs_hw.sga
+; Same Ω.PROP work (closure from node 0 + dirty/version update of the reached nodes) done
+;  (a) in RV64I software with an adjacency-list worklist (fair, optimized software baseline), and
+;  (b) with the Xomegacausal instructions (omega.dirty + omega.prop), after a one-time omega.track setup.
+; Graph: chain 0 -> 1 -> ... -> 63 (worst-case closure depth). Dynamic instruction counts per region
+; are taken from the Spike commit log (omega-cosim count). Exit code 0 iff both masks agree.
+
+_start:
+    a0 ← 1
+
+sw_begin:
+    s1 ← &succ_off
+    s2 ← &succ
+    s3 ← &ver
+    s4 ← &dirty
+    s5 ← &stack
+    ; software Ω.DIRTY(0, 0): ver[0]++, dirty[0] = 1
+    t0 ← [s3 + 0]
+    t0 ← t0 + 1
+    [s3 + 0] ← t0
+    t1 ← 1
+    [s4 + 0] ← t1
+    ; worklist closure from 0, marking first visits dirty + version bump
+    s6 ← 0                  ; reach mask
+    s7 ← s5                 ; stack pointer
+    [s7 + 0] ← x0           ; push node 0
+    s7 ← s7 + 8
+wl_loop:
+    ↻ wl_done if s7 = s5
+    s7 ← s7 - 8
+    t2 ← [s7 + 0]           ; x
+    t3 ← t2 << 3
+    t3 ← t3 + s1
+    t4 ← [t3 + 0]           ; k = succ_off[x]
+    t5 ← [t3 + 8]           ; kend = succ_off[x + 1]
+inner:
+    ↻ wl_loop if t4 ≥ t5
+    t6 ← t4 << 3
+    t6 ← t6 + s2
+    a2 ← [t6 + 0]           ; y = succ[k]
+    a3 ← t1 << a2           ; 1 << y
+    a4 ← s6 & a3
+    ↻ next if a4 ≠ x0
+    s6 ← s6 | a3            ; first visit
+    [s7 + 0] ← a2           ; push y
+    s7 ← s7 + 8
+    a5 ← a2 << 3
+    a6 ← a5 + s4
+    a7 ← [a6 + 0]
+    ↻ next if a7 ≠ x0       ; already dirty: no version bump
+    [a6 + 0] ← t1
+    a6 ← a5 + s3
+    a7 ← [a6 + 0]
+    a7 ← a7 + 1
+    [a6 + 0] ← a7
+next:
+    t4 ← t4 + 1
+    ↷ inner
+wl_done:
+sw_end:
+
+hw_setup_begin:
+    t0 ← 0
+    t2 ← 63
+track_loop:
+    t3 ← t0 + 1
+    a1 ← ⊙ t0, t3           ; track i -> i + 1
+    t0 ← t3
+    ↻ track_loop if t0 < t2
+hw_setup_end:
+
+hw_begin:
+    a1 ← Δ⁺ x0, x0          ; Ω.DIRTY(0, expected 0)
+    s8 ← ⇝ x0               ; Ω.PROP(0): closure + dirty/version update in one instruction
+hw_end:
+
+    ↻ fail if s8 ≠ s6
+    a0 ← 0
+fail:
+    ↩
+
+.data
+succ_off:
+    .dword 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+    .dword 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+    .dword 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47
+    .dword 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 63
+succ:
+    .dword 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+    .dword 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32
+    .dword 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48
+    .dword 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63
+ver:
+    .zero 512
+dirty:
+    .zero 512
+stack:
+    .zero 520

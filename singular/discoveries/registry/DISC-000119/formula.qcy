@@ -1,0 +1,13 @@
+// SINGULAR Ω v32.0 — Quantum-Inspired Geodesic bSB x Fisher-Rao Natural Gradient x 3-Body Cubic HUBO
+§λ("discoveries")
+§ω("singular.v32.elite.disc")
+§κ("DISC-000119-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[378, 430], W_0 : ℝ[430, 430], K_0 : ℝ[378, 430], δ_0 : Δℝ[189], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ∇_g(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

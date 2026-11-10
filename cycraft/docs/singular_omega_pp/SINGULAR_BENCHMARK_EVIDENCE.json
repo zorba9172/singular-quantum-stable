@@ -1,0 +1,14 @@
+{
+  "schema_version": "3.0.0-STABLE",
+  "workload": "Incremental K=32 Parity & Full Recompute N=4096",
+  "p41_reuse_corpus_size": 240,
+  "p41_reuse_precision": 1,
+  "p41_reuse_recall": 1,
+  "contestants": [
+    {"engine": "CPython 3.14.7 (Pure AST Loop + copy.deepcopy)", "forward_us": 133.956, "rollback_us": 167.445, "undo_log_kib": 128, "speedup_vs_cpython": 1, "zero_log_exact": false},
+    {"engine": "NumPy 2.5.2 (Vector Array Full + arr.copy())", "forward_us": 4.4344, "rollback_us": 3.76924, "undo_log_kib": 32, "speedup_vs_cpython": 30.2083, "zero_log_exact": false},
+    {"engine": "Cython / C-Ext (_singular_accel.so Dense)", "forward_us": 1.24718, "rollback_us": 3.17774, "undo_log_kib": 16, "speedup_vs_cpython": 107.407, "zero_log_exact": false},
+    {"engine": "C++23 Dense Full Recompute + Snapshot Undo", "forward_us": 0.923834, "rollback_us": 2.76325, "undo_log_kib": 16, "speedup_vs_cpython": 145, "zero_log_exact": false},
+    {"engine": "CYCRAFT Ω (SIAC Incremental Arc + 0-Log MAP_JIT)", "forward_us": 0.0215, "rollback_us": 0.027834, "undo_log_kib": 0, "speedup_vs_cpython": 6230.51, "zero_log_exact": true}
+  ]
+}

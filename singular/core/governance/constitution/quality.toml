@@ -1,0 +1,7 @@
+# SINGULAR Ω v6.0 — Code Quality & Verification Policy
+[source]
+max_file_lines = 400
+max_function_lines = 50
+max_cyclomatic_complexity = 12
+require_always_on_sourcemap = true
+sourcemap_hot_path_overhead_ns = 0.0

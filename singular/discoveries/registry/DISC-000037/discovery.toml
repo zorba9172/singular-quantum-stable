@@ -1,0 +1,9 @@
+discovery_id = "DISC-000037"
+title = "oss8_tokamak_nanotech_singular_arcs_siac_elite_compiler"
+domain = "compiler_optimization_distributed_systems_fusion_nanotech"
+status = "PROMOTED"
+operators = ["⟁_CIR", "⟁_EMIT", "⟁_ACG", "⟁_DB", "⟁_ORC", "⟁_HEAL", "⊕_trop", "⟐_S", "⊥_Σ", "◈_H", "ℋ_CD", "⨂_TM"]
+within_domain_verified = true
+cross_domain_transfer_verified = true
+ablation_verified = true
+retraction_ulp = 0.0

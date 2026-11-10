@@ -1,0 +1,13 @@
+// SINGULAR Ω v32.0 — Zero-Forgetting Null-Space DoRA Projection (Sigma_X dW_perp = 0) & 42ns 0-ULP SCRAM
+§λ("modules")
+§ω("singular.v32.elite.model.swarm100")
+§κ("CY-V32-ELITE-6")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[384, 436], W_0 : ℝ[436, 436], K_0 : ℝ[384, 436], δ_0 : Δℝ[192], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⊥_Σ(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

@@ -1,0 +1,3 @@
+discovery_id = "DISC-000083"
+title = "3-Way Verified Execution Equivalence (Reference Interpreter == QBE == Spike 0x7B)"
+status = "PROMOTED"

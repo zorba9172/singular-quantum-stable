@@ -1,0 +1,9 @@
+{
+  "discovery_id": "DISC-000179",
+  "owner": "MetaEverest Ltd. (metaeverest בע\"מ)",
+  "status": "PROMOTED",
+  "within_domain_verified": true,
+  "cross_domain_transfer_verified": true,
+  "ablation_verified": true,
+  "ulp_drift": 0.0
+}

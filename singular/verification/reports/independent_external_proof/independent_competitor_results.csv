@@ -1,0 +1,8 @@
+kernel,cone_elements,batch_reps,mean_us_per_call,bytes_per_elem,speedup_of_singular_vs_kernel
+clang_cpp23_o3_scalar_novec,16384,1000,36.9733,48,2.1150
+clang_cpp23_o3_autovec_2pass,16384,1000,22.1496,48,1.2670
+eigen3_arrayxd_2pass,16384,1000,26.2490,48,1.5015
+accelerate_vdsp_2pass,16384,1000,28.4894,48,1.6297
+cpp23_neon_intrinsics_2pass,16384,1000,24.5965,48,1.4070
+cpp23_neon_intrinsics_1pass_fused,16384,1000,28.7546,32,1.6448
+singular_arm64_neon_asm_1pass_fused,16384,1000,17.4819,32,1.0000

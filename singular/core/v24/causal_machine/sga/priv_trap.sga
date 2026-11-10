@@ -1,0 +1,43 @@
+; SINGULAR Ω v24 — priv_trap.sga
+; Privilege and reserved-encoding behaviour of Xomegacausal.
+;  1. U-mode with momegaen.U = 0: omega.dirty raises illegal-instruction (mcause 2), no state change.
+;  2. Handler sets momegaen.U = 1 and retries: the same instruction now commits.
+;  3. Reserved encodings trap even when enabled: funct3 = 5, prop with rs2 != 0, funct7 = 3.
+; Exit code (a0) is 0 when exactly four traps were taken.
+
+_start:
+    t0 ← &handler
+    csrw mtvec, t0
+    csrw momegaen, x0
+    csrw mstatus, x0        ; MPP = U
+    t0 ← &user
+    csrw mepc, t0
+    s11 ← 0
+    mret
+
+user:
+    s1 ← 9
+    a1 ← Δ⁺ s1, x0          ; traps once, then commits with rd = 1
+    a2 ← ✓ s1, x0           ; version is 1 and dirty -> 0
+    a3 ← ⟲ s1               ; clean -> rd = 1
+    t1 ← 1
+    a4 ← ✓ s1, t1           ; certificate (9, v1) valid -> 1
+    .word 0x0200507B        ; funct3 = 5 (reserved)      -> trap, skipped
+    .word 0x0210207B        ; omega.prop with rs2 = x1   -> trap, skipped
+    .word 0x0600107B        ; funct7 = 3 (not Ω causal)  -> trap, skipped
+    a0 ← s11 - 4
+    ↩
+
+handler:
+    s11 ← s11 + 1
+    csrr s9, mcause
+    csrr s8, mepc
+    s10 ← 1
+    ↻ retry if s11 = s10
+    s8 ← s8 + 4             ; skip the faulting reserved encoding
+    csrw mepc, s8
+    mret
+retry:
+    t2 ← 2                  ; momegaen.U = 1
+    csrw momegaen, t2
+    mret

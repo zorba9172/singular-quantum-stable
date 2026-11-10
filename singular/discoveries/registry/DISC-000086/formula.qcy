@@ -1,0 +1,13 @@
+// SINGULAR Ω v25.0 — 4-Way Hardware Instruction Equivalence (Ref == QBE == Spike == RTL 0x7B)
+§λ("discoveries")
+§ω("singular.v25.proof")
+§κ("DISC-000086-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[124, 174], W_0 : ℝ[174, 174], K_0 : ℝ[124, 174], δ_0 : Δℝ[62], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_ISA(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

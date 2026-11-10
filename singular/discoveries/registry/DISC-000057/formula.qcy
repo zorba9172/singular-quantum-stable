@@ -1,0 +1,13 @@
+// SINGULAR Ω v20.0 — Three-Limb Chained TwoSum Residual Expansion & Z[zeta_16] Overflow Guard
+§λ("discoveries")
+§ω("singular.v20.discovery")
+§κ("DISC-000057-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[54, 87], W_0 : ℝ[87, 87], K_0 : ℝ[54, 87], δ_0 : Δℝ[25], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_SARC(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

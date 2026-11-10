@@ -1,0 +1,13 @@
+// SINGULAR Ω v15.0 — sdb18_distributed_rag_knowledge_fusion_engine.qcy
+§λ("modules")
+§ω("singular.v15.singulardb")
+§κ("CY-SDB-18")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[92, 114], W_0 : ℝ[114, 114], K_0 : ℝ[92, 114], δ_0 : Δℝ[14], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_HNSW(Ψ_1, W_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

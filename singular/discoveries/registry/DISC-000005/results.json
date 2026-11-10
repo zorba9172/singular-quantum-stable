@@ -1,0 +1,8 @@
+{
+  "id": "DISC-000005",
+  "gate": "Q12",
+  "metrics": {
+    "nanotech_speedup_x": 4.25,
+    "vlsi_speedup_x": 3.666667
+  }
+}

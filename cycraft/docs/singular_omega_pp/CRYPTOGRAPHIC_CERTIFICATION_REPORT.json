@@ -1,0 +1,17 @@
+{
+  "gate_ids": ["P17", "P28", "P40"],
+  "hash_algorithm": "FIPS-180-4-SHA-256 (32 bytes / 64 hex chars, zero truncation)",
+  "signature_algorithm": "RFC-8032-Ed25519 (64 bytes / 128 hex chars via libsodium)",
+  "source_sha256": "bc7577c603a4db604ee75994da2c1061c3ae78e41b6e5fafe981006ec1e8e773",
+  "sir_omega_sha256": "5c7367fcb04952c78073791fa4003188b3445e483dbdebbadf27357fed3df4e1",
+  "assumptions_sha256": "6f4386c41f8f07082dbc4fcb1d087ea9e487e955cc9ad5c80a1f867038f3dbad",
+  "proofs_sha256": "1515e4203a6cd0c605bf08fed406c48cca16c6a3c030b10c61a4a47663d3c654",
+  "merkle_root_sha256": "5b9ed2b765cab4bb5115862f19bcb8b862f3e2de75e53a75e9a2abdaf6282ddb",
+  "ed25519_public_key_hex": "2f31763ae369353fba49a24284a3a4c8d64c47a183727e76493d1d91914bc616",
+  "ed25519_public_key_bytes": 32,
+  "ed25519_signature_hex": "dd3d805e71270756fcb5a92ff80ca47f6f61cb93133dc6df9139a64a7168d709052f8d5e0892c9e2cfbb9b256d334db4147f86a9ca6844d9efa595ba5ba47c00",
+  "ed25519_signature_bytes": 64,
+  "signature_verified": true,
+  "payload_1bit_tamper_rejected": true,
+  "signature_1bit_tamper_rejected": true
+}

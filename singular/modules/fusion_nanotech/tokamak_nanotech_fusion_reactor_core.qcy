@@ -1,0 +1,16 @@
+// SINGULAR Ω v14.0 — Stable & Secure Nanotechnological Nuclear-Fusion Reactor Core (`Tokamak MHD × Nanotech ACG`)
+// Couples Grad-Shafranov MHD safety factor q>2.0 + Counter-Diabatic Tearing Suppression (ℋ_CD) + 0-ULP Wall Heal (⟁_HEAL)
+§λ("modules")
+§ω("singular.v14.fusion_nanotech.reactor_core")
+§κ("CY-FUSION-NANOTECH-TOKAMAK-001")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[66, 132], B_0 : ℝ[132, 132], A_0 : ℝ[66, 132], Q_0 : ℤ[66, 132], δ_0 : Δℝ[35], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← ℋ_CD(Ψ_0, B_0)
+  A_1 ← ⟁_ACG(Ψ_1, A_0)
+  Q_1 ← ⨂_TM(A_1, Q_0)
+  Ψ_2 ← ⟁_HEAL(Q_1, B_0)
+  Ψ_3 ← ◈_H(Ψ_2, A_1) ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

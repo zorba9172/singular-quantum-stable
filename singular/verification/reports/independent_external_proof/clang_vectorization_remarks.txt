@@ -1,0 +1,48 @@
+/Volumes/Lenovo PS8S/workspace/Supercomputing/singular/core/v24/causal_machine/bench/standalone_external_competitor_benchmark.cpp:147:33: remark: vectorized loop (vectorization width: 2, interleaved count: 1) [-Rpass=loop-vectorize]
+  147 |     auto init_buffers = [&]() { for (size_t i = 0; i < K_CONE + 8; ++i) { s_buf[i] = std::sin(0.01 * static_cast<double>(i)); e_buf[i] = 0.0; out_buf[i] = 0.0; } };
+      |                                 ^
+/Volumes/Lenovo PS8S/workspace/Supercomputing/singular/core/v24/causal_machine/bench/standalone_external_competitor_benchmark.cpp:179:5: remark: vectorized loop (vectorization width: 4, interleaved count: 1) [-Rpass=loop-vectorize]
+  179 |     for (size_t u = 0; u < N_GRAPH; ++u) {
+      |     ^
+/Volumes/Lenovo PS8S/workspace/Supercomputing/singular/core/v24/causal_machine/bench/standalone_external_competitor_benchmark.cpp:185:5: remark: vectorized loop (vectorization width: 2, interleaved count: 1) [-Rpass=loop-vectorize]
+  185 |     for (size_t i = 0; i < N_GRAPH; ++i) base_state[i] = std::sin(0.001 * static_cast<double>(i));
+      |     ^
+/Volumes/Lenovo PS8S/workspace/Supercomputing/singular/core/v24/causal_machine/bench/standalone_external_competitor_benchmark.cpp:202:36: remark: vectorized loop (vectorization width: 16, interleaved count: 2) [-Rpass=loop-vectorize]
+  202 |             size_t active_cnt = 0; for (size_t i = 0; i < N_GRAPH; ++i) active_cnt += dirty_full[i];
+      |                                    ^
+/Volumes/Lenovo PS8S/workspace/Supercomputing/singular/core/v24/causal_machine/bench/standalone_external_competitor_benchmark.cpp:246:13: remark: interleaved loop (interleaved count: 2) [-Rpass=loop-vectorize]
+  246 |             for (size_t i = 0; i < CONE_SZ + 4; ++i) { st[bfs_q[i]] = cone_s[i]; err[bfs_q[i]] = cone_e[i]; }
+      |             ^
+/Volumes/Lenovo PS8S/workspace/Supercomputing/singular/core/v24/causal_machine/bench/standalone_external_competitor_benchmark.cpp:243:13: remark: interleaved loop (interleaved count: 2) [-Rpass=loop-vectorize]
+  243 |             for (size_t i = 0; i < CONE_SZ + 4; ++i) { uint32_t u = bfs_q[i]; if (do_retract) undo_log.emplace_back(u, st[u]); cone_s[i] = st[u]; cone_e[i] = err[u]; }
+      |             ^
+/Volumes/Lenovo PS8S/workspace/Supercomputing/singular/core/v24/causal_machine/bench/standalone_external_competitor_benchmark.cpp:315:5: remark: vectorized loop (vectorization width: 2, interleaved count: 1) [-Rpass=loop-vectorize]
+  315 |     for (size_t j = 0; j < N_PDE; ++j) {
+      |     ^
+/Volumes/Lenovo PS8S/workspace/Supercomputing/singular/core/v24/causal_machine/bench/standalone_external_competitor_benchmark.cpp:344:5: remark: interleaved loop (interleaved count: 4) [-Rpass=loop-vectorize]
+  344 |     for (int s = 0; s < 10000; ++s) { storm_fp64 += (s & 1) ? (-1e8 + 1e-7) : (+1e8 + 1e-7); era_i128_acc += (s & 1) ? -100000000LL : +100000000LL; }
+      |     ^
+/Volumes/Lenovo PS8S/workspace/Supercomputing/singular/core/v24/causal_machine/bench/standalone_external_competitor_benchmark.cpp:347:5: remark: interleaved loop (interleaved count: 4) [-Rpass=loop-vectorize]
+  347 |     for (int i = 0; i < 64; ++i) q_deltas[i] = (i & 1) ? -(1000000LL + i * 137) : (1000000LL + i * 137);
+      |     ^
+/Volumes/Lenovo PS8S/workspace/Supercomputing/singular/core/v24/causal_machine/bench/standalone_external_competitor_benchmark.cpp:147:33: remark: vectorized loop (vectorization width: 2, interleaved count: 1) [-Rpass=loop-vectorize]
+  147 |     auto init_buffers = [&]() { for (size_t i = 0; i < K_CONE + 8; ++i) { s_buf[i] = std::sin(0.01 * static_cast<double>(i)); e_buf[i] = 0.0; out_buf[i] = 0.0; } };
+      |                                 ^
+/Volumes/Lenovo PS8S/workspace/Supercomputing/singular/core/v24/causal_machine/bench/standalone_external_competitor_benchmark.cpp:59:5: remark: vectorized loop (vectorization width: 2, interleaved count: 2) [-Rpass=loop-vectorize]
+   59 |     for (size_t i = 0; i < total; ++i) {
+      |     ^
+/Volumes/Lenovo PS8S/workspace/Supercomputing/singular/core/v24/causal_machine/bench/standalone_external_competitor_benchmark.cpp:65:5: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]
+   65 |     for (size_t i = 0; i < n; ++i) {
+      |     ^
+/Volumes/Lenovo PS8S/workspace/Supercomputing/singular/core/v24/causal_machine/bench/standalone_external_competitor_benchmark.cpp:74:5: remark: vectorized loop (vectorization width: 2, interleaved count: 2) [-Rpass=loop-vectorize]
+   74 |     for (Eigen::Index i = 0; i < total; ++i) {
+      |     ^
+In file included from /Volumes/Lenovo PS8S/workspace/Supercomputing/singular/core/v24/causal_machine/bench/standalone_external_competitor_benchmark.cpp:9:
+In file included from /Users/moshemoran/.singularc-tools/vcpkg/installed/arm64-osx/include/Eigen/Dense:1:
+In file included from /Users/moshemoran/.singularc-tools/vcpkg/installed/arm64-osx/include/Eigen/Core:334:
+/Users/moshemoran/.singularc-tools/vcpkg/installed/arm64-osx/include/Eigen/src/Core/AssignEvaluator.h:417:5: remark: vectorized loop (vectorization width: 2, interleaved count: 1) [-Rpass=loop-vectorize]
+  417 |     for (Index index = start; index < end; ++index) kernel.assignCoeff(index);
+      |     ^
+/Volumes/Lenovo PS8S/workspace/Supercomputing/singular/core/v24/causal_machine/bench/standalone_external_competitor_benchmark.cpp:84:5: remark: vectorized loop (vectorization width: 2, interleaved count: 2) [-Rpass=loop-vectorize]
+   84 |     for (size_t i = 0; i < total; ++i) {
+      |     ^

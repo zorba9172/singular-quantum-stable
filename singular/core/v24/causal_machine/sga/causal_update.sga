@@ -1,0 +1,37 @@
+; SINGULAR Ω v24 — causal_update.sga
+; Register-level Singular Assembly. Runs on Spike (physical custom-3 instructions),
+; on the reference interpreter, and (via --emit-qbe) on ARM64 with emulated Ω ops.
+; Dependency graph: 42 -> 7 -> 19, 42 -> 5. Node 3 is unrelated.
+
+_start:
+    s1 ← 42                 ; source state id
+    s2 ← 7
+    s3 ← 19
+    s4 ← 5
+    s5 ← 3
+    a1 ← ⊙ s1, s2           ; track 42 -> 7      (rd = deps[42])
+    a1 ← ⊙ s2, s3           ; track 7 -> 19
+    a1 ← ⊙ s1, s4           ; track 42 -> 5
+    a2 ← ⊙ s1, s1           ; self dependency -> ERR_SELF_DEP
+
+    t0 ← 0
+    a3 ← Δ⁺ s1, t0          ; version[42]: 0 -> 1, dirty
+    a4 ← Δ⁺ s1, t0          ; stale expected version -> ERR_VERSION_MISMATCH
+    a5 ← ⇝ s1               ; closure from 42 = {7, 19, 5}; versions of 7, 19, 5 bump to 1
+    a6 ← ⇝ s5               ; node 3 is clean -> 0
+
+    t1 ← 1
+    a7 ← ✓ s3, t1           ; 19 is dirty -> 0 (must recompute)
+    s6 ← ⟲ s3               ; recomputed 19 -> clean, rd = version 1
+    s7 ← ✓ s3, t1           ; certificate (19, v1) now valid -> 1
+    s8 ← ✓ s5, x0           ; unrelated node 3 was never touched -> valid at v0 -> 1
+
+    t2 ← 64
+    s9 ← Δ⁺ t2, x0          ; id 64 >= entries -> ERR_INVALID_ID
+
+    ; checksum of observable results into s10; exit code 0
+    s10 ← a5 ^ s6
+    s10 ← s10 + s7
+    s10 ← s10 + s8
+    a0 ← 0
+    ↩

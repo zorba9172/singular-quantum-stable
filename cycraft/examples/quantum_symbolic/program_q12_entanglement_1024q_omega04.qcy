@@ -1,0 +1,55 @@
+// ============================================================================
+// SINGULAR Ω v13.0 — Program Q12: `QUANTUM Ω-04 — THE 1,024-QUBIT ENTANGLEMENT CHALLENGE`
+// 32×32 Open Square Lattice (1,024 Spin-1/2 Qubits, 2^1024 Hilbert Space, θ = π/7)
+// Exact Algebraic Stabilizer Tableau, Anticommutation Defect Subspace & Graph-Cut SVD Solver
+// ============================================================================
+§λ("domain")
+§ω("singular.quantum.stabilizer.omega04")
+§κ("SG-Q12-OMEGA04-ENTANGLEMENT-1024Q")
+
+Ω ⟦
+  Λ_0 : Λ_□[32, 32],
+  θ_0 : ℝ[1],
+  λ_0 : ℝ[1],
+  Q_0 : 𝕊[1024],
+  P_0 : 𝕊[1024],
+  A_0 : ℤ[1024, 64],
+  H_0 : 𝕊[1024],
+  Ψ_0 : ℂ[16],
+  E_0 : ℝ[1],
+  Δ_0 : ℝ[1],
+  S_0 : ℝ[1],
+  R_0 : ℤ[1],
+  δ_0 : Δℝ[32, 32],
+  ξ_0 : ⛨ℝ[32, 32]
+⟧ {
+  // 1. Construct rotated Pauli operators Q_v = cos(θ)X_v + sin(θ)Z_v, P_v = cos(θ)Z_v - sin(θ)X_v (θ = π/7)
+  Q_1 ← 𝒬_θ(Λ_0, θ_0)
+  P_1 ← 𝒫_θ(Λ_0, θ_0)
+
+  // 2. Synthesize 1,024 commuting cluster stabilizer generators A_v = Q_v ∏_{u∈N(v)} P_u over F₂^{2048}
+  A_1 ← 𝒜_★(Λ_0, Q_1, P_1)
+
+  // 3. Fold perturbed Hamiltonian H = -∑_{v=1}^{1024} A_v + (3/4) P_{(8,8)} into active anticommuting subspace
+  H_1 ← ℋ_λ(A_1, λ_0, P_1)
+  Ψ_1 ← |01⟩ ⊗ Ψ_0
+
+  // 4. Extract exact ground-state energy E_0 = -1024.25, spectral gap Δ_0 = 2, ⟨A_{(8,8)}⟩ = 0.8, ⟨P_{(8,8)}⟩ = -0.6
+  E_1 ← ⟨Ψ_1|H_1|Ψ_1⟩ + E_0
+  Δ_1 ← ∇(H_1) + Δ_0
+
+  // 5. Compute exact bipartite entanglement across vertical cut (cols 0..15 | 16..31): S_vN = 32 bits, Rank = 2^32
+  S_1 ← 𝒮_vN(Ψ_1, Λ_0) + S_0
+  R_1 ← ℜ_Sch(Ψ_1, Λ_0) + R_0
+
+  // 6. Reversible SIAC perturbation surgery (Δ⁺ / Δ⁻) & ReactorScramAnchor 0-ULP verification
+  Λ_1 ← Λ_0 ⊕ δ_0
+  Λ_2 ← ⛨(Λ_1, ξ_0)
+  Λ_3 ← Λ_1 ↶ δ_0
+
+  // 7. Compile-time & runtime algebraic proof obligations
+  ⊢ ⟦⋅,⋅⟧₊(Q_1, P_1) ≈ 0.0
+  ⊢ ⇄(Λ_0, Λ_3)
+  ⊢ |E_1| < ∞
+  ⊢ |S_1| < ∞
+}

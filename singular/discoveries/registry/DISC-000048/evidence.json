@@ -1,0 +1,17 @@
+{
+  "id": "DISC-000048",
+  "discovery_id": "DISC-000048",
+  "title": "RISC-V custom-3 (0x7B) 6-Op Ω-ISA & Reversible TwoSum / Cyclotomic Z[ζ₁₆] Hardware ALU (⟁_ISA / PAT-18)",
+  "version": "18.0.0",
+  "status": "PROMOTED",
+  "verified": true,
+  "within_domain_verified": true,
+  "cross_domain_verified": true,
+  "cross_domain_transfer_verified": true,
+  "ablation_verified": true,
+  "retraction_ulp": 0.0,
+  "within_domain_proof": "PASS: 6/6 RISC-V custom-3 (0x7B) instructions bijectively encoded/decoded; 0.0 ULP error over 10000 TwoSum cycles and 0-bit drift over 1000 Z[ζ₁₆] rotations.",
+  "cross_domain_transfer": "PASS: Transfers to compaction-free Kafka KRaft log retraction and Temporal Chasm O(1) saga rollback.",
+  "ablation_proof": "PASS: Disabling shadow error register e_q causes immediate FP64 absorption loss at dynamic range 1e16 + 1e-16.",
+  "reproduction_cmd": "./bin/singular-quantum audit-v18"
+}

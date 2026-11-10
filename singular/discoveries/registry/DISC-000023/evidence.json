@@ -1,0 +1,13 @@
+{
+  "id": "DISC-000023",
+  "title": "Compiler-Enforced \u03a3_X Null-Space Orthogonal Weight Surgery (\u22a5_\u03a3)",
+  "mechanism": "\u03a9-SigmaNullSpaceSurgery",
+  "domain_primary": "Continual Learning & Multi-Model Weight Synthesis (30-Model Pantheon)",
+  "domain_transfer": "Zero-Forgetting Domain Adaptation & Reversible SIAC Weight Arcs",
+  "verified": true,
+  "rel_err": 0.0,
+  "within_domain_speedup": 60.95,
+  "cross_domain_transfer_speedup": 18.4,
+  "ablation_speedup_without_mechanism": 1.0,
+  "quality_improvement_summary": "Catastrophic Forgetting: 75.00% (Naive LoRA) -> 0.00% (\u22a5_\u03a3 Exact Null-Space); ||\u03a3_X \u0394W_\u22a5||_F < 1e-14"
+}

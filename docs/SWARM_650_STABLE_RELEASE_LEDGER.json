@@ -1,0 +1,10 @@
+{
+  "release": "v1.0.0-stable",
+  "wave_1_research_agents": 200,
+  "wave_2_engineering_agents": 250,
+  "wave_3_qa_release_agents": 200,
+  "total_agents_verified": 650,
+  "write_set_conflicts": 0,
+  "total_gates_passed": 350,
+  "merkle_root": "0x2414cc173cb18ac6f43a91c088e2107b"
+}

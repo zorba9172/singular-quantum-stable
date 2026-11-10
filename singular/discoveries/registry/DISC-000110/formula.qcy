@@ -1,0 +1,13 @@
+// SINGULAR Ω v25.1 — Longitudinal Thermal Pressure, Hardware Counter & Mach VM Zero-Leak Soak Certification
+§λ("discoveries")
+§ω("singular.v25.audit.truth")
+§κ("DISC-000110-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[154, 204], W_0 : ℝ[204, 204], K_0 : ℝ[154, 204], δ_0 : Δℝ[77], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_HEAL(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

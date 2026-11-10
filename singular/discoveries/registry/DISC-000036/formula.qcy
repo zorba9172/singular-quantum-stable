@@ -1,0 +1,13 @@
+// SINGULAR Ω v15.0 — verifiable_grpo_sheaf_cohomology_prm_test_time_scaling_formula.qcy
+§λ("discoveries")
+§ω("singular.v15.discovery")
+§κ("DISC-000036-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[86, 47], W_0 : ℝ[47, 47], K_0 : ℝ[86, 47], δ_0 : Δℝ[9], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ◈_H(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

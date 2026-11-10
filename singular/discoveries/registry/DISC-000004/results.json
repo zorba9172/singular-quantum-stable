@@ -1,0 +1,8 @@
+{
+  "id": "DISC-000004",
+  "gate": "Q11",
+  "metrics": {
+    "healed_rmsd_nm": 2.533388e-16,
+    "swarm_coherence_r": 1.0
+  }
+}

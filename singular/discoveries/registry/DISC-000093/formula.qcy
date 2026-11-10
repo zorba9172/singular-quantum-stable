@@ -1,0 +1,13 @@
+// SINGULAR Ω v25.0 — Harmonic Hodge-Helmholtz Singular Arc Decomposition (d0_phi + d1*_psi + H1)
+§λ("discoveries")
+§ω("singular.v25.sarc.siac")
+§κ("DISC-000093-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[136, 186], W_0 : ℝ[186, 186], K_0 : ℝ[136, 186], δ_0 : Δℝ[68], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ◈_H(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

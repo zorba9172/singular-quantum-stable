@@ -1,0 +1,21 @@
+{
+  "discovery_id": "DISC-000038",
+  "title": "Core .qcy Language Self-Acceleration via Singular Arcs × SIAC",
+  "status": "VERIFIED_EMPIRICALLY",
+  "within_domain_proof": {
+    "cold_purity_scans_per_line_before": 168,
+    "cold_purity_scans_per_line_after": 12,
+    "warm_siac_ast_cir_cache_hit_ns": 22.5,
+    "incremental_line_arc_splice_ulp": 0,
+    "stage1_eq_stage2_eq_stage3": true
+  },
+  "cross_domain_transfer_proof": {
+    "workspace_projects_enforced": 14,
+    "total_qcy_modules_accelerated": 1000,
+    "retraction_ulp_drift": 0
+  },
+  "ablation_proof": {
+    "bypass_siac_cache_slowdown_factor": 42.8,
+    "unfused_3pass_vs_fused_ratio": 3.0
+  }
+}

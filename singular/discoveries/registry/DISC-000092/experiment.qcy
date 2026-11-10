@@ -1,0 +1,13 @@
+// SINGULAR Ω v25.0 — Fused Incremental-Decremental Singular Arcs (Delta+/Delta-) x 5-Tap B-Spline SIAC ASM
+§λ("discoveries")
+§ω("singular.v25.sarc.siac.exp")
+§κ("DISC-000092-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[135, 185], W_0 : ℝ[185, 185], K_0 : ℝ[135, 185], δ_0 : Δℝ[67], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φτ(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⊛_θ(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

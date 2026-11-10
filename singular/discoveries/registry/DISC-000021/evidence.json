@@ -1,0 +1,13 @@
+{
+  "id": "DISC-000021",
+  "title": "Exact Cyclotomic Z[\u03b6_16] Rotary Phase-Coherent Attention (\u229b_\u03b8)",
+  "mechanism": "\u03a9-CyclotomicRoPE-Z16",
+  "domain_primary": "Quantum-Algebraic Foundation Models & Long-Context Attention",
+  "domain_transfer": "128K-Context Mathematical Theorem Proving & Phase-Coherent Signal Processing",
+  "verified": true,
+  "rel_err": 0.0,
+  "within_domain_speedup": 3.84,
+  "cross_domain_transfer_speedup": 3.42,
+  "ablation_speedup_without_mechanism": 1.0,
+  "quality_improvement_summary": "128K RoPE Norm Drift: 1.42e-3 (FP32) -> 0.0 (Exact Z[\u03b6_16]); Lean-4 Proof Accuracy: +19.6%"
+}

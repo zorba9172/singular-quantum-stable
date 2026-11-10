@@ -1,0 +1,20 @@
+# SINGULAR Ω v6.0 — Scientific Freedom Zone Manifest
+[scientific_experiment]
+id = "EXP-2026-001"
+purpose = "compare novel causal, quantum-inspired, and cryptographic solvers"
+owner = "research"
+status = "experimental"
+zone = "discoveries/"
+
+[duplication]
+allow_competing_implementations = true
+reason = "controlled ablation study and baseline comparison"
+
+[safety]
+sandbox_required = true
+production_import = false
+evidence_required = true
+
+[promotion]
+independent_verification = true
+architecture_review = true

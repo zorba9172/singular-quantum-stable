@@ -1,0 +1,13 @@
+// SINGULAR Ω v33.0 — OTZAR Cloud Telemetry, RC-008 Guard & 45-Patent Sovereign Seal
+§λ("modules")
+§ω("singular.v33.cloud.auto")
+§κ("DISC-000125-M6")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[424, 476], W_0 : ℝ[476, 476], K_0 : ℝ[424, 476], δ_0 : Δℝ[212], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_OTZ(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

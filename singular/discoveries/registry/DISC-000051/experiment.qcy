@@ -1,0 +1,13 @@
+// SINGULAR Ω v14.0 — ARCH-01 Atomic Causal Graph Multi-Target Lowering Across 20 Domains
+§λ("discoveries")
+§ω("singular.v19.discovery")
+§κ("DISC-000051-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[40, 73], W_0 : ℝ[73, 73], K_0 : ℝ[40, 73], δ_0 : Δℝ[19], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_ACG(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

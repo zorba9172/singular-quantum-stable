@@ -1,0 +1,13 @@
+// SINGULAR Ω v24.0 — Canonical .sga Symbolic Assembly & 131,072-Case Bijective singular-as/objdump
+§λ("discoveries")
+§ω("singular.v24.arch")
+§κ("DISC-000082-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[114, 164], W_0 : ℝ[164, 164], K_0 : ℝ[114, 164], δ_0 : Δℝ[57], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_EMIT(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

@@ -1,0 +1,3 @@
+discovery_id = "DISC-000074"
+title = "Open-Source AsmJit AArch64 Machine-Code Emitter (libasmjit_singular.dylib)"
+status = "PROMOTED"

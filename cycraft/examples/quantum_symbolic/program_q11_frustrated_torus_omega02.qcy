@@ -1,0 +1,40 @@
+// ============================================================================
+// SINGULAR Ω v11.0 — Program Q11: `Quantum Ω-02 — The Frustrated Quantum Lattice`
+// 36-Qubit (6×6 Periodic Torus, 2^36 = 68,719,476,736 basis states) Exact Cyclotomic
+// Tensor-Network & Transfer-Matrix Solver (`⨂_TM` over ℤ[ζ₁₆]/(ζ₁₆⁸+1))
+// ============================================================================
+§λ("domain")
+§ω("singular.quantum.cyclotomic.omega02")
+§κ("SG-Q11-OMEGA02-TORUS-36Q")
+
+Ω ⟦
+  Λ_0 : 𝕋[6, 6],
+  J_0 : ℝ[3, 6],
+  h_0 : ℝ[6, 6],
+  ψ_0 : ℂ[36],
+  δ_0 : Δℝ[6, 6],
+  S_0 : ⛨ℝ[6, 6],
+  Α_0 : ℤ[36]
+⟧ {
+  // 1. Initialize uniform superposition ket |+⟩^⊗36 on 6×6 periodic torus Λ_0
+  ψ_1 ← |010101⟩ ⊗ ψ_0
+
+  // 2. Construct frustrated diagonal Ising Hamiltonian E(z) with horizontal, vertical, diagonal & local field h_{r,c}
+  ℋ_0 ← ℋ_ℤ(Λ_0, J_0, h_0)
+
+  // 3. Construct exact cyclotomic unitary U = exp(iπH/8) over ℤ[ζ₁₆]/(ζ₁₆⁸+1)
+  𝒰_0 ← 𝒰_π8(ℋ_0)
+
+  // 4. Contract 6×6 periodic transfer matrix Tr(T_0 T_1 T_2 T_3 T_4 T_5) without 2^36 state enumeration
+  Α_1 ← ⟨ψ_1|𝒰_0|ψ_1⟩ ⨂_TM Λ_0 + Α_0
+
+  // 5. Singular Arcs × SIAC (Δ⁺ / Δ⁻) defect surgery & 0-ULP reversible anchor on torus field h_0
+  h_1 ← h_0 ⊕ δ_0
+  h_2 ← ⛨(h_1, S_0)
+  h_3 ← h_1 ↶ δ_0
+
+  // 6. Compile-time & runtime cryptographic proof obligations
+  ⊢ Α_1 ≈ ⟨ψ_1|𝒰_0|ψ_1⟩
+  ⊢ ⇄(h_0, h_3)
+  ⊢ |Α_1| < ∞
+}

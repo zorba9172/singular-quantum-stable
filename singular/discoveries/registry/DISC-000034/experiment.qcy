@@ -1,0 +1,13 @@
+// SINGULAR Ω v15.0 — cyclotomic_hnsw_xxh3_lz4_sqlite3_singulardb_hybrid_index_experiment.qcy
+§λ("discoveries")
+§ω("singular.v15.discovery")
+§κ("DISC-000034-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[80, 110], W_0 : ℝ[110, 110], K_0 : ℝ[80, 110], δ_0 : Δℝ[21], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_HNSW(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

@@ -1,0 +1,13 @@
+// SINGULAR Ω v22.0 — Project-Wide .qcy to Native ARM64 .s & Symbolic .qasm Hardware-Routing Compiler
+§λ("discoveries")
+§ω("singular.v22.discovery")
+§κ("DISC-000066-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[76, 119], W_0 : ℝ[119, 119], K_0 : ℝ[76, 119], δ_0 : Δℝ[37], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_ISA(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

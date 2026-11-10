@@ -1,0 +1,11 @@
+{
+  "id": "DISC-000018",
+  "title": "Verified Control-Barrier MPC & Interventional Causal Robotics Compiler",
+  "domain_primary": "Control Theory & Probabilistic Robotics",
+  "domain_transfer": "Compiler Loop-Pacing & QoS Latency Control",
+  "verified": true,
+  "rel_err": 0.0,
+  "within_domain_speedup": 18.9,
+  "cross_domain_transfer_speedup": 14.6,
+  "ablation_speedup_without_mechanism": 1.0
+}

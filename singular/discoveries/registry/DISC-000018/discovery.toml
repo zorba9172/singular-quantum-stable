@@ -1,0 +1,6 @@
+id = "DISC-000018"
+title = "Verified Control-Barrier MPC & Interventional Causal Robotics Compiler"
+domain_primary = "Control Theory & Probabilistic Robotics"
+domain_transfer = "Compiler Loop-Pacing & QoS Latency Control"
+status = "VALIDATED_AND_PROMOTED"
+author = "singular.quantum.research"

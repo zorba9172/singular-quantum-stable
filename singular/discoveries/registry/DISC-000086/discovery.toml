@@ -1,0 +1,3 @@
+discovery_id = "DISC-000086"
+title = "4-Way Hardware Instruction Equivalence (Ref == QBE == Spike == RTL 0x7B)"
+status = "PROMOTED"

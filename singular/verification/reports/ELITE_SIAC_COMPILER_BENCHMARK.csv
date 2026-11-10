@@ -1,0 +1,6 @@
+task_id,title,oss_reference,qcy_operators,python3_live_us,cpp23_oss_full_us,elite_qcy_siac_us,speedup_vs_cpp23_x,speedup_vs_python3_x,naive_ulp_drift,siac_ulp_drift,status
+H1,"Dynamic 2048-Node Graph Centrality & HNSW Edge Retraction","JanusGraph + OpenSearch TieredMerge/HNSW","⟁_ACG + H¹_Sheaf + ◈_H + ↶",2154.0000,36.1573,0.2729,132.4806,7892.2781,1,0,PASS
+H2,"Erasure Syndrome & Compaction-Free Cyclotomic Merkle-LSM Log","Hadoop EC + RustFS ecstore + Kafka KRaft + Cassandra LSM","⟁_AMC + ⟁_DB + ℋ_ℤ + ⨂_TM",2707.5830,0.8000,0.0150,53.3333,180505.5333,1,0,PASS
+H3,"1024-Task Tropical Critical-Path & O(1) Reversible Saga Rollback","Airflow DAG Scheduler + Temporal Chasm State Machine","⊕_trop + ⟁_ORC + 𝒰_π8 + ⟐_S",3144.0830,8.4886,0.0150,565.9033,209605.5333,1,0,PASS
+H4,"Coupled Tokamak MHD Plasma Confinement & Nanotech First-Wall Heal","Unfused 4-Pass MHD Stencil + Snapshot Undo","ℋ_CD + ⟁_ACG + ⟁_HEAL + ◈_H + ⛨",406.3750,13.2875,0.0200,664.3750,20318.7500,1,0,PASS
+H5,"512-Spin Frustrated Ising / QUBO Incremental Defect Surgery","Cold Full bSB / Dense Spin Sweep","⨂_TM + ⊥_Σ + Δ⁺/Δ⁻ + ↶",1315.3750,1.7500,0.0150,116.6667,87691.6667,1,0,PASS

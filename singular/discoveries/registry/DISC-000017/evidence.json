@@ -1,0 +1,11 @@
+{
+  "id": "DISC-000017",
+  "title": "Bio-Inspired Lyapunov Self-Healing Execution & Mycelial Swarm Consensus",
+  "domain_primary": "Self-Healing Systems & Molecular Swarms",
+  "domain_transfer": "Byzantine Fault-Tolerant Distributed Runtime",
+  "verified": true,
+  "rel_err": 0.0,
+  "within_domain_speedup": 31.2,
+  "cross_domain_transfer_speedup": 22.8,
+  "ablation_speedup_without_mechanism": 1.0
+}

@@ -1,0 +1,35 @@
+# SINGULAR Ω v6.0 — Canonical Authoritative Constitution (Level 1 Authority)
+[constitution]
+id = "SINGULAR-OMEGA-CONSTITUTION-V6"
+version = 6
+authority_level = 1
+hierarchy = ["Constitution", "ArchitectureContracts", "AcceptedDecisions", "Specifications", "Evidence", "ResearchNotes"]
+
+[[rules]]
+id = "SG-ARCH-400"
+subject = "source_file"
+constraint = "max_physical_lines"
+value = 400
+severity = "error"
+authority = "constitution"
+version = 6
+exceptions = ["signed_scientific_exemption"]
+
+[[rules]]
+id = "SG-DOC-201"
+subject = "authoritative_policy"
+constraint = "zero_unresolved_contradictions"
+value = 0
+severity = "error"
+authority = "constitution"
+version = 6
+
+[[rules]]
+id = "SG-DUP-101"
+subject = "production_module"
+constraint = "forbid_exact_and_structural_duplication"
+value = true
+severity = "error"
+authority = "constitution"
+version = 6
+exceptions = ["SEC-CT-001", "EXP-2026-001"]

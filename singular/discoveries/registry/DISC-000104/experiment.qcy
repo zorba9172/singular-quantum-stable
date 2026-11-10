@@ -1,0 +1,13 @@
+// SINGULAR Ω v30.0 — Angular Spectrum (532nm) Holographic Scene Compiler with Incremental SIAC Cones
+§λ("discoveries")
+§ω("singular.v30.neural.vector.genesis.exp")
+§κ("DISC-000104-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[325, 375], W_0 : ℝ[375, 375], K_0 : ℝ[325, 375], δ_0 : Δℝ[162], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φτ(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_PBR(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

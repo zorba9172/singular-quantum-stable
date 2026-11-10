@@ -1,0 +1,13 @@
+// SINGULAR Ω v21.0 — Tokamak H-Mode Edge Transport Barrier & RMP Counterdiabatic AI Reactor
+§λ("discoveries")
+§ω("singular.v21.discovery")
+§κ("DISC-000064-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[68, 107], W_0 : ℝ[107, 107], K_0 : ℝ[68, 107], δ_0 : Δℝ[33], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_FUS(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

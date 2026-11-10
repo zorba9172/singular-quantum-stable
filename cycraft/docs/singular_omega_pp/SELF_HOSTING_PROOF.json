@@ -1,0 +1,19 @@
+{
+  "gate_ids": ["P05", "P42"],
+  "stage1_ssa_sha256": "cfc2cf1d9d1df13221e8dbf8706959edc577988a8340e212d38f235ee904a7b7",
+  "stage2_ssa_sha256": "cfc2cf1d9d1df13221e8dbf8706959edc577988a8340e212d38f235ee904a7b7",
+  "stage3_ssa_sha256": "cfc2cf1d9d1df13221e8dbf8706959edc577988a8340e212d38f235ee904a7b7",
+  "stage1_arm64_sha256": "7d8673b8288335536f8b8f1718f9500eb30440f86f63e02e98308b5df8574b10",
+  "stage2_arm64_sha256": "7d8673b8288335536f8b8f1718f9500eb30440f86f63e02e98308b5df8574b10",
+  "stage3_arm64_sha256": "7d8673b8288335536f8b8f1718f9500eb30440f86f63e02e98308b5df8574b10",
+  "cycraft_binary_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stage1_eq_stage2_eq_stage3": true,
+  "self_hosted_cy_modules_count": 100,
+  "cpp20_bootstrap_headers_count": 23,
+  "self_hosted_module_ratio": 0.8130,
+  "cli_ownership_map": {
+    "./bin/cycraft": "Canonical CYCRAFT Ω+ (.cy) Compiler, 6-Dialect QBE/ARM64 Backend & Workspace Enforcer",
+    "./bin/singularc": "Canonical SingularC++ Ω GENESIS (.sgc) Compiler, VCF Engine & Constitutional Doctor",
+    "./bin/singular": "Unified Polyglot Runtime & Chaos Verification Dispatcher"
+  }
+}

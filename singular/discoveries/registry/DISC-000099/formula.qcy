@@ -1,0 +1,13 @@
+// SINGULAR Ω v26.0 — Incremental-Decremental Singular Arc BVH Refit (Delta+/Delta-) x 5-Tap Temporal SIAC
+§λ("discoveries")
+§ω("singular.v26.cinema.nanotech")
+§κ("DISC-000099-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[150, 200], W_0 : ℝ[200, 200], K_0 : ℝ[150, 200], δ_0 : Δℝ[75], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_SARC(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

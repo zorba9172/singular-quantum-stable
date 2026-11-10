@@ -1,0 +1,15 @@
+The benchmark is a labeled synthetic microbenchmark, not a real model, renderer,
+quantum simulation, molecular system or distributed agent workload.
+C++ modes are interleaved with rotated order within each process. Rust modes are
+interleaved separately; language processes were not interleaved across a controlled
+idle host. Other work was active. All samples, including cold/noisy ones, are retained.
+Reported p50/p95 use sample quantiles, not fabricated multipliers. Setup is separate;
+update times include event generation and the respective runtime update machinery.
+C++ uses a memory barrier and Rust black_box to retain per-event work. Baselines check
+all final arrays against the same mathematical answer. They are specialized kernels,
+whereas the .qcy path retains dynamic graph checks, assertions and undo state; this
+comparison is useful but does not isolate language overhead or establish superiority.
+The benchmark does NOT compare native QCY steady-state update kernels, compiler speed,
+JIT end-to-end latency, arbitrary IEEE-754 corner cases, memory RSS or quantum advantage.
+Only one update density and one transform are measured. No measured crossover,
+cross-domain transfer or workload-distribution generalization is claimed.

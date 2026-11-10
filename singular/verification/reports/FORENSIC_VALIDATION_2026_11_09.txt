@@ -1,0 +1,77 @@
+Forensic language stabilization — observed command results, 2026-11-09
+
+Initial baseline reproduction:
+  bin/singular-quantum verify /tmp/singular-forensic-20261109/overflow.qcy
+  exit=134; libc++abi: terminating due to uncaught exception of type std::out_of_range: stoull: out of range
+
+First patched build:
+  SingularQuantum/./build.sh: exit=0; Build succeeded in 62309 ms.
+  Link warnings: libmlx/libjaccl built for macOS 26.2, target macOS 26.0.
+
+Focused CLI validation after first patched build:
+  overflow dimension: exit=1, CY-RC-005-SHAPE-MISMATCH, Line 9.
+  fractional dimension 16.5: exit=1, CY-RC-005-SHAPE-MISMATCH.
+  negative dimension -16: exit=1, CY-RC-005-SHAPE-MISMATCH.
+  zero dimension: exit=1, CY-RC-005-SHAPE-MISMATCH.
+  empty dimension 16,,64: exit=1, CY-RC-005-SHAPE-MISMATCH.
+  existing program_a_thermoelastic_arc.qcy: exit=0.
+  No test suite or test dependency was added; temporary source mutations were used as CLI probes.
+
+Concurrent build rejection through Supercomputing/build.sh:
+  exit=75; Build unavailable: lock already exists ... no lock was removed.
+  lock_preserved=yes.
+
+Existing verification commands:
+  verify-all: exit=1; Total Combined Gates : 249 / 254 PASS | Verdict: FAIL.
+  Failed IDs: V19-06, V26-01, V26-03, V26-04, V26-05.
+  V19-06 output: SQ_Qcy=34/33, SC_Qcy=34/33; source requires exactly 33.
+  V26 output: Tris=0, WAV=0KB, Atoms=20/21; BVH gate also fails.
+  No pre-change full-suite run was captured, so these are not proven baseline failures.
+  They remain unresolved; no gate was disabled or changed to manufacture success.
+  enforce . (SingularQuantum): exit=0; Compiled=599, Errors=0, PASS.
+  enforce ../Supercomputing: exit=0; Compiled=300, Errors=0, PASS.
+  enforce-workspace .: exit=0; Projects=15/15, Disk .qcy=1535, Errors=0, PASS.
+  audit-v17: exit=0; six reported gates PASS.
+  audit-v18: exit=0; six reported gates PASS.
+  deep-read: exit=0; CLI dispatches the v24 audit and reports 12/12 PASS.
+  These are internal command results, not independent scientific certification.
+  Some audit commands emit/overwrite their standard reports as a side effect.
+
+Trace semantic probe:
+  program_a with activation changed from phi-plus to phi-tau: exit=0.
+  Both traces: Accum=27.972014 vs Ref=27.972014, max_diff=0.000000e+00.
+  Together with the source inspection this exposes a generic trace, not general program execution.
+
+Concurrent workspace changes:
+  Other work changed build.sh and the binary during this audit.
+  Initial synchronized binary SHA-256:
+    bc76e6b25605375efcaf4327c31f74841836aaa60b7c3c7ffb8d16e10fc0c12b
+  Later synchronized binary SHA-256 before final build:
+    1b3772953caaa58641517ab199040dbc44bda498179765522d09859b675aefca
+  The overflowing-input probe still returned the corrected diagnostic on that later binary.
+  Intermediate wrapper invocation encountered a changing script, then an empty-array Bash nounset error.
+  The empty PCORE_RUN prefix was removed while preserving the external change to balanced scheduling.
+  Final build and current-binary checks follow below.
+
+Final compilation/install outcome:
+  The final build invocation returned 127 after clang/link completed:
+    build.sh: line 154: -o: command not found
+  build.sh's modification time changed during execution; the current file passes bash -n.
+  Do not describe this final wrapper invocation as a successful end-to-end build.
+  Its output /tmp/singular_nvme_build_cache/cycraft.tmp.98719 was verified as Mach-O arm64.
+  Direct execution: valid existing program exit=0; overflowing dimension exit=1 with diagnostic.
+  The artifact was stripped and installed using the existing atomic_install_signed helper,
+  copied to a temporary shell file for this operation. No successful-build cache stamp was forged.
+  Installed binaries in both projects have SHA-256:
+    b9829c880d9876062a48ff8e617561089acb616ad8dee876779384b3d4f36eaa
+  Installed Supercomputing binary: valid program exit=0; overflow exit=1.
+  bash -n on both current build scripts: exit=0.
+  Full verify-all was not repeated on this final artifact; the earlier 249/254 result
+  must not be presented as full validation of all concurrent source changes.
+
+Final status:
+  Parser overflow and malformed dimensions: focused runtime verification passed.
+  Lock refusal and distribution delegation: verified; no second build implementation remains.
+  Initial full build succeeded; final compiler artifact works, final wrapper run failed as above.
+  Overall language stability and independent scientific advantage: NOT ESTABLISHED.
+  No external quantum-library benchmark or scientific breakthrough was implemented in this change.

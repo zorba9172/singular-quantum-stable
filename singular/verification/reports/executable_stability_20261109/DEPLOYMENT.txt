@@ -1,0 +1,53 @@
+Validated executable profile deployment — 2026-11-09
+
+Frozen source worktree commit:
+  4aead9171e15a5786af7109bc77c40df6e87d552
+Snapshot baseline commit:
+  88c7e6621d3a23f1964b5d7ec34e183448358f7f
+These are local snapshot commits, not fabricated upstream release tags.
+
+Installed source/toolchain manifest SHA-256:
+  19e0de7819b5e7dcbc1c5d337caa4bff3dfd486dbb5b994a9e63872cd42388f5
+Installed binary SHA-256 (both projects):
+  f003bb8ef30e8c3ce1793f212c507a7a80c604c867a206608b9fbfbde1fd94c3
+
+Entrypoints:
+  /Volumes/Lenovo PS8S/workspace/SingularQuantum/bin/singular-quantum
+  /Volumes/Lenovo PS8S/workspace/Supercomputing/bin/singular-quantum
+Both point to their local singular/workspace/releases/qcy-executable-<source hash>/bin/singular-quantum.
+The immutable authoritative copy also exists outside the concurrently edited workspace:
+  /Users/moshemoran/.codex/visualizations/2026/11/09/01a1c218-b360-7a82-b96f-7221390dfa07/singular-stability/source/singular/workspace/releases/qcy-executable-19e0de7819b5e7dcbc1c5d337caa4bff3dfd486dbb5b994a9e63872cd42388f5
+
+Observed validation:
+  Frozen build: exit=0.
+  Rebuild of identical source/toolchain: exit=0; binary cmp succeeded; existing release retained.
+  Pipeline invoked through Supercomputing/build.sh against live SingularQuantum: exit=0,
+  temporarily published source/toolchain hash 3e379355b890a65b78774319b15ac523fd3de67d231293521b56761701dcd765.
+  That live release and earlier workspace copies were subsequently removed by external activity,
+  and the live SingularQuantum binary was replaced. The authoritative frozen release remained intact.
+  Workspace copies and entrypoint links were restored from the authoritative frozen artifact.
+  SHA-256 verification of all installed sources and the binary succeeded after restoration.
+  Installed --version and matrix program: successful in both projects.
+  verify-all: arithmetic and transactional assertion rollback smoke passed.
+  release validation: VM/native/JIT outputs identical; known independent matrix answers matched;
+  seven invalid-input/error cases rejected; full/incremental/undo outputs matched.
+  ASan+UBSan invariants: 129 deterministic states, 903 node comparisons; no reported sanitizer error.
+
+Compatibility failures were retained, not converted to PASS:
+  Frozen historical examples: 24/24 rejected by the limited executable profile.
+  Observed live Supercomputing project enforcement: 311 of 315 .qcy files rejected.
+  Observed live modules enforcement: 87 of 88 rejected.
+  Whole-project counts refer to the state when scanned, not a frozen whole-workspace census.
+  deep-read: exits 1 explicitly; the former audit alias is not represented as semantic verification.
+
+Legacy source was preserved as build-legacy.sh and cycraft/src/cycraft_legacy_main.cpp.
+Concurrent changes to the previous entrypoint were preserved in that legacy copy, not discarded.
+The old binary was retained as singular-quantum-legacy-unverified. Its reports/version claims
+are NOT evidence for this release. Historical report directories carry EVIDENCE_STATUS.json.
+
+Acceptance:
+  Executable-profile checks: verified in the recorded environment.
+  General language completeness/stability: NOT CERTIFIED.
+  Backward compatibility with the historical scientific library: NOT ACHIEVED.
+  Cross-language superiority or scientific breakthrough: NOT DEMONSTRATED.
+  Quantum-inspired algorithmic advantage, distributed transport and patentability: NOT ESTABLISHED.

@@ -1,0 +1,13 @@
+// SINGULAR Ω v25.0 — 25-Patent Singular Arc x SIAC Breakthrough Portfolio & 5-Pillar AI Singularity
+§λ("discoveries")
+§ω("singular.v25.sarc.siac.exp")
+§κ("DISC-000095-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[141, 191], W_0 : ℝ[191, 191], K_0 : ℝ[141, 191], δ_0 : Δℝ[70], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φτ(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_SARC(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

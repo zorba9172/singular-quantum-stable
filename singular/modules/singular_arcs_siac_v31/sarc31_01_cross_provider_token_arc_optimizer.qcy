@@ -1,0 +1,13 @@
+// SINGULAR Ω v31.0 — Cross-Provider AST Causal-Cone Token-Saving Engine (Omega-TokenArc Delta+/Delta-)
+§λ("modules")
+§ω("singular.v31.sarc.token.patent")
+§κ("CY-V31-SARC-1")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[332, 382], W_0 : ℝ[382, 382], K_0 : ℝ[332, 382], δ_0 : Δℝ[166], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_SARC(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

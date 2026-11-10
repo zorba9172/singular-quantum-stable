@@ -1,0 +1,13 @@
+// SINGULAR Ω v26.0 — Tripo3D OpenAPI v3 Autonomous 3D Asset Ingestion & 118,835-Triangle SAH BVH Engine
+§λ("discoveries")
+§ω("singular.v26.cinema.nanotech.exp")
+§κ("DISC-000096-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[145, 195], W_0 : ℝ[195, 195], K_0 : ℝ[145, 195], δ_0 : Δℝ[72], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φτ(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_PBR(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

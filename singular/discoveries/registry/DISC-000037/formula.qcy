@@ -1,0 +1,14 @@
+// SINGULAR Ω v14.0 — DISC-000037 Formula: Elite SIAC Compiler Pass + OSS-8 & Tokamak-Nanotech Singular Arcs
+§λ("discoveries")
+§ω("singular.v14.discovery.disc000037.formula")
+§κ("CY-DISC-000037-FORMULA")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[70, 140], W_0 : ℝ[140, 140], C_0 : ℤ[70, 140], δ_0 : Δℝ[37], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← ⟁_CIR(Ψ_0, W_0)
+  C_1 ← ⨂_TM(Ψ_1, C_0)
+  Ψ_2 ← ℋ_CD(C_1, W_0)
+  Ψ_3 ← ⟁_EMIT(Ψ_2, C_1) ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

@@ -1,0 +1,11 @@
+# SINGULAR Ω v6.0 — Cryptographic SuperKernel & Security Policy
+[security]
+require_secret_types = true
+forbid_implicit_secret_to_public = true
+forbid_secret_logging = true
+require_decrypt_capability = true
+require_constant_time_on_secrets = true
+constant_time_exemption_id = "SEC-CT-001"
+production_aead = ["AES-256-GCM", "XChaCha20-Poly1305", "Ascon-AEAD128"]
+post_quantum_hybrid = ["X25519+ML-KEM-768", "Ed25519+ML-DSA"]
+confidential_compute = ["CKKS", "BFV", "zk-STARK", "Shamir-MPC"]

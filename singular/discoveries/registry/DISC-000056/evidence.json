@@ -1,0 +1,7 @@
+{
+  "discovery_id": "DISC-000056",
+  "within_domain_verified": true,
+  "cross_domain_transfer_verified": true,
+  "ablation_verified": true,
+  "retraction_ulp": 0.0
+}

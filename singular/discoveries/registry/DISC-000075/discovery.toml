@@ -1,0 +1,3 @@
+discovery_id = "DISC-000075"
+title = "Project-Wide .qcy -> .ssa -> singular-qbe -> .s & .o Multi-Target Pipeline"
+status = "PROMOTED"

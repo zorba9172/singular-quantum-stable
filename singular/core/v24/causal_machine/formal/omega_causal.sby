@@ -1,0 +1,32 @@
+[tasks]
+func_bmc
+reset_bmc
+func_prove
+func_cover
+
+[options]
+func_bmc: mode bmc
+func_bmc: depth 16
+reset_bmc: mode bmc
+reset_bmc: depth 24
+func_prove: mode prove
+func_prove: depth 12
+func_cover: mode cover
+func_cover: depth 16
+
+[engines]
+smtbmc bitwuzla
+
+[script]
+read -formal omega_isa_pkg.sv omega_causal_decoder.sv omega_causal_unit.sv omega_causal_formal.sv
+func_bmc: chparam -set RESET_TABLE 0 omega_causal_formal
+func_prove: chparam -set RESET_TABLE 0 omega_causal_formal
+func_cover: chparam -set RESET_TABLE 0 omega_causal_formal
+reset_bmc: chparam -set RESET_TABLE 1 omega_causal_formal
+prep -top omega_causal_formal
+
+[files]
+../isa/gen/omega_isa_pkg.sv
+../rtl/omega_causal_decoder.sv
+../rtl/omega_causal_unit.sv
+omega_causal_formal.sv

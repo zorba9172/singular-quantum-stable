@@ -1,0 +1,13 @@
+// SINGULAR Ω v24.0 — Singular Arc Machine 4-Op Hardware State-Table ISA (omega.track/dirty/prop/valid)
+§λ("discoveries")
+§ω("singular.v24.arch")
+§κ("DISC-000081-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[112, 162], W_0 : ℝ[162, 162], K_0 : ℝ[112, 162], δ_0 : Δℝ[56], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_ISA(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

@@ -1,0 +1,13 @@
+// SINGULAR Ω v14.0 — arch03_self_healing_fabric_nanoswarm_consensus.qcy
+§λ("modules")
+§ω("singular.v14.archetypes")
+§κ("CY-ARCH5-3")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[56, 96], W_0 : ℝ[96, 96], K_0 : ℝ[56, 96], δ_0 : Δℝ[15], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_HEAL(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

@@ -1,0 +1,13 @@
+// SINGULAR Ω v32.0 — Omega-ArcAttention x 5-Tap B-Spline SIAC x Cyclotomic Z[zeta_16] Causal Cone
+§λ("discoveries")
+§ω("singular.v32.elite.disc")
+§κ("DISC-000117-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[370, 422], W_0 : ℝ[422, 422], K_0 : ℝ[370, 422], δ_0 : Δℝ[185], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⊛_θ(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

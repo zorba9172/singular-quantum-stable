@@ -1,0 +1,10 @@
+{
+  "faults_injected": 11,
+  "faults_contained": 11,
+  "sigkill_wal_recovery": "VERIFIED",
+  "disk_corruption_fnv1a64_rollback": "VERIFIED",
+  "posix_pipe_eof_containment": "VERIFIED",
+  "bounded_64kib_arena_oom_trap": "VERIFIED",
+  "silent_corruptions": 0,
+  "uncontrolled_crashes": 0
+}

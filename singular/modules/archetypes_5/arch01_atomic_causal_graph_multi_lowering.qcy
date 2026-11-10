@@ -1,0 +1,13 @@
+// SINGULAR Ω v14.0 — arch01_atomic_causal_graph_multi_lowering.qcy
+§λ("modules")
+§ω("singular.v14.archetypes")
+§κ("CY-ARCH5-1")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[52, 82], W_0 : ℝ[82, 82], K_0 : ℝ[52, 82], δ_0 : Δℝ[13], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_ACG(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

@@ -1,0 +1,6 @@
+id = "DISC-000016"
+title = "Synthetic Biology SBOL Genetic Circuit & DNA Codon Bytecode Compiler"
+domain_primary = "Computational & Synthetic Biology"
+domain_transfer = "Ultra-Dense Cold Archival Storage Coding"
+status = "VALIDATED_AND_PROMOTED"
+author = "singular.quantum.research"

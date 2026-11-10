@@ -1,0 +1,13 @@
+// SINGULAR Ω v25.0 — Total Non-Gradual Symbolic-to-Native Assembly Compiler (.qcy -> .sga -> ARM64/RISC-V)
+§λ("discoveries")
+§ω("singular.v25.sarc.siac")
+§κ("DISC-000091-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[132, 182], W_0 : ℝ[182, 182], K_0 : ℝ[132, 182], δ_0 : Δℝ[66], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_EMIT(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

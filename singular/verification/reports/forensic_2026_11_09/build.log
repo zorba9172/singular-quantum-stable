@@ -1,0 +1,8 @@
+[SingularQuantum | SINGULAR Ω v23.0.0-IMMORTAL-AGENT-HYPERVELOCITY (.qcy)] Building on NVMe APFS Stage (/tmp/singular_nvme_build_cache) with Apple M5 P-Core QoS...
+ld: warning: building for macOS-26.0, but linking with dylib '@rpath/libmlx.dylib' which was built for newer version 26.2
+ld: warning: building for macOS-26.0, but linking with dylib '@rpath/libjaccl.dylib' which was built for newer version 26.2
+[SingularQuantum | SINGULAR Ω v23.0.0-IMMORTAL-AGENT-HYPERVELOCITY] Build succeeded in 62309 ms:
+  -> /Volumes/Lenovo PS8S/workspace/SingularQuantum/bin/singular-quantum
+  -> /Volumes/Lenovo PS8S/workspace/SingularQuantum/bin/cycraft
+  -> /Volumes/Lenovo PS8S/workspace/SingularQuantum/singular/core/compiler/bin/singular-quantum
+  -> /Volumes/Lenovo PS8S/workspace/SingularQuantum/stack/libsingular_math_stack.dylib

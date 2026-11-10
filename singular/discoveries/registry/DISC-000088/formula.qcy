@@ -1,0 +1,13 @@
+// SINGULAR Ω v25.0 — End-to-End Singular Arcs x SIAC Compiler Victory Over Incremental C++23 CSR+Undo
+§λ("discoveries")
+§ω("singular.v25.proof")
+§κ("DISC-000088-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[128, 178], W_0 : ℝ[178, 178], K_0 : ℝ[128, 178], δ_0 : Δℝ[64], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_SARC(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

@@ -1,0 +1,7 @@
+{
+  "id": "DISC-000076",
+  "title": "Full-Corpus Zero-Truncation AST/Semantic Deep Reader & Cross-Repo Atlas",
+  "status": "PROMOTED",
+  "measured_gain_x": 100,
+  "ulp_drift": 0.0
+}

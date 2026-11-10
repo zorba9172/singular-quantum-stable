@@ -1,0 +1,13 @@
+// SINGULAR Ω v31.0 — Atomic Graphical Nanotechnology Reversible Bond-Arc Lattice (Graphene-Nanodiamond SiV-)
+§λ("modules")
+§ω("singular.v31.sarc.token.patent")
+§κ("CY-V31-SARC-4")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[344, 394], W_0 : ℝ[394, 394], K_0 : ℝ[344, 394], δ_0 : Δℝ[172], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_RMD(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

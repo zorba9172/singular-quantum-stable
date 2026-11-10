@@ -1,0 +1,6 @@
+config:
+  singular-omega:autoScaleMinAgents: 10
+  singular-omega:autoScaleMaxAgents: 100
+  singular-omega:clouds: ["gcp-cloudrun-gke", "aws-eks-fargate", "azure-aca-aks"]
+  singular-omega:githubBackgroundWorktreeDaemon: true
+  singular-omega:autonomousRnDLoop: true

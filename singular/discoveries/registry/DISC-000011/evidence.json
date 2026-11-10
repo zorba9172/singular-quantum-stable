@@ -1,0 +1,12 @@
+{
+  "id": "DISC-000011",
+  "title": "Harmonic-Incremental-Decremental Singular Arcs x SIAC",
+  "domain_primary": "Computational Mathematics & Compiler Optimization",
+  "domain_transfer": "Atomic Nanotechnology Bond-Graph Dynamics",
+  "verified": true,
+  "rel_err": 0.0,
+  "within_domain_speedup": 46.8,
+  "cross_domain_transfer_speedup": 38.4,
+  "ablation_speedup_without_mechanism": 1.0,
+  "zero_ulp_retraction": true
+}

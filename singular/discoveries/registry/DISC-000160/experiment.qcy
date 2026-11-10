@@ -1,0 +1,13 @@
+// SINGULAR Ω v40.0 — Multi-Cloud Pulumi Live Inference Router & Speculative Retract
+§λ("discoveries")
+§ω("singular.v40.live.exp")
+§κ("DISC-000160-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[451, 503], W_0 : ℝ[503, 503], K_0 : ℝ[451, 503], δ_0 : Δℝ[225], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φτ(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_ORC(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

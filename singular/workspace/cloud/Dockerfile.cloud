@@ -1,0 +1,9 @@
+# SINGULAR Ω v33.0.0 — Robotic Self-Deploying Multi-Cloud Container with 39 Local + 5 Cloud Models
+FROM ubuntu:24.04 AS runtime
+WORKDIR /opt/singular
+COPY bin/singular-quantum /opt/singular/bin/singular-quantum
+COPY stack/libsingular_math_stack.dylib /opt/singular/stack/libsingular_math_stack.dylib
+COPY .agents/CLOUD_AUTO_ROUTER_V33.toml /opt/singular/.agents/CLOUD_AUTO_ROUTER_V33.toml
+ENV SINGULAR_AUTO_MODE=1 SINGULAR_AUTO_RND=1 SINGULAR_TOKEN_ARC=1 PORT=8080
+EXPOSE 8080
+ENTRYPOINT ["/opt/singular/bin/singular-quantum", "cloud-auto"]

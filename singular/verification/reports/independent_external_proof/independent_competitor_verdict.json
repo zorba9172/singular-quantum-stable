@@ -1,0 +1,31 @@
+{
+  "cntfrq_el0_hz": 1000000000,
+  "gate_competitor": {
+    "us_cpp23_scalar_2pass": 36.9733, "us_cpp23_autovec_2pass": 22.1496,
+    "us_eigen3_2pass": 26.2490, "us_accelerate_vdsp_2pass": 28.4894,
+    "us_neon_intrinsics_2pass": 24.5965, "us_neon_intrinsics_1pass_fused": 28.7546,
+    "us_singular_arm64_asm_1pass_fused": 17.4819, "speedup_vs_cpp23_scalar": 2.1150,
+    "speedup_vs_cpp23_autovec": 1.2670, "speedup_vs_eigen3_2pass": 1.5015,
+    "speedup_vs_accelerate_vdsp": 1.6297, "speedup_vs_neon_2pass": 1.4070,
+    "speedup_vs_neon_1pass_fused": 1.6448
+  },
+  "gate_end_to_end": {
+    "graph_nodes": 65536, "graph_edges": 262144, "theoretical_cone_sparsity_x": 1024.0000,
+    "eigen_vdsp_total_us": 30526.6290, "cpp_inc_bfs_total_us": 280.2970,
+    "singular_total_us": 21.7920, "singular_cone_discovery_us": 0.2090,
+    "singular_graph_maint_us": 0.2080, "singular_gather_schedule_us": 0.2080,
+    "singular_kernel_exec_us": 18.3340, "singular_retract_verify_us": 2.8330,
+    "true_e2e_speedup_vs_eigen_vdsp_x": 1400.8181, "true_e2e_speedup_vs_cpp_bfs_x": 12.8624
+  },
+  "precision_taxonomy_inv2c": {
+    "level1_discrete_retract_ulp": 0,
+    "level2_naive_fp64_ulp_vs_128b": 206, "level2_twosum_ulp_vs_128b": 0,
+    "level3_continuous_unfiltered_linf": 2.4000e-03, "level3_continuous_siac_linf": 7.5964e-08,
+    "level3_continuous_siac_gain_x": 31594.0733, "level3_continuous_siac_ulp_above_eps": 1368438820
+  },
+  "gate_adversarial": {
+    "unguarded_sparse_100pct_speedup_x": 0.2597, "guarded_hybrid_100pct_speedup_x": 1.0000,
+    "storm_10k_i128_exact": true, "permutation_mismatches": 0,
+    "nan_trapped_0ulp": true
+  }
+}

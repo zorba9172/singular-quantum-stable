@@ -1,0 +1,15 @@
+// SINGULAR Ω — DISC-000901 Exact Reversible Arc Engine (ERA)
+// Σ: exact ℤ accumulators, Ψ: outputs on a 2^-b grid, δ: arc / input delta.
+// Ψ is a pure function of Σ, so incremental Σ == full Σ  ⇒  Ψ incremental == Ψ full (bitwise).
+§λ("discoveries")
+§ω("singular.v24.discovery")
+§κ("DISC-000901-F")
+
+Ω ⟦ Σ_0 : ℤ[256, 256], W_0 : ℤ[256, 256], δ_0 : Δℤ[256], ξ_0 : ⚿[32] ⟧ {
+  Σ_1 ← Σ_0 ⋅ W_0
+  Σ_2 ← Σ_1 ⊕ δ_0
+  Ψ_1 ← φ₊(Σ_2)
+  Σ_3 ← Σ_2 ↶ δ_0
+  ⊢ ⇄(Σ_3, Σ_1)
+  ⊢ |Σ_2| < ∞
+}

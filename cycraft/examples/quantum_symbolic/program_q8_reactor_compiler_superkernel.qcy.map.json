@@ -1,0 +1,17 @@
+{
+  "schema": "SINGULAR_OMEGA_QUANTUM_SOURCEMAP_V1",
+  "usage_policy": "QUARANTINED_DOCUMENTATION_AND_BREAKTHROUGH_RECONSTRUCTION_ONLY (NEVER_USED_IN_RUNTIME_HOT_PATH)",
+  "runtime_hot_path_linked": false,
+  "source_qcy": "cycraft/examples/quantum_symbolic/program_q8_reactor_compiler_superkernel.qcy",
+  "blake2b_256": "2e918abfd0049254186b7f7913187e653766c4d8dc9b0b01b8b4f657a9afe7da",
+  "mapped_spans": [
+    {"line": 15, "byte_offset": 450, "byte_len": 34, "omega_cir": "omega.fused_gemm_bias_phi_plus", "cpp_kernel": "cycraft/include/cycraft/quantum_syntax/omega_cir_lowering.hpp:182-212"},
+    {"line": 16, "byte_offset": 487, "byte_len": 22, "omega_cir": "omega.sparse_inject_oplus", "cpp_kernel": "cycraft/include/cycraft/quantum_syntax/omega_cir_lowering.hpp:112-136"},
+    {"line": 17, "byte_offset": 512, "byte_len": 18, "omega_cir": "omega.reactor_osr_promote", "cpp_kernel": "cycraft/include/cycraft/quantum_syntax/omega_symbolic_parser.hpp:150-245"},
+    {"line": 18, "byte_offset": 533, "byte_len": 23, "omega_cir": "omega.scram_anchor_guard", "cpp_kernel": "cycraft/include/cycraft/quantum_syntax/omega_symbolic_parser.hpp:150-245"},
+    {"line": 19, "byte_offset": 559, "byte_len": 29, "omega_cir": "omega.retract_exact_inverse", "cpp_kernel": "cycraft/include/cycraft/quantum_syntax/omega_cir_lowering.hpp:112-136"},
+    {"line": 20, "byte_offset": 591, "byte_len": 19, "omega_cir": "omega.proof_turnstile", "cpp_kernel": "cycraft/include/cycraft/quantum_syntax/omega_symbolic_parser.hpp:150-245"},
+    {"line": 21, "byte_offset": 613, "byte_len": 16, "omega_cir": "omega.proof_turnstile", "cpp_kernel": "cycraft/include/cycraft/quantum_syntax/omega_symbolic_parser.hpp:150-245"}
+  ],
+  "reconstructible_ascii_canonical_length": 752
+}

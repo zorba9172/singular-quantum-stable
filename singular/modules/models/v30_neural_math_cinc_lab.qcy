@@ -1,0 +1,13 @@
+// SINGULAR Ω v30.0 — Neural Mathematics Ω: Causal Incremental Neural Computation (CINC), Reversible Memory & Selective Plasticity
+§λ("modules")
+§ω("singular.v30.neural.math.cinc")
+§κ("V30-NEURAL-MATH-CINC-01")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[340, 384], W_0 : ℝ[384, 384], K_0 : ℝ[340, 384], δ_0 : Δℝ[170], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⊥_Σ(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

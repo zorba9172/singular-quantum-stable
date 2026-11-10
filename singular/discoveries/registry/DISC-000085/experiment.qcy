@@ -1,0 +1,13 @@
+// SINGULAR Ω v24.0 — OMEGA-FUSION Dependency/Version-Aware Kernel Fusion & Verified Native AI Search
+§λ("discoveries")
+§ω("singular.v24.arch.exp")
+§κ("DISC-000085-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[121, 171], W_0 : ℝ[171, 171], K_0 : ℝ[121, 171], δ_0 : Δℝ[60], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φτ(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_FUS(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

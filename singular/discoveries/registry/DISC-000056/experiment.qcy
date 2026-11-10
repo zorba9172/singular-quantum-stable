@@ -1,0 +1,13 @@
+// SINGULAR Ω v20.0 — Same-Regime Incremental Parity & O(|dC|+M+V) Complexity Bound
+§λ("discoveries")
+§ω("singular.v20.discovery")
+§κ("DISC-000056-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[54, 89], W_0 : ℝ[89, 89], K_0 : ℝ[54, 89], δ_0 : Δℝ[25], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_CIE(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

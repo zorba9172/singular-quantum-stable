@@ -1,0 +1,13 @@
+// SINGULAR Ω v23.0 — Immortal Agent WORM Longevity & P-Core Verification Gate
+§λ("verification")
+§ω("singular.v23.verification")
+§κ("CY-V23-LONGEVITY-GATE-001")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[88, 136], W_0 : ℝ[136, 136], K_0 : ℝ[88, 136], δ_0 : Δℝ[44], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_HEAL(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

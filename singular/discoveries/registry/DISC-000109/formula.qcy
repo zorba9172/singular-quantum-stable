@@ -1,0 +1,13 @@
+// SINGULAR Ω v25.1 — Orthogonal Decomposition of Equal-Work Speedup vs Cone Sparsity vs SIAC L_inf Accuracy
+§λ("discoveries")
+§ω("singular.v25.audit.truth")
+§κ("DISC-000109-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[152, 202], W_0 : ℝ[202, 202], K_0 : ℝ[152, 202], δ_0 : Δℝ[76], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⊛_θ(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

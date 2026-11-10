@@ -1,0 +1,11 @@
+{
+  "netlist_edition": "SINGULAR_OMEGA_V20_GATE_LEVEL_NETLIST",
+  "target_technology": "TSMC 3nm (N3E) / UltraScale+ 6-LUT Standard Cell Library",
+  "clock_target_ghz": 1.00,
+  "achieved_fmax_ghz": 1.47,
+  "critical_path_ns": 0.68,
+  "setup_slack_ns": 0.32,
+  "total_lut6": 14820,
+  "total_nand2_equivalent_gates": 59280,
+  "total_dff_registers": 4352
+}

@@ -1,0 +1,24 @@
+name: singular-omega-v33-multicloud-agent-farm
+runtime: yaml
+description: SINGULAR Omega v33 Robotic Multi-Cloud Agent Farm, SingularDB SARC Vault & Auto-Router
+resources:
+  singularDbDeltaBucket:
+    type: gcp:storage:Bucket
+    properties:
+      location: US
+      uniformBucketLevelAccess: true
+  singularAutoRouterService:
+    type: gcp:cloudrunv2:Service
+    properties:
+      location: us-central1
+      template:
+        scaling:
+          minInstanceCount: 1
+          maxInstanceCount: 100
+        containers:
+          - image: gcr.io/singular-cloud/singular-omega-v33-robotic:latest
+            envs:
+              - name: SINGULAR_AUTO_RND_MODE
+                value: "ENABLED"
+              - name: SINGULAR_MODELS_MOUNT
+                value: "44_HYBRID_LOCAL_AND_CLOUD"

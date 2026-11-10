@@ -1,0 +1,13 @@
+// SINGULAR Ω v22.0 — Riemannian Incremental Singular Arcs (Fisher-Rao Geodesic x Causal Cone)
+§λ("discoveries")
+§ω("singular.v22.discovery")
+§κ("DISC-000067-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[78, 122], W_0 : ℝ[122, 122], K_0 : ℝ[78, 122], δ_0 : Δℝ[38], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ∇_g(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

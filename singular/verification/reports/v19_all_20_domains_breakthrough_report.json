@@ -1,0 +1,10 @@
+{
+  "edition": "SINGULAR Ω v19.0.0-OMNI-20-DOMAIN-BREAKTHROUGH",
+  "geometric_mean_within_speedup_x": 226.0851,
+  "geometric_mean_transfer_speedup_x": 185.2581,
+  "external_cpp23_speedup_x": 435.2960,
+  "external_rust_speedup_x": 542.4372,
+  "sq_cross_domain_qcy": 33,
+  "sc_cross_domain_qcy": 33,
+  "total_discoveries": 182
+}

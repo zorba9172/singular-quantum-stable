@@ -1,0 +1,17 @@
+// SINGULAR Ω v14.0 — DISC-000032 Experiment: 3-Stage Bootstrap Fixed-Point & Cross-Domain Circuit Lowering (.qcy)
+§λ("discoveries")
+§ω("singular.v14.discovery")
+§κ("DISC-000032-EXP")
+
+Ω ⟦ ω_0 : 𝕊[4096], Ψ_0 : ⛨ℝ[58, 104], W_0 : ℝ[104, 104], T_0 : ℤ[256, 4], A_0 : ℤ[128, 8], C_0 : ℤ[64, 12], δ_0 : Δℝ[16], ξ_0 : ⚿[32] ⟧ {
+  T_0 ← ⟁_LEX(ω_0, Ψ_0)
+  A_0 ← ⟁_AST(T_0, W_0)
+  Ψ_1 ← φ₊(Ψ_0 ⋅ W_0)
+  C_0 ← ⟁_CIR(A_0, Ψ_1)
+  Ψ_2 ← ⟁_EMIT(C_0, Ψ_1) + H¹_Sheaf(A_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ d(d(ω_0)) ≈ 0.0
+  ⊢ |Ψ_2| < ∞
+}

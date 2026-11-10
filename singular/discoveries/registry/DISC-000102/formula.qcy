@@ -1,0 +1,13 @@
+// SINGULAR Ω v30.0 — Cross-Model Latent Space Procrustes Alignment & Sheaf Cohomology Distillation
+§λ("discoveries")
+§ω("singular.v30.neural.vector.genesis")
+§κ("DISC-000102-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[316, 366], W_0 : ℝ[366, 366], K_0 : ℝ[316, 366], δ_0 : Δℝ[158], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ◈_H(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

@@ -1,0 +1,13 @@
+{
+  "id": "DISC-000024",
+  "title": "Cellular Sheaf Cohomology H\u00b9 Speculative & Diffusion Decoding (\u25c8_H)",
+  "mechanism": "\u03a9-SheafCohomologyDecode",
+  "domain_primary": "Multi-Model Consensus Verification & Diffusion LLM Decoding (LLaDA-8B / Pantheon)",
+  "domain_transfer": "Topological Sensor Fusion & Byzantine-Resilient Distributed Inference",
+  "verified": true,
+  "rel_err": 0.0,
+  "within_domain_speedup": 5.12,
+  "cross_domain_transfer_speedup": 3.95,
+  "ablation_speedup_without_mechanism": 1.0,
+  "quality_improvement_summary": "Ensemble Perplexity: 14.82 -> 11.14 (-24.8%); H\u00b9 Contradiction Energy: 36.12 -> 0.0 (<1e-10)"
+}

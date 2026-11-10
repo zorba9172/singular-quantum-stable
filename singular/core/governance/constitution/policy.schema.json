@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SingularOmegaConstitutionalPolicy",
+  "type": "object",
+  "required": [
+    "id",
+    "subject",
+    "constraint",
+    "value",
+    "severity",
+    "authority",
+    "version"
+  ]
+}

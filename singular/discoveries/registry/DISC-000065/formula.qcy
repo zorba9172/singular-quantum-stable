@@ -1,0 +1,13 @@
+// SINGULAR Ω v21.0 — 20-Qubit Bitwise Matrix-Free TFIM Scaling & 500-Agent Patent Antithesis
+§λ("discoveries")
+§ω("singular.v21.discovery")
+§κ("DISC-000065-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[70, 110], W_0 : ℝ[110, 110], K_0 : ℝ[70, 110], δ_0 : Δℝ[34], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⨂_TM(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

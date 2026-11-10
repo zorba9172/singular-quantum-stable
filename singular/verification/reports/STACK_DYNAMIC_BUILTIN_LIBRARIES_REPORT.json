@@ -1,0 +1,17 @@
+{
+  "discovery_id": "DISC-000040",
+  "dylib_path": "./stack/libsingular_math_stack.dylib",
+  "abi_version": 1600,
+  "patents_registered": 16,
+  "c_abi_symbols_resolved": 11,
+  "builtin_qcy_packs_loaded": 0,
+  "auto_discoveries_admitted": 123,
+  "unproven_candidate_quarantined": true,
+  "swarm_200_agents_verified": 0,
+  "swarm_200_merkle_seal": "cbf29ce48422232591a8394174d22c2a",
+  "cold_load_us": 0.0000,
+  "warm_siac_load_us": 0.0000,
+  "warm_speedup_x": 0.0000,
+  "max_retraction_ulp": 0,
+  "all_passed": false
+}

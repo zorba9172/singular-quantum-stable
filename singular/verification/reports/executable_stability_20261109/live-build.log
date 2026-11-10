@@ -1,0 +1,3 @@
+/Volumes/Lenovo PS8S/workspace/SingularQuantum/.release-stage.X44oU7/bin/singular-quantum: replacing existing signature
+Validated source release: /Volumes/Lenovo PS8S/workspace/SingularQuantum/singular/workspace/releases/qcy-executable-3e379355b890a65b78774319b15ac523fd3de67d231293521b56761701dcd765
+{"source_toolchain_sha256":"3e379355b890a65b78774319b15ac523fd3de67d231293521b56761701dcd765","status":"validated_executable_profile","scope":"finite fp64 rank 1/2, VM/native/JIT, transactional event replay","general_language_stability":null,"scientific_advantage":null,"hardware_certification":null}

@@ -1,0 +1,13 @@
+// SINGULAR Ω v20.0 — Compaction-Free O(1) Bitmask Slot Reclamation Without Tombstones
+§λ("discoveries")
+§ω("singular.v20.discovery")
+§κ("DISC-000058-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[56, 90], W_0 : ℝ[90, 90], K_0 : ℝ[56, 90], δ_0 : Δℝ[26], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_EDGE(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

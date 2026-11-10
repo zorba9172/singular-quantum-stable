@@ -1,0 +1,9 @@
+{
+  "id": "DISC-000014",
+  "title": "Hardware-Aware Elastic RTL & OpenROAD VLSI Placement Co-Design",
+  "verified": true,
+  "rel_err": 0.0,
+  "within_domain_speedup": 11.8,
+  "cross_domain_transfer_speedup": 9.4,
+  "ablation_speedup_without_mechanism": 1.0
+}

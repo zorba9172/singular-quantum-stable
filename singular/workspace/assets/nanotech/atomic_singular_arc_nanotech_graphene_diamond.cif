@@ -1,0 +1,41 @@
+data_SINGULAR_OMEGA_V26_GRAPHENE_DIAMOND_SIV
+#
+loop_
+_atom_site.group_PDB
+_atom_site.id
+_atom_site.type_symbol
+_atom_site.label_atom_id
+_atom_site.label_comp_id
+_atom_site.label_asym_id
+_atom_site.label_seq_id
+_atom_site.Cartn_x
+_atom_site.Cartn_y
+_atom_site.Cartn_z
+_atom_site.occupancy
+_atom_site.B_iso_or_equiv
+_atom_site.auth_seq_id
+_atom_site.auth_comp_id
+_atom_site.auth_asym_id
+_atom_site.auth_atom_id
+_atom_site.pdbx_PDB_model_num
+ATOM 1 C C1 GRA A 1 0.000 1.420 0.000 1.00 98.50 1 GRA A C1 1
+ATOM 2 C C2 GRA A 2 1.230 0.710 0.000 1.00 98.50 2 GRA A C2 1
+ATOM 3 C C3 GRA A 3 1.230 -0.710 0.000 1.00 98.50 3 GRA A C3 1
+ATOM 4 C C4 GRA A 4 0.000 -1.420 0.000 1.00 98.50 4 GRA A C4 1
+ATOM 5 C C5 GRA A 5 -1.230 -0.710 0.000 1.00 98.50 5 GRA A C5 1
+ATOM 6 C C6 GRA A 6 -1.230 0.710 0.000 1.00 98.50 6 GRA A C6 1
+ATOM 7 C C7 ARC A 7 2.460 1.420 0.420 1.00 99.80 7 ARC A C7 1
+ATOM 8 N N1 ARC A 8 2.460 -1.420 0.420 1.00 99.80 8 ARC A N1 1
+ATOM 9 C C8 ARC A 9 3.690 0.710 0.880 1.00 99.90 9 ARC A C8 1
+ATOM 10 C C9 ARC A 10 3.690 -0.710 0.880 1.00 99.90 10 ARC A C9 1
+ATOM 11 O O1 ARC A 11 4.820 1.380 1.240 1.00 99.40 11 ARC A O1 1
+ATOM 12 O O2 ARC A 12 4.820 -1.380 1.240 1.00 99.40 12 ARC A O2 1
+ATOM 14 C C10 DIA B 13 4.920 0.000 1.760 1.00 97.20 13 DIA B C10 1
+ATOM 15 SI SI1 DIA B 14 6.180 0.000 2.850 1.00 99.90 14 DIA B SI1 1
+ATOM 16 C C11 DIA B 15 5.820 1.260 3.820 1.00 96.80 15 DIA B C11 1
+ATOM 17 C C12 DIA B 16 5.820 -1.260 3.820 1.00 96.80 16 DIA B C12 1
+ATOM 18 C C13 DIA B 17 7.560 0.000 2.020 1.00 96.80 17 DIA B C13 1
+ATOM 19 C C14 DIA B 18 7.080 1.260 4.680 1.00 95.50 18 DIA B C14 1
+ATOM 20 C C15 DIA B 19 7.080 -1.260 4.680 1.00 95.50 19 DIA B C15 1
+ATOM 21 C C16 DIA B 20 7.960 0.000 4.680 1.00 95.50 20 DIA B C16 1
+#

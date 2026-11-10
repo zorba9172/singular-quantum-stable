@@ -1,0 +1,1 @@
+{"profile":"qcy-executable-1","values":"finite float64, rank 1/2","backends":["vm","native","jit"],"distributed_transport":null,"quantum_solver_binding":null,"scientific_advantage":null,"patentability":null}

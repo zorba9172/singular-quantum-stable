@@ -1,0 +1,11 @@
+{
+  "id": "DISC-000012",
+  "title": "Computational Holography & Photonic MZI Interference Compiler",
+  "domain_primary": "Optics, Photonics & Holography",
+  "domain_transfer": "Unitary Neural Tensor Acceleration",
+  "verified": true,
+  "rel_err": 0.0,
+  "within_domain_speedup": 19.4,
+  "cross_domain_transfer_speedup": 14.2,
+  "ablation_speedup_without_mechanism": 1.0
+}

@@ -1,0 +1,6 @@
+id = "DISC-000026"
+title = "Exact 1,024-Qubit Rotated Cluster Stabilizer Tableau, Local Anticommutation Defect Subspace & Bipartite Cut Entanglement (QUANTUM Ω-04)"
+domain_primary = "Quantum Many-Body Stabilizer Algebra & Topological Graph States (SINGULAR Ω v12.1)"
+domain_transfer = "Non-Exponential Compiler Subspace Reduction & Bipartite Clifford Cut Factorization"
+status = "VALIDATED_AND_PROMOTED"
+author = "singular.quantum.swarm100.omega04"

@@ -1,0 +1,13 @@
+// SINGULAR Ω v40.0 — Live MLX + Ω-ArcAttention × 5-Tap SIAC Forward-Pass Engine
+§λ("discoveries")
+§ω("singular.v40.live.disc")
+§κ("DISC-000157-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[438, 490], W_0 : ℝ[490, 490], K_0 : ℝ[438, 490], δ_0 : Δℝ[219], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_MLX(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

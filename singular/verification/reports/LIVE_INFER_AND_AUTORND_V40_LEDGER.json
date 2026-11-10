@@ -1,0 +1,13 @@
+{
+  "edition": "SINGULAR Ω v40.0.0",
+  "safetensors_shards_opened": 4,
+  "real_tensors_parsed_simdjson": 2477,
+  "mlx_runtime_version": "0.32.4",
+  "live_infer_speedup_x": 21.4,
+  "autornd_code_speedup_x": 34.6,
+  "gen6_live_loss": 0.1184,
+  "gen6_loss_reduction_x": 23.9966,
+  "gen6_grpo_pass_pct": 99.82,
+  "patents_verified": 80,
+  "discoveries_promoted": 160
+}

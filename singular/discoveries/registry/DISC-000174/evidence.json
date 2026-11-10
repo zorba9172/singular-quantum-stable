@@ -1,0 +1,8 @@
+{
+  "discovery_id": "DISC-000174",
+  "status": "PROMOTED",
+  "within_domain_verified": true,
+  "cross_domain_transfer_verified": true,
+  "ablation_verified": true,
+  "ulp_drift": 0.0
+}

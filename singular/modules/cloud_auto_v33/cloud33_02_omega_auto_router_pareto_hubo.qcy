@@ -1,0 +1,13 @@
+// SINGULAR Ω v33.0 — Ω-AutoRouter Geodesic Pareto + Cubic HUBO Multi-Model Router
+§λ("modules")
+§ω("singular.v33.cloud.auto")
+§κ("DISC-000122-M2")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[408, 460], W_0 : ℝ[460, 460], K_0 : ℝ[408, 460], δ_0 : Δℝ[204], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_MOE(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

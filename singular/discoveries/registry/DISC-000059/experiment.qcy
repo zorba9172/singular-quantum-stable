@@ -1,0 +1,13 @@
+// SINGULAR Ω v20.0 — Dynamic Subspace Rank Expansion for Unbounded Zero-Forgetting Projection
+§λ("discoveries")
+§ω("singular.v20.discovery")
+§κ("DISC-000059-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[60, 98], W_0 : ℝ[98, 98], K_0 : ℝ[60, 98], δ_0 : Δℝ[28], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⊥_Σ(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

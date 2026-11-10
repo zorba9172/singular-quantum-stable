@@ -1,0 +1,11 @@
+# SINGULAR Ω v9.0 — Rigid Reactor-Core Compiler & Project Constitution
+[reactor_constitution]
+id = "SINGULAR-OMEGA-REACTOR-CONSTITUTION-V9"
+exclusive_language = "SingularQuantum (.qcy)"
+forbidden_languages = ["Eywa"]
+enforce_compile_time_laws = ["RC-001", "RC-002", "RC-003", "RC-004", "RC-005", "RC-006", "RC-007", "RC-008", "RC-009", "RC-010", "RC-011", "RC-012"]
+require_six_dir_spine = true
+require_criticality_turnstile = true
+require_scram_retractability = true
+require_static_shape_proof = true
+require_declaration_before_use = true

@@ -1,0 +1,15 @@
+// SINGULAR Ω v14.0 — OSS-03 (`janusgraph-master`): Nanometric Atomic Graph Link & Sheaf Cohomology Arc
+// Replaces O(|E|) vertex-centric scan & ghost vertices (`StandardJanusGraphTx`) with O(|∂C|) H¹=0 sheaf arc
+§λ("modules")
+§ω("singular.v14.oss8.janusgraph_acg")
+§κ("CY-OSS8-03-JANUSGRAPH-SHEAF-ARC")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[42, 84], W_0 : ℝ[84, 84], G_0 : ℝ[42, 84], δ_0 : Δℝ[23], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← ⟁_ACG(Ψ_0, W_0)
+  G_1 ← H¹_Sheaf(Ψ_1, G_0)
+  Ψ_2 ← ∇_g(G_1, W_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

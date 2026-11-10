@@ -1,0 +1,14 @@
+id = "DISC-000902"
+title = "ERA-CGH: exact incremental computer-generated holography driven by exact incremental skinning"
+status = "RESEARCH_CANDIDATE"
+maturity = "FUNCTION_VERIFIED (exactness); speed = ERA-incremental on top of a quantized-LUT CGH (LUT speedup itself is prior art)"
+implementation = ["cycraft/include/cycraft/quantum_syntax/omega_era_holography.hpp", "cycraft/include/cycraft/quantum_syntax/omega_era_holo_bench.hpp"]
+command = "singular/verification/era/era_audit.sh era-holo"
+evidence = "evidence.json (written by the command; no hand-entered figures)"
+images = "singular/verification/reports/era_holo/*.bmp (numerical angular-spectrum reconstructions)"
+depends_on = "DISC-000901 (ERA kernel, skinning workload)"
+# Prior art (subagent report, 2026-11-09): temporal-redundancy / motion-compensated N-LUT CGH (Kim & Kim et al.,
+# Appl. Opt. 2008; Opt. Express 2013, 2014), LUT/WRP CGH (Lucente 1993; Shimobaba et al. Opt. Lett. 2009),
+# fixed-point FPGA CGH (HORN series), reproducible summation (Kulisch, ReproBLAS). Not found: an explicit,
+# verified bit-identity contract (incremental = full = any partition order, exact undo) for CGH.
+# Obviousness risk: HIGH. Defensible framing: determinism contract + verification + measured trade-offs.

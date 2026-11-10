@@ -1,0 +1,3 @@
+discovery_id = "DISC-000107"
+title = "Hermetic SHA-256 Build Manifest & Adversarial Cache Invalidation Gate (GATE-BUILD-TRUTH)"
+status = "PROMOTED"

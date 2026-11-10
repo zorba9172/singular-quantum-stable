@@ -1,0 +1,77 @@
+{
+  "gate_id": "P39",
+  "cases": [
+    {
+      "case_id": "REV-01",
+      "op_class": "BIJECTIVE_AFFINE (y = a*x + b, a != 0)",
+      "retract_policy": "exact_inverse",
+      "compile_status": "PASS",
+      "k_updates": 32,
+      "undo_log_bytes": 0,
+      "delta_ownership_bytes": 256,
+      "kink_log_bytes": 0,
+      "max_retract_abs_err": 0.000000e+00,
+      "passed": true
+    },
+    {
+      "case_id": "REV-02",
+      "op_class": "UNITARY_FFT_SPECTRAL (F^-1 * H * F)",
+      "retract_policy": "exact_inverse",
+      "compile_status": "PASS",
+      "k_updates": 32,
+      "undo_log_bytes": 0,
+      "delta_ownership_bytes": 256,
+      "kink_log_bytes": 0,
+      "max_retract_abs_err": 1.550000e-16,
+      "passed": true
+    },
+    {
+      "case_id": "REV-03",
+      "op_class": "SYMPLECTIC_LEAPFROG_STEP",
+      "retract_policy": "exact_inverse",
+      "compile_status": "PASS",
+      "k_updates": 32,
+      "undo_log_bytes": 0,
+      "delta_ownership_bytes": 256,
+      "kink_log_bytes": 0,
+      "max_retract_abs_err": 0.000000e+00,
+      "passed": true
+    },
+    {
+      "case_id": "REV-04",
+      "op_class": "LOSSY_CLAMP (clamp(x, 0, 100) without boundary_log)",
+      "retract_policy": "exact_inverse",
+      "compile_status": "REJECT_CY_REV_001",
+      "k_updates": 32,
+      "undo_log_bytes": 0,
+      "delta_ownership_bytes": 256,
+      "kink_log_bytes": 0,
+      "max_retract_abs_err": 0.000000e+00,
+      "passed": true
+    },
+    {
+      "case_id": "REV-05",
+      "op_class": "LOSSY_RELU (relu(x) with sparse kink boundary_log)",
+      "retract_policy": "boundary_log",
+      "compile_status": "PASS",
+      "k_updates": 32,
+      "undo_log_bytes": 0,
+      "delta_ownership_bytes": 256,
+      "kink_log_bytes": 96,
+      "max_retract_abs_err": 0.000000e+00,
+      "passed": true
+    },
+    {
+      "case_id": "REV-06",
+      "op_class": "DESTRUCTIVE_ASSIGN (x = const with value witness_log)",
+      "retract_policy": "boundary_log",
+      "compile_status": "PASS",
+      "k_updates": 32,
+      "undo_log_bytes": 0,
+      "delta_ownership_bytes": 256,
+      "kink_log_bytes": 256,
+      "max_retract_abs_err": 0.000000e+00,
+      "passed": true
+    }
+  ]
+}

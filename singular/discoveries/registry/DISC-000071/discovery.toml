@@ -1,0 +1,3 @@
+discovery_id = "DISC-000071"
+title = "Open-Source QBE Compiler Backend Modified with Native SINGULAR OMEGA SSA Ops"
+status = "PROMOTED"

@@ -1,0 +1,16 @@
+{
+  "release_version": "3.0.0-STABLE",
+  "overall_verdict": "PASS_STABLE_RELEASE_CERTIFIED",
+  "workspace_projects_enforced": 13,
+  "workspace_cy_modules_verified": 92,
+  "p41_semantic_reuse_corpus_size": 240,
+  "p41_true_positives": 120,
+  "p41_false_positives": 0,
+  "p41_true_negatives": 120,
+  "p41_false_negatives": 0,
+  "p44_os_processes_spawned": 5,
+  "p44_minority_write_rejected": true,
+  "p44_majority_quorum_committed": true,
+  "p44_partition_healed_converged": true,
+  "ed25519_signature_hex_len": 128
+}

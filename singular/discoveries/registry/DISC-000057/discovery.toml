@@ -1,0 +1,3 @@
+discovery_id = "DISC-000057"
+title = "Three-Limb Chained TwoSum Residual Expansion & Z[zeta_16] Overflow Guard"
+status = "PROMOTED"

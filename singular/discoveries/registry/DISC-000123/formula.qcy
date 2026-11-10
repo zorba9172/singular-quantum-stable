@@ -1,0 +1,13 @@
+// SINGULAR Ω v33.0 — SingularDB Cloud-Replicated SARC Nullspace Delta & HNSW Cache
+§λ("discoveries")
+§ω("singular.v33.cloud.disc")
+§κ("DISC-000123-F")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[414, 466], W_0 : ℝ[466, 466], K_0 : ℝ[414, 466], δ_0 : Δℝ[207], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_DB(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

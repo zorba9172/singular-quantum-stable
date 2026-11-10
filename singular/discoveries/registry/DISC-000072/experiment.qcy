@@ -1,0 +1,13 @@
+// SINGULAR Ω v23.0 — Open-Source TinyCC ARM64 Assembler & JIT Modified with omtwosum..omwfactor
+§λ("discoveries")
+§ω("singular.v23.discovery")
+§κ("DISC-000072-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[88, 138], W_0 : ℝ[138, 138], K_0 : ℝ[88, 138], δ_0 : Δℝ[44], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_EMIT(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

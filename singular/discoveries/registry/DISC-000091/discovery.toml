@@ -1,0 +1,3 @@
+discovery_id = "DISC-000091"
+title = "Total Non-Gradual Symbolic-to-Native Assembly Compiler (.qcy -> .sga -> ARM64/RISC-V)"
+status = "PROMOTED"

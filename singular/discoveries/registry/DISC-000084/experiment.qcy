@@ -1,0 +1,13 @@
+// SINGULAR Ω v24.0 — Synthesizable omega_dirty_unit.sv + CVA6 CV-X-IF Coprocessor & 40 Formal Assertions
+§λ("discoveries")
+§ω("singular.v24.arch.exp")
+§κ("DISC-000084-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[119, 169], W_0 : ℝ[169, 169], K_0 : ℝ[119, 169], δ_0 : Δℝ[59], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φτ(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_RTL(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

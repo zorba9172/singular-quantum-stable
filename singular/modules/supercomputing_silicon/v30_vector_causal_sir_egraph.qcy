@@ -1,0 +1,13 @@
+// SINGULAR Ω v30.0 — Vector-Native SIR Ω v30, Proof-Carrying E-Graph Rewrite Chain & Vectorized SIAC Causal Cones
+§λ("modules")
+§ω("singular.v30.vector.causal.sir")
+§κ("V30-VECTOR-CAUSAL-SIR-02")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[344, 388], W_0 : ℝ[388, 388], K_0 : ℝ[344, 388], δ_0 : Δℝ[172], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⊛_θ(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

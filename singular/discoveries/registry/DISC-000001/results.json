@@ -1,0 +1,9 @@
+{
+  "id": "DISC-000001",
+  "gate": "Q08",
+  "metrics": {
+    "ulp_drift": 0.0,
+    "packet_bytes": 640,
+    "memory_saving_x": 51.2
+  }
+}

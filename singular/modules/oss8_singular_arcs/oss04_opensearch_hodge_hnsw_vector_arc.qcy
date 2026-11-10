@@ -1,0 +1,15 @@
+// SINGULAR Ω v14.0 — OSS-04 (`OpenSearch-main 2`): Hodge-Harmonic Decremental HNSW Vector & Segment Arc
+// Eliminates `OpenSearchTieredMergePolicy` forced delete-expunge merges via harmonic neighbor splicing Δ_H
+§λ("modules")
+§ω("singular.v14.oss8.opensearch_hnsw")
+§κ("CY-OSS8-04-OPENSEARCH-HNSW-ARC")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[46, 92], W_0 : ℝ[92, 92], V_0 : ℝ[46, 92], δ_0 : Δℝ[25], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← ∇_g(Ψ_0, W_0)
+  V_1 ← ◈_H(Ψ_1, V_0)
+  Ψ_2 ← ⟁_DB(V_1, W_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}

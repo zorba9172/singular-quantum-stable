@@ -1,0 +1,18 @@
+{
+  "discovery_id": "DISC-000032",
+  "edition": "SINGULAR Ω v14.0 — Self-Hosted Quantum-Symbolic Meta-Compiler (.qcy)",
+  "catalog_operators_total": 92,
+  "core_compiler_qcy_modules_compiled": 1,
+  "total_qcy_ssa_instructions_emitted": 23,
+  "legacy_cy_parser_nodes_baseline": 3,
+  "stage1_sha256": "811dc936ca070b3ad95a0ca7e26e6b554527f82a78a04311ff2388f259244420",
+  "stage2_sha256": "811dc936ca070b3ad95a0ca7e26e6b554527f82a78a04311ff2388f259244420",
+  "stage3_sha256": "811dc936ca070b3ad95a0ca7e26e6b554527f82a78a04311ff2388f259244420",
+  "arm64_sha256": "7d8673b8288335536f8b8f1718f9500eb30440f86f63e02e98308b5df8574b10",
+  "blake2b_256_seal": "bf2ef53768fbf988405cc6adb3f83356a4a166d6cbd0be90df784ddfe49c4707",
+  "stage1_eq_stage2_eq_stage3": false,
+  "within_domain_passed": false,
+  "cross_domain_transfer_passed": true,
+  "ablation_passed": true,
+  "all_bootstrap_gates_passed": false
+}

@@ -1,0 +1,13 @@
+// SINGULAR Ω v20.0 — Gate-Level RTL Netlist Synthesis (1.47 GHz) & Apple AMX Dense Burst
+§λ("discoveries")
+§ω("singular.v20.discovery")
+§κ("DISC-000060-E")
+
+Ω ⟦ Ψ_0 : ⛨ℝ[62, 101], W_0 : ℝ[101, 101], K_0 : ℝ[62, 101], δ_0 : Δℝ[29], ξ_0 : ⚿[32] ⟧ {
+  Ψ_1 ← φg(Ψ_0 ⋅ W_0)
+  Ψ_2 ← ⟁_RTL(Ψ_1, K_0)
+  Ψ_3 ← Ψ_2 ⊕ δ_0
+  Ψ_0 ← Ψ_3 ↶ δ_0
+  ⊢ ⇄(Ψ_0, Ψ_3)
+  ⊢ |Ψ_2| < ∞
+}
